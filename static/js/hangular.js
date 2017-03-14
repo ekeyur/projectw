@@ -20,7 +20,7 @@ app.config(function($stateProvider,$urlRouterProvider){
   .state({
     name : 'addGuest',
     url : '/addguest',
-    templateUrl : 'addguest.html',
+    templateUrl : 'addguest_ns.html',
     controller : 'addGuestController'
   })
 
@@ -35,13 +35,13 @@ app.config(function($stateProvider,$urlRouterProvider){
   .state({
     name : 'uploadFile',
     url : '/uploadfile',
-    templateUrl : 'uploadfile.html',
+    templateUrl : 'uploadfile_ns.html',
     controller : 'uploadfileController'
   })
   .state({
     name : 'allGuests',
     url : '/allguests',
-    templateUrl : 'allguests.html',
+    templateUrl : 'allguests_ns.html',
     controller : 'allGuestsController'
   });
 
