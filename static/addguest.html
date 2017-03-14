@@ -1,0 +1,28 @@
+<div> ADDGUEST </div>
+<div class="container">
+  <input type="text" ng-model="fname" placeholder="Keyur">
+  <input type="text" ng-model="lname" placeholder="Patel">
+  <input type="text" ng-model="group" placeholder="5">
+  <input type="text" ng-model="city" placeholder="Altanta"><br>
+  <label>Mandvo<input type="checkbox" ng-model="mandvo" ></label>&nbsp;&nbsp;
+  <label>Garba<input type="checkbox" ng-model="garba" ></label>&nbsp;&nbsp;
+  <label>Reception<input type="checkbox" ng-model="reception" ></label>&nbsp;&nbsp;
+  <label>Wedding<input type="checkbox" ng-model="wedding" ></label><br>
+  <button ng-click="AddG()">AddGuest</button>
+</div>
+
+<!-- <div class="">
+  <form class="" action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileName" />
+        <input type="submit" value="Upload!">
+  </form>
+</div> -->
+
+
+<div>
+<button ng-click="deleteEveryGuest()">Remove all Guests</button>
+</div>
+
+<div class="">
+  <button ng-click="addguestsfromuploadedfile()">Add Guests from Uploaded File</button>
+</div>

@@ -1,0 +1,22 @@
+<table border="2">
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>City</th>
+  <th>Group</th>
+  <th>Mandvo</th>
+  <th>Garba</th>
+  <th>Wedding</th>
+  <th>Reception</th>
+</tr>
+<tr ng-repeat="guest in guests | orderBy : 'group'">
+<td>{{guest.fname}}</td>
+<td>{{guest.lname}}</td>
+<td>{{guest.city}}</td>
+<td>{{guest.group}}</td>
+<td><span ng-if="guest.mandvo.invited">{{guest.mandvo.rsvp}}</span></td>
+<td><span ng-if="guest.garba.invited">{{guest.garba.rsvp}}</span></td>
+<td><span ng-if="guest.wedding.invited">{{guest.wedding.rsvp}}</span></td>
+<td><span ng-if="guest.reception.invited">{{guest.reception.rsvp}}</span></td>
+</tr>
+</table>
