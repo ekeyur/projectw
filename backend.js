@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 // mongoose.connect(config.database);
 mongoose.connect('mongodb://localhost/hemguest');
-
+// comment
 mongoose.Promise = bluebird;
 
 // MongoDb Schema
