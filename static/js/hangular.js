@@ -1,4 +1,4 @@
-var app = angular.module('hangular', ['ui.router','ngFileUpload']);
+var app = angular.module('hangular', ['ui.router','angularFileUpload']);
 
 //States
 app.config(function($stateProvider,$urlRouterProvider){
@@ -12,11 +12,26 @@ app.config(function($stateProvider,$urlRouterProvider){
     controller : 'nhController'
   })
   .state({
+    name : 'search',
+    url : '/search',
+    templateUrl : 'search.html',
+    controller : 'searchController'
+  })
+  .state({
     name : 'addGuest',
     url : '/addguest',
     templateUrl : 'addguest.html',
     controller : 'addGuestController'
   })
+
+  .state({
+    name : 'rsvp',
+    url : '/rsvp',
+    params : {data : null},
+    templateUrl : 'rsvp.html',
+    controller : 'rsvpController'
+  })
+
   .state({
     name : 'uploadFile',
     url : '/uploadfile',
@@ -105,57 +120,55 @@ app.factory('hangularService',function($http){
     });
   };
 
-
 	return service;
 });
+
+
 
 //Controllers
 
 
-//File Upload Controller
-
-
-
-
-
 // Initial
-app.controller('nhController', function($scope, $stateParams, $state, hangularService) {
-
+app.controller('searchController', function($scope, $stateParams, $state, hangularService) {
   $scope.searchQuery = function(){
-    $scope.showSearchResults = true;
-    hangularService.searchGuests($scope.query).success(function(data){
-    $scope.guests = data;
-    console.log($scope.guests);
-  	});
-    };
+    if($scope.query.length >=3){
+      hangularService.searchGuests($scope.query).success(function(data){
+        $scope.guests = data;
+        console.log($scope.guests);
+    	});
+    }
+  };
 
-  // Query to get the rsvp things
-    // $scope.getParty = function(guest){
-    //   hangularService.getPartyGuests(guest).success(function(data){
-    //     $scope.guestsInParty = data;
-    //   });
-    // };
 
-    $scope.getParty = function(guest){
-      console.log(guest);
-    };
+  $scope.getParty = function(guest){
+    $state.go('rsvp',{data:guest});
+  };
 
-  //Do Ask for RSVP
-    $scope.rsvp = function(){
-      // var newGuestInParty = JSON.parse(JSON.stringify($scope.guestsInParty));
-      $scope.guestsInParty.forEach(function(a){
-      if(a.mandvo.rsvp === true){a.mandvo.modified = true;}
-      if(a.garba.rsvp === true){a.garba.modified = true;}
-      if(a.wedding.rsvp === true){a.wedding.modified = true;}
-      if(a.reception.rsvp === true){a.reception.modified = true;}
+  });
+
+  app.controller('nhController',function($scope,hangularService){
+
+  });
+
+  // RSVP Controller
+  app.controller('rsvpController',function($state,$scope,$stateParams,hangularService){
+    $scope.guestsInParty = $stateParams.data;
+    $scope.guestsInParty.forEach(function(g){
+      if(g.mandvo.rsvp !== "No Response") {g.mandvo.modified = true;}
+      if(g.garba.rsvp !== "No Response") {g.garba.modified = true;}
+      if(g.wedding.rsvp !== "No Response") {g.wedding.modified = true;}
+      if(g.reception.rsvp !== "No Response") {g.reception.modified = true;}
     });
+    $scope.rsvp = function(){
       hangularService.rsvp($scope.guestsInParty).success(function(data){
-        console.log("Updated Data");
+        console.log("Updated RSVP");
         console.log(data);
       });
     };
 
+    console.log($scope.guestsInParty);
   });
+
 
   app.controller('addGuestController',function($scope,hangularService){
     $scope.AddG = function(){
@@ -190,11 +203,12 @@ app.controller('nhController', function($scope, $stateParams, $state, hangularSe
 
   });
 
-app.controller('uploadfileController',function($scope,hangularService){
-  $scope.UploadFile = function(){
-    hangularService.uploadFile($scope.file).success(function(data){
-      console.log(data);
-    });
+app.controller('uploadfileController',function($scope,hangularService,FileUploader){
+  var uploader = $scope.uploader = new FileUploader({
+    url : '/upload'
+  });
+  uploader.onCompleteAll = function(){
+    console.info('onCompleteAll');
   };
 });
 

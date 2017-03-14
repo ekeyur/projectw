@@ -1,18 +1,20 @@
 const express = require('express');
-const fileUpload = require('express-fileupload');
+const multer = require('multer');
+const upload = multer({dest: 'uploads/'});
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bluebird = require('bluebird');
 const lineReader = require('line-reader');
 const eachLine = bluebird.promisify(lineReader.eachLine);
 const app = express();
-
+const config = require('./config');
 
 app.use(express.static('static'));
 app.use(bodyParser.json());
-app.use(fileUpload());
 
+// mongoose.connect(config.database);
 mongoose.connect('mongodb://localhost/hemguest');
+
 mongoose.Promise = bluebird;
 
 // MongoDb Schema
@@ -22,20 +24,21 @@ var guestSchema = new mongoose.Schema({
       garba : {
           invited : Boolean,
           rsvp : String,
+          modified : Boolean,
           },
       mandvo : {
           invited : Boolean,
-          rsvp : Boolean,
+          rsvp : String,
           modified : Boolean,
           },
       wedding: {
             invited : Boolean,
-            rsvp : Boolean,
+            rsvp : String,
             modified : Boolean,
           },
       reception: {
             invited : Boolean,
-            rsvp : Boolean,
+            rsvp : String,
             modified : Boolean,
           },
       group  : String,
@@ -57,7 +60,7 @@ app.get('/allguests',function(request,response){
 
 // Search Query based on the userinput
 app.get('/searchguests',function(request,response){
-  if(request.query.query.length >= 3){
+  // if(request.query.query.length >= 3){
     Guest.find({'fname' : { $regex : new RegExp('\\b' + request.query.query + '\\b', "i") }})
     .then(function(data){
       return bluebird.map(data,function(g){
@@ -70,7 +73,7 @@ app.get('/searchguests',function(request,response){
     .catch(function(err){
       console.log(err.stack);
     });
-  }
+  // }
 });
 
 //Add a single Guest API
@@ -82,23 +85,23 @@ app.post('/addguest',function(request,response){
     lname : data.lname,
     mandvo : {
         invited : data.mandvo,
-        rsvp : false,
+        rsvp : "No Response",
         modified : false,
         },
     garba : {
         invited : data.garba,
-        rsvp : false,
+        rsvp : "No Response",
         modified : false,
         },
     wedding: {
           invited : data.wedding,
-          rsvp : false,
+          rsvp : "No Response",
           modified : false,
         },
     reception: {
           invited : data.reception,
-          rsvp : false,
-          modified: false,
+          rsvp : "No Response",
+          modified : false,
         },
     group  : data.group,
     city   : data.city
@@ -127,23 +130,23 @@ app.post('/addguestsfromuploadedfile',function(request,response){
         lname : g[1],
         mandvo : {
             invited : g[4],
-            rsvp : false,
+            rsvp : "No Response",
             modified : false,
             },
         garba : {
             invited : g[5],
-            rsvp : false,
+            rsvp : "No Response",
             modified : false,
             },
         wedding: {
               invited : g[6],
-              rsvp : false,
+              rsvp : "No Response",
               modified : false,
             },
         reception: {
               invited : g[7],
-              rsvp : false,
-              modified: false,
+              rsvp : "No Response",
+              modified : false,
             },
         group  : g[2],
         city   : g[3]
@@ -187,8 +190,20 @@ app.post('/deleteallguests',function(request,response){
 
 app.post('/rsvpguest',function(request,response){
   let guests = request.body;
+  console.log(guests);
   bluebird.map(guests,function(g){
-    return Guest.update({'_id' : g._id},{$set : {'garba':g.garba, 'reception':g.reception, 'wedding' : g.wedding}})
+    return Guest.update(
+      {'_id' : g._id},
+        {
+          $set :
+          {
+          'mandvo':{invited:g.mandvo.invited,rsvp:g.mandvo.rsvp,modified : g.mandvo.modified},
+          'garba':{invited:g.garba.invited,rsvp:g.garba.rsvp,modified : g.garba.modified},
+          'reception':{invited:g.reception.invited,rsvp:g.reception.rsvp,modified : g.reception.modified},
+          'wedding' : {invited:g.reception.invited,rsvp:g.reception.rsvp,modified : g.reception.modified}
+          }
+        }
+    )
   })
   .then(function(data){
     response.send(data);
@@ -200,26 +215,12 @@ app.post('/rsvpguest',function(request,response){
 
 
 /// File Upload
-app.post('/upload', function(request, response) {
-  // console.log("Hola file upload");
-  console.log(request.files.file);
-  if (!request.files)
-    return response.status(400).send('No files were uploaded.');
-
-  // The name of the input field (i.e. "fileName") is used to retrieve the uploaded file
-  let fileName = request.files.file;
-
-  // Use the mv() method to place the file somewhere on your server
-  fileName.mv('guests.csv', function(err) {
-    if (err)
-      return response.status(500).send(err);
-
-    response.send('File uploaded!');
-  });
+app.post('/upload',upload.single('file') ,function(request, response) {
+  response.end();
 });
 
 
 // Starting the Server
-app.listen('3000',function(){
+app.listen(3008,function(){
   console.log("Server is running");
 });

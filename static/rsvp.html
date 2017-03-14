@@ -1,0 +1,47 @@
+
+
+  <div ng-repeat="guest in guestsInParty">
+    <span>{{guest.fname}}</span>
+    <span>{{guest.lname}}</span>
+
+    <span ng-if="guest.mandvo.invited">Mandvo:
+      <span ng-if="!guest.mandvo.modified" ng-init="guest.mandvo.rsvp = 'No Response'">
+        <input  type="radio" value="No Response" ng-model="guest.mandvo.rsvp">
+        <input  type="radio" value="Accept" ng-model="guest.mandvo.rsvp">
+        <input  type="radio" value="Decline" ng-model="guest.mandvo.rsvp">
+      </span>
+      <span ng-if="guest.mandvo.modified">Already rsvped for Mandvo:
+      </span>
+    </span>
+
+    <span ng-if="guest.garba.invited">Raas:
+      <span ng-if="!guest.garba.modified" ng-init="guest.garba.rsvp = 'No Response'">
+        <input  type="radio" value="No Response" ng-model="guest.garba.rsvp">
+        <input  type="radio" value="Accept" ng-model="guest.garba.rsvp">
+        <input  type="radio" value="Decline" ng-model="guest.garba.rsvp">
+      </span>
+      <span ng-if="guest.garba.modified">Already rsvped for Raas:
+      </span>
+    </span>
+
+    <span ng-if="guest.wedding.invited">Wedding:
+      <span ng-if="!guest.wedding.modified" ng-init="guest.wedding.rsvp = 'No Response'">
+        <input  type="radio" value="No Response" ng-model="guest.wedding.rsvp">
+        <input  type="radio" value="Accept" ng-model="guest.wedding.rsvp">
+        <input  type="radio" value="Decline" ng-model="guest.wedding.rsvp">
+      </span>
+      <span ng-if="guest.wedding.modified">Already rsvped for Wedding:
+      </span>
+    </span>
+
+    <span ng-if="guest.reception.invited">Reception:
+      <span ng-if="!guest.reception.modified" ng-init="guest.reception.rsvp = 'No Response'">
+        <input  type="radio" value="No Response" ng-model="guest.reception.rsvp">
+        <input  type="radio" value="Accept" ng-model="guest.reception.rsvp">
+        <input  type="radio" value="Decline" ng-model="guest.reception.rsvp">
+      </span>
+      <span ng-if="guest.reception.modified">Already rsvped for Reception:
+      </span>
+    </span>
+</div>
+  <button type="button" ng-click="rsvp()">RSVP</button>

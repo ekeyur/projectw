@@ -1,11 +1,11 @@
 
 
-<div class="">
-  <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type="submit">
-  </form>
-</div>
+
+  <!-- <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data"> -->
+        <!-- <input type="file" name="file" />
+        <input type="submit"> -->
+  <!-- </form> -->
+
 
 
 <!-- <div class="">
@@ -16,3 +16,10 @@
 <!-- <form name="form">
   <input type="file" name="data" ng-model="form" />
 </form> -->
+<div class="">
+  <h3>Select files</h3>
+    <input type="file" nv-file-select="" uploader="uploader" />
+    <button type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()" ng-disabled="!uploader.getNotUploadedItems().length">
+        Upload
+    </button>
+</div>
