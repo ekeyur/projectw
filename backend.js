@@ -21,8 +21,7 @@ var guestSchema = new mongoose.Schema({
       lname : String,
       garba : {
           invited : Boolean,
-          rsvp : Boolean,
-          modified : Boolean,
+          rsvp : String,
           },
       mandvo : {
           invited : Boolean,
@@ -58,15 +57,20 @@ app.get('/allguests',function(request,response){
 
 // Search Query based on the userinput
 app.get('/searchguests',function(request,response){
-  // console.log(request.query.query);
-  Guest.find({'fname' : { $regex : new RegExp('\\b' + request.query.query + '\\b', "i") }})
-  .then(function(data){
-    console.log(data);
-    response.send(data);
-  })
-  .catch(function(err){
-    console.log(err.stash);
-  });
+  if(request.query.query.length >= 3){
+    Guest.find({'fname' : { $regex : new RegExp('\\b' + request.query.query + '\\b', "i") }})
+    .then(function(data){
+      return bluebird.map(data,function(g){
+        return Guest.find({'group' : g.group});
+      });
+    })
+    .then(function(data){
+      response.send(data);
+    })
+    .catch(function(err){
+      console.log(err.stack);
+    });
+  }
 });
 
 //Add a single Guest API
@@ -163,7 +167,6 @@ app.post('/addguestsfromuploadedfile',function(request,response){
 app.post('/deleteallguests',function(request,response){
   Guest.remove()
   .then(function(data){
-    // console.log(data);
     response.send(data);
   })
   .catch(function(err){

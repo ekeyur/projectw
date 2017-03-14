@@ -1,18 +1,21 @@
 <div>
-<input ng-show="!showSearchResults" type="text" ng-model="query">
-  <button ng-click="searchQuery()">Search</button>
-  <!-- <div ng-show="!showSearchResults" class="search-result" ng-repeat="guest in guests | limitTo : 2">
-    <div class="result">
-        <p class="result-name">{{guest.fname}}</p>
-        <p class="result-name">{{guest.lname}}</p>
-        <p class="result-concourse">City{{guest.city}}</p>
-    </div>
-    <div class="go" ng-click="getParty(guest)">
-        <p>Click</p>
-    </div>
-  </div> -->
+  <input  type="text" ng-change="searchQuery()" ng-model="query" placeholder="firstname">
+  <!-- <button ng-change="searchQuery()">Search</button> -->
+</div>
+<br>
+<br>
+<br>
+<div ng-if="guests.length > 0" ng-repeat="guest in guests">
+  <span>{{guest[0].group}} &nbsp; {{guest[0].city}}</span>
+  <div class="" ng-repeat="g in guest">
+    <span class="">{{g.fname}}</span>&nbsp;
+    <span class="">{{g.lname}}</span>&nbsp;
+  </div>
+  <button ng-click="getParty(guest)">RSVP</button>
+</div>
 
-  <div ng-if="showSearchResults">
+
+  <!-- <div ng-if="showSearchResults">
     <div ng-repeat="guest in guestsInParty">
       <span>{{guest.fname}}</span>
       <span>{{guest.lname}}</span>
@@ -22,9 +25,9 @@
       <span ng-if="guest.reception.invited">Reception: <span ng-if="!guest.reception.modified"><input type="checkbox" ng-model="guest.reception.rsvp"></span><span ng-if="guest.reception.modified">Already RSVP for Garba</span> </span>
     </div>
     <button type="button" ng-click="rsvp()">RSVP</button>
-  </div>
+  </div> -->
 
-</div>
+
 
 
 

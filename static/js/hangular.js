@@ -120,21 +120,25 @@ app.factory('hangularService',function($http){
 
 // Initial
 app.controller('nhController', function($scope, $stateParams, $state, hangularService) {
-  // Query to get the initial function
+
   $scope.searchQuery = function(){
-      hangularService.searchGuests($scope.query).success(function(data){
-      console.log(data);
-    	});
+    $scope.showSearchResults = true;
+    hangularService.searchGuests($scope.query).success(function(data){
+    $scope.guests = data;
+    console.log($scope.guests);
+  	});
     };
 
+  // Query to get the rsvp things
+    // $scope.getParty = function(guest){
+    //   hangularService.getPartyGuests(guest).success(function(data){
+    //     $scope.guestsInParty = data;
+    //   });
+    // };
 
-
-  // Query to get the
-  //   $scope.getParty = function(guest){
-  //     hangularService.getPartyGuests(guest).success(function(data){
-  //       $scope.guestsInParty = data;
-  //     });
-  //   };
+    $scope.getParty = function(guest){
+      console.log(guest);
+    };
 
   //Do Ask for RSVP
     $scope.rsvp = function(){
