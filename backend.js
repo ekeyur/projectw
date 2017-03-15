@@ -12,8 +12,8 @@ const config = require('./config');
 app.use(express.static('static'));
 app.use(bodyParser.json());
 
-// mongoose.connect(config.database);
-mongoose.connect('mongodb://localhost/hemguest');
+mongoose.connect(config.database);
+// mongoose.connect('mongodb://localhost/hemguest');
 // comment
 mongoose.Promise = bluebird;
 
@@ -221,6 +221,6 @@ app.post('/upload',upload.single('file') ,function(request, response) {
 
 
 // Starting the Server
-app.listen(3008,function(){
-  console.log("Server is running");
+app.listen(config.port,function(){
+  console.log("It's Showtime");
 });
