@@ -190,7 +190,7 @@ app.controller('searchController', function($scope, $stateParams, $state, hangul
 });
 
 app.controller('nhController',function($scope,hangularService){
-
+  $scope.bgimg = "background.jpg"
 });
 app.controller('aboutusController',function($scope,hangularService){
 

@@ -1,11 +1,45 @@
+/*index page*/
+
 .navbarlist{
   list-style-type: none;
   margin-top: 1%;
+  margin-right: 2%;
+  margin-top: 2%;
 }
+
 .nav-links{
-  float : right;
-  padding-right: 2%;
+  float: right;
+  padding-right: 2.5%;
+  padding-left: 0.5%;
+  color: white;
+  font-size: 12px;
 }
+
 .nav-links:hover{
-  color:red;
+  border-left: 1px solid white;
+}
+
+
+/*front page*/
+
+.front_page_wrapper{
+  width: 100vw;
+  height: 75vw;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.title_div{
+  width:400px;
+  border: 1px solid white;
+  margin-left: 60vw;
+}
+
+h1{
+  color: white;
+  font-size: 36px;
+  letter-spacing: 36px;
+  text-align: center;
+  line-height: 3;
 }

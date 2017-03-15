@@ -14,19 +14,24 @@
   <script src="js/hangular.js"></script>
   <script src="js/angular-file-upload.js"></script>
 
-  <body ng-app="hangular">
-  <div class="">
-    <ul class="navbarlist">
-      <li class="nav-links"><span ui-sref="contact">contact</span></li>
-      <li class="nav-links"><span ui-sref="venue">venue</span></li>
-      <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
-      <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
-      <li class="nav-links"><span ui-sref="theparty">the party</span></li>
-      <li class="nav-links"><span ui-sref="aboutus">about us</span></li>
-      <li class="nav-links"><span ui-sref="search">rsvp</span></li>
-    </ul>
-  </div>
+  <body ng-app="hangular" class="front_page_wrapper">
     <ui-view></ui-view>
+    <div class="nav">
+      <ul class="navbarlist">
+        <li class="nav-links"><span ui-sref="contact">contact</span></li>
+        <li class="nav-links"><span ui-sref="venue">venue</span></li>
+        <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
+        <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
+        <li class="nav-links"><span ui-sref="theparty">the party</span></li>
+        <li class="nav-links"><span ui-sref="aboutus">about us</span></li>
+        <li class="nav-links"><span ui-sref="search">rsvp</span></li>
+      </ul>
+    </div>
+    <div class="title_div">
+      <h1>NEHA</h1>
+      <h1>HEMANG</h1>
+    </div>
+
   </body>
 
 </html>
