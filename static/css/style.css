@@ -1,1 +1,12 @@
-
+.navbarlist{
+  list-style-type: none;
+  margin-top: 1%;
+}
+.nav-links{
+  float : right;
+  text-decoration: none;
+  padding-right: 2%;
+}
+.nav-links:hover{
+  color:red;
+}
