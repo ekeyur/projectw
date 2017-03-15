@@ -14,10 +14,10 @@
   <script src="js/hangular.js"></script>
   <script src="js/angular-file-upload.js"></script>
 
-  <body ng-app="hangular" style="background-image: url({{bgimg}})">
+  <body ng-app="hangular" style="background-image: url({{bgimg}});background-size: cover;">
     <ui-view></ui-view>
     <div class="nav">
-      <ul class="navbarlist">
+      <ul class="navbarlist cf">
         <li class="nav-links"><span ui-sref="contact">contact</span></li>
         <li class="nav-links"><span ui-sref="venue">venue</span></li>
         <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
@@ -27,15 +27,6 @@
         <li class="nav-links"><span ui-sref="search">rsvp</span></li>
       </ul>
     </div>
-    <div class="title_div">
-      <h1 class="neha">NEHA</h1>
-      <h1 class="hemang">HEMANG</h1>
-      <img src="../assets/love.png" alt="love">
-      <p class="introduction">We can’t wait to share <br>our special day with you.</p>
-      <p class="rsvp_button">RSVP</p>
-    </div>
-
-
   </body>
 
 </html>
