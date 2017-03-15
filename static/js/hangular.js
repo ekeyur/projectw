@@ -173,7 +173,8 @@ app.factory('hangularService',function($http){
 
 
 // Initial
-app.controller('searchController', function($scope, $stateParams, $state, hangularService) {
+app.controller('searchController', function($rootScope,$scope, $stateParams, $state, hangularService) {
+  $rootScope.bgimg = "../assets/another.jpg";
   $scope.searchQuery = function(){
     if($scope.query.length >=3){
       hangularService.searchGuests($scope.query).success(function(data){
@@ -193,7 +194,7 @@ app.controller('nhController',function($rootScope,hangularService){
   $rootScope.bgimg = "../assets/background.jpg";
 });
 app.controller('aboutusController',function($scope,hangularService){
-  
+
 });
 app.controller('thepartyController',function($scope,hangularService){
 
@@ -201,6 +202,7 @@ app.controller('thepartyController',function($scope,hangularService){
 
   // RSVP Controller
   app.controller('rsvpController',function($state,$scope,$stateParams,hangularService){
+
     $scope.guestsInParty = $stateParams.data;
     $scope.guestsInParty.forEach(function(g){
       if(g.mandvo.rsvp !== "No Response") {g.mandvo.modified = true;}
