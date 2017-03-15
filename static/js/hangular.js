@@ -189,11 +189,11 @@ app.controller('searchController', function($scope, $stateParams, $state, hangul
 
 });
 
-app.controller('nhController',function($scope,hangularService){
-  $scope.bgimg = "background.jpg"
+app.controller('nhController',function($rootScope,hangularService){
+  $rootScope.bgimg = "../assets/background.jpg";
 });
 app.controller('aboutusController',function($scope,hangularService){
-
+  
 });
 app.controller('thepartyController',function($scope,hangularService){
 
