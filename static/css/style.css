@@ -27,19 +27,63 @@
   height: 75vw;
   background-image: url(../assets/background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .title_div{
+  position: relative;
   width:400px;
-  border: 1px solid white;
-  margin-left: 60vw;
+  margin-left: 62vw;
+  margin-top: 7vw;
+  opacity: 0.9;
 }
 
-h1{
+.neha{
+  position: absolute;
+  left:6.25vw;
+  top: 0vw;
   color: white;
-  font-size: 36px;
-  letter-spacing: 36px;
+  font-size: 2.5vw;
+  letter-spacing: 2.5vw;
+}
+
+.hemang{
+  position: absolute;
+  left:2vw;
+  top: 8vw;
+  color: white;
+  font-size: 2.5vw;
+  letter-spacing: 2.5vw;
+}
+
+.title_div img{
+  display: block;
+  position: absolute;
+  left:-13.5vw;
+  top: 1.5vw;
+  width: 55vw;
+}
+
+.introduction{
+  position: absolute;
+  color:white;
+  left:4.5vw;
+  top: 16vw;
+  font-size: 1.25vw;
   text-align: center;
-  line-height: 3;
+  letter-spacing: 0.17vw;
+  font-family: "century gothic", Arial;
+  line-height: 1.58;
+}
+
+.rsvp_button{
+  position: absolute;
+  left:9.5vw;
+  top: 22vw;
+  color:white;
+  font-size: 1.1vw;
+  border: 1px solid white;
+  padding: 1vw 3vw;
+  letter-spacing: 0.05vw;
 }
