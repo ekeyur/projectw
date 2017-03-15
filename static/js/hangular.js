@@ -200,7 +200,6 @@ app.controller('searchController', function($scope, $stateParams, $state, hangul
         console.log(data);
       });
     };
-
   });
 
 app.controller('uploadfileController',function($scope,hangularService,FileUploader){
@@ -210,6 +209,7 @@ app.controller('uploadfileController',function($scope,hangularService,FileUpload
   uploader.onCompleteAll = function(){
     console.info('onCompleteAll');
   };
+
 });
 
 app.controller('allGuestsController',function($scope,$state,hangularService){
