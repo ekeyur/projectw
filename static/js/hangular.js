@@ -11,12 +11,56 @@ app.config(function($stateProvider,$urlRouterProvider){
     templateUrl : 'nh.html',
     controller : 'nhController'
   })
+
+  .state({
+    name : 'venue',
+    url : '/venue',
+    templateUrl : 'venue.html',
+    controller : 'venueController'
+  })
+
+  .state({
+    name : 'schedule',
+    url : '/schedule',
+    templateUrl : 'schedule.html',
+    controller : 'scheduleController'
+  })
+
+  .state({
+    name : 'gallery',
+    url : '/gallery',
+    templateUrl : 'gallery.html',
+    controller : 'galleryController'
+  })
+
+  .state({
+    name : 'contact',
+    url : '/contact',
+    templateUrl : 'contact.html',
+    controller : 'contactController'
+  })
+
   .state({
     name : 'search',
     url : '/search',
     templateUrl : 'search.html',
     controller : 'searchController'
   })
+
+  .state({
+    name : 'aboutus',
+    url : '/aboutus',
+    templateUrl : 'aboutus.html',
+    controller : 'aboutusController'
+  })
+
+  .state({
+    name : 'theparty',
+    url : '/theparty',
+    templateUrl : 'theparty.html',
+    controller : 'thepartyController'
+  })
+
   .state({
     name : 'addGuest',
     url : '/addguest',
@@ -139,16 +183,21 @@ app.controller('searchController', function($scope, $stateParams, $state, hangul
     }
   };
 
-
   $scope.getParty = function(guest){
     $state.go('rsvp',{data:guest});
   };
 
-  });
+});
 
-  app.controller('nhController',function($scope,hangularService){
+app.controller('nhController',function($scope,hangularService){
 
-  });
+});
+app.controller('aboutusController',function($scope,hangularService){
+
+});
+app.controller('thepartyController',function($scope,hangularService){
+
+});
 
   // RSVP Controller
   app.controller('rsvpController',function($state,$scope,$stateParams,hangularService){

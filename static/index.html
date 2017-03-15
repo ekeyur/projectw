@@ -17,12 +17,13 @@
   <body ng-app="hangular">
   <div class="">
     <ul class="navbarlist">
-      <li class="nav-links"><span>contact</span></li>
-      <li class="nav-links">schedule</li>
-      <li class="nav-links">gallery</li>
-      <li class="nav-links">the party</li>
-      <li class="nav-links">about us</li>
-      <li class="nav-links"><div ui-sref="search">rsvp</div></li>
+      <li class="nav-links"><span ui-sref="contact">contact</span></li>
+      <li class="nav-links"><span ui-sref="venue">venue</span></li>
+      <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
+      <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
+      <li class="nav-links"><span ui-sref="theparty">the party</span></li>
+      <li class="nav-links"><span ui-sref="aboutus">about us</span></li>
+      <li class="nav-links"><span ui-sref="search">rsvp</span></li>
     </ul>
   </div>
     <ui-view></ui-view>

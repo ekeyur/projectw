@@ -1,6 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const upload = multer({dest: 'uploads/'});
+// const upload = multer({dest: 'uploads/'});
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bluebird = require('bluebird');
@@ -8,6 +8,19 @@ const lineReader = require('line-reader');
 const eachLine = bluebird.promisify(lineReader.eachLine);
 const app = express();
 const config = require('./config');
+
+
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/');
+  },
+  filename: function (req, file, cb) {
+    cb(null, 'guests.csv');
+  }
+});
+
+var upload = multer({ storage: storage })
+
 
 app.use(express.static('static'));
 app.use(bodyParser.json());
