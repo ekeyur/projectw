@@ -181,6 +181,7 @@ app.factory('hangularService',function($http){
 // Initial
 app.controller('searchController', function($rootScope,$scope, $stateParams, $state, hangularService) {
   $rootScope.bgimg = "../assets/another.jpg";
+  $rootScope.color = "red";
   $scope.searchQuery = function(){
     if($scope.query.length >=3){
       hangularService.searchGuests($scope.query).success(function(data){
@@ -209,6 +210,7 @@ app.controller('thepartyController',function($rootScope,hangularService){
   // RSVP Controller
   app.controller('rsvpController',function($rootScope,$state,$scope,$stateParams,hangularService){
     $rootScope.bgimg = "";
+    $rootScope.color = "red";
     $scope.guestsInParty = $stateParams.data;
   $scope.rsvp = function(){
     $scope.guestsInParty.forEach(function(g){
