@@ -1,46 +1,61 @@
 
-  <div ng-repeat="guest in guestsInParty">
-    <span>{{guest.fname}}</span>
-    <span>{{guest.lname}}</span>
-
-    <span ng-if="guest.mandvo.invited">Mandvo:
-      <span ng-if="!guest.mandvo.modified" ng-init="guest.mandvo.rsvp = 'No Response'">
-        <input  type="radio" value="No Response" ng-model="guest.mandvo.rsvp">
-        <input  type="radio" value="Accept" ng-model="guest.mandvo.rsvp">
-        <input  type="radio" value="Decline" ng-model="guest.mandvo.rsvp">
+  <table>
+  <tr>
+    <th>Name</th>
+    <th ng-if="guestsInParty[0].mandvo.invited">Mandvo</th>
+    <th ng-if="guestsInParty[0].garba.invited">Rass</th>
+    <th ng-if="guestsInParty[0].wedding.invited">Wedding</th>
+    <th ng-if="guestsInParty[0].reception.invited">Reception</th>
+  </tr>
+  <tr ng-repeat="guest in guestsInParty">
+    <td>
+      <span>{{guest.fname}}</span>
+      <span>{{guest.lname}}</span>
+    </td>
+    <td ng-if="guest.mandvo.invited">
+      <span>
+        <span ng-if="!guest.mandvo.modified" ng-init="guest.mandvo.rsvp = 'No Response'">
+          <label>No Response:</label><input  type="radio" value="No Response" ng-model="guest.mandvo.rsvp"><br>
+          <label>Accept:</label><input  type="radio" value="Accept" ng-model="guest.mandvo.rsvp"><br>
+          <label>Decline:</label><input  type="radio" value="Decline" ng-model="guest.mandvo.rsvp">
+        </span>
+        <span ng-if="guest.mandvo.modified">Already rsvped for Mandvo:
+        </span>
       </span>
-      <span ng-if="guest.mandvo.modified">Already rsvped for Mandvo:
+    </td>
+    <td ng-if="guest.garba.invited">
+      <span >
+        <span ng-if="!guest.garba.modified" ng-init="guest.garba.rsvp = 'No Response'">
+          <label>No Response:</label><input  type="radio" value="No Response" ng-model="guest.garba.rsvp"><br>
+          <label>Accept:</label><input  type="radio" value="Accept" ng-model="guest.garba.rsvp"><br>
+          <label>Decline:</label><input  type="radio" value="Decline" ng-model="guest.garba.rsvp">
+        </span>
+        <span ng-if="guest.garba.modified">Already rsvped for Raas:
+        </span>
       </span>
-    </span>
-
-    <span ng-if="guest.garba.invited">Raas:
-      <span ng-if="!guest.garba.modified" ng-init="guest.garba.rsvp = 'No Response'">
-        <input  type="radio" value="No Response" ng-model="guest.garba.rsvp">
-        <input  type="radio" value="Accept" ng-model="guest.garba.rsvp">
-        <input  type="radio" value="Decline" ng-model="guest.garba.rsvp">
+    </td>
+    <td ng-if="guest.wedding.invited">
+      <span >
+        <span ng-if="!guest.wedding.modified" ng-init="guest.wedding.rsvp = 'No Response'">
+          <label>No Response:</label><input  type="radio" value="No Response" ng-model="guest.wedding.rsvp"><br>
+          <label>Accept:</label><input  type="radio" value="Accept" ng-model="guest.wedding.rsvp"><br>
+          <label>Decline:</label><input  type="radio" value="Decline" ng-model="guest.wedding.rsvp">
+        </span>
+        <span ng-if="guest.wedding.modified">Already rsvped for Wedding:
+        </span>
       </span>
-      <span ng-if="guest.garba.modified">Already rsvped for Raas:
+    </td>
+    <td ng-if="guest.reception.invited">
+      <span >
+        <span ng-if="!guest.reception.modified" ng-init="guest.reception.rsvp = 'No Response'">
+          <label>No Response:</label><input  type="radio" value="No Response" ng-model="guest.reception.rsvp"><br>
+          <label>Accept:</label><input  type="radio" value="Accept" ng-model="guest.reception.rsvp"><br>
+          <label>Decline:</label><input  type="radio" value="Decline" ng-model="guest.reception.rsvp">
+        </span>
+        <span ng-if="guest.reception.modified">Already rsvped for Reception:
+        </span>
       </span>
-    </span>
-
-    <span ng-if="guest.wedding.invited">Wedding:
-      <span ng-if="!guest.wedding.modified" ng-init="guest.wedding.rsvp = 'No Response'">
-        <input  type="radio" value="No Response" ng-model="guest.wedding.rsvp">
-        <input  type="radio" value="Accept" ng-model="guest.wedding.rsvp">
-        <input  type="radio" value="Decline" ng-model="guest.wedding.rsvp">
-      </span>
-      <span ng-if="guest.wedding.modified">Already rsvped for Wedding:
-      </span>
-    </span>
-
-    <span ng-if="guest.reception.invited">Reception:
-      <span ng-if="!guest.reception.modified" ng-init="guest.reception.rsvp = 'No Response'">
-        <input  type="radio" value="No Response" ng-model="guest.reception.rsvp">
-        <input  type="radio" value="Accept" ng-model="guest.reception.rsvp">
-        <input  type="radio" value="Decline" ng-model="guest.reception.rsvp">
-      </span>
-      <span ng-if="guest.reception.modified">Already rsvped for Reception:
-      </span>
-    </span>
-</div>
-  <button type="button" ng-click="rsvp()">RSVP</button>
+    </td>
+  </tr>
+  </table>
+  <button class="rsvp_submit_button" type="button" ng-click="rsvp()">Submit</button>

@@ -193,16 +193,16 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
 app.controller('nhController',function($rootScope,hangularService){
   $rootScope.bgimg = "../assets/background.jpg";
 });
-app.controller('aboutusController',function($scope,hangularService){
-
+app.controller('aboutusController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
 });
-app.controller('thepartyController',function($scope,hangularService){
-
+app.controller('thepartyController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
 });
 
   // RSVP Controller
-  app.controller('rsvpController',function($state,$scope,$stateParams,hangularService){
-
+  app.controller('rsvpController',function($rootScope,$state,$scope,$stateParams,hangularService){
+    $rootScope.bgimg = "";
     $scope.guestsInParty = $stateParams.data;
     $scope.guestsInParty.forEach(function(g){
       if(g.mandvo.rsvp !== "No Response") {g.mandvo.modified = true;}
@@ -221,7 +221,8 @@ app.controller('thepartyController',function($scope,hangularService){
   });
 
 
-  app.controller('addGuestController',function($scope,hangularService){
+  app.controller('addGuestController',function($rootScope,$scope,hangularService){
+    $rootScope.bgimg = "";
     $scope.AddG = function(){
       var obj = {
                   "fname":$scope.fname,

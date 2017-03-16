@@ -1,14 +1,18 @@
-<div> ADDGUEST </div>
-<div class="container">
-  <input type="text" ng-model="fname" placeholder="Keyur">
-  <input type="text" ng-model="lname" placeholder="Patel">
-  <input type="text" ng-model="group" placeholder="5">
-  <input type="text" ng-model="city" placeholder="Altanta"><br>
-  <label>Mandvo<input type="checkbox" ng-model="mandvo" ></label>&nbsp;&nbsp;
-  <label>Garba<input type="checkbox" ng-model="garba" ></label>&nbsp;&nbsp;
-  <label>Reception<input type="checkbox" ng-model="reception" ></label>&nbsp;&nbsp;
-  <label>Wedding<input type="checkbox" ng-model="wedding" ></label><br>
-  <button ng-click="AddG()">AddGuest</button>
+<div> <h3>Add guests here:</h3> </div>
+<div class="add_guest">
+  <label>First name:</label>&nbsp;&nbsp;<input type="text" ng-model="fname" placeholder="Keyur"><br>
+  <label>Last name:</label>&nbsp;&nbsp;<input type="text" ng-model="lname" placeholder="Patel"><br>
+  <label>Group name:</label>&nbsp;&nbsp;<input type="text" ng-model="group" placeholder="Group name"><br>
+  <label>City:</label>&nbsp;&nbsp;<input type="text" ng-model="city" placeholder="Altanta"><br>
+  <br>
+  <label>This guest will be invited for:</label>
+  <br>
+  <label>Mandvo&nbsp;<input type="checkbox" ng-model="mandvo" ></label>&nbsp;&nbsp;
+  <label>Garba&nbsp;<input type="checkbox" ng-model="garba" ></label>&nbsp;&nbsp;
+  <label>Reception&nbsp;<input type="checkbox" ng-model="reception" ></label>&nbsp;&nbsp;
+  <label>Wedding&nbsp;<input type="checkbox" ng-model="wedding" ></label><br>
+  <br>
+  <button ng-click="AddG()">Add This Guest</button>
 </div>
 
 <!-- <div class="">
@@ -18,11 +22,12 @@
   </form>
 </div> -->
 
-
-<div>
-<button ng-click="deleteEveryGuest()">Remove all Guests</button>
+<br>
+<div class="button_div">
+<button class="remove" ng-click="deleteEveryGuest()">Remove all Guests</button>
 </div>
 
-<div class="">
+<br>
+<div class="button_div">
   <button ng-click="addguestsfromuploadedfile()">Add Guests from Uploaded File</button>
 </div>
