@@ -14,7 +14,7 @@
 
 .navbarlist{
   list-style-type: none;
-  margin-top: -5%;
+  /*margin-top: -5%;*/
   margin-right: 2%;
   opacity: 0.9;
 }
