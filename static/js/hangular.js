@@ -4,6 +4,12 @@ var app = angular.module('hangular', ['ui.router','angularFileUpload']);
 app.config(function($stateProvider,$urlRouterProvider){
 
   $stateProvider
+  .state({
+    name : 'login',
+    url : '/login',
+    templateUrl : 'login.html',
+    controller : 'loginController'
+  })
 
   .state({
     name : 'nh',
@@ -201,24 +207,31 @@ app.controller('thepartyController',function($scope,hangularService){
 });
 
   // RSVP Controller
-  app.controller('rsvpController',function($state,$scope,$stateParams,hangularService){
-
-    $scope.guestsInParty = $stateParams.data;
+app.controller('rsvpController',function($state,$scope,$stateParams,hangularService){
+  $scope.guestsInParty = $stateParams.data;
+  $scope.rsvp = function(){
     $scope.guestsInParty.forEach(function(g){
-      if(g.mandvo.rsvp !== "No Response") {g.mandvo.modified = true;}
-      if(g.garba.rsvp !== "No Response") {g.garba.modified = true;}
-      if(g.wedding.rsvp !== "No Response") {g.wedding.modified = true;}
+      if(g.mandvo.rsvp !== "No Response") {
+          console.log(g.mandvo.modified);
+          g.mandvo.modified = true;
+        }
+      if(g.garba.rsvp !== "No Response") {
+          console.log(g.garba.modified);
+          g.garba.modified = true;
+        }
+      if(g.wedding.rsvp !== "No Response") {
+        console.log(g.wedding.modified);
+        g.wedding.modified = true;}
       if(g.reception.rsvp !== "No Response") {g.reception.modified = true;}
     });
-    $scope.rsvp = function(){
-      hangularService.rsvp($scope.guestsInParty).success(function(data){
-        console.log("Updated RSVP");
-        console.log(data);
-      });
-    };
+    hangularService.rsvp($scope.guestsInParty).success(function(data){
+      console.log("Updated RSVP");
+      console.log(data);
+    });
+  };
 
-    console.log($scope.guestsInParty);
-  });
+  console.log($scope.guestsInParty);
+});
 
 
   app.controller('addGuestController',function($scope,hangularService){

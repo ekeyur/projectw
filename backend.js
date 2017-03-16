@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bluebird = require('bluebird');
 const lineReader = require('line-reader');
+// const uuidV1 = require('uuid/v1');
 const eachLine = bluebird.promisify(lineReader.eachLine);
 const app = express();
 const config = require('./config');
@@ -71,6 +72,36 @@ app.get('/allguests',function(request,response){
   });
 });
 
+app.post('/login', function(request, response) {
+   var user = request.body.user;
+   var password = request.body.pass;
+   if (user === 'nehem' && password == 'hemang123neha'){
+     response.send('qwe123rty857hgs');
+   }else{
+     response.send('Login Failed');
+   }
+ });
+
+ function auth(request, response, next) {
+    //verify auth token
+    let token = request.query.token;
+
+    if (!token) {
+      response.status(401);
+      response.json({error: "You are not logged in"});
+      return;
+    }
+
+    if(user.token === 'qwe123rty857hgs') {
+        next();
+      } else {
+        response.status(401);
+        response.json({error: "You are not logged in"});
+      }
+  }
+
+
+
 // Search Query based on the userinput
 app.get('/searchguests',function(request,response){
   // if(request.query.query.length >= 3){
@@ -133,7 +164,7 @@ app.post('/addguest',function(request,response){
 // Add Guests to Database from Uploaded csv file
 app.post('/addguestsfromuploadedfile',function(request,response){
   var fileguests = [];
-  eachLine('guests.csv', function(line, last) {
+  eachLine('./uploads/guests.csv', function(line, last) {
     fileguests.push(line.split(','));
   })
   .then(function(){
@@ -201,22 +232,25 @@ app.post('/deleteallguests',function(request,response){
 //   });
 // });
 
+
+
 app.post('/rsvpguest',function(request,response){
   let guests = request.body;
+  console.log("Helloe");
   console.log(guests);
   bluebird.map(guests,function(g){
     return Guest.update(
-      {'_id' : g._id},
+      {'_id':g._id},
         {
-          $set :
+          $set:
           {
-          'mandvo':{invited:g.mandvo.invited,rsvp:g.mandvo.rsvp,modified : g.mandvo.modified},
-          'garba':{invited:g.garba.invited,rsvp:g.garba.rsvp,modified : g.garba.modified},
-          'reception':{invited:g.reception.invited,rsvp:g.reception.rsvp,modified : g.reception.modified},
-          'wedding' : {invited:g.reception.invited,rsvp:g.reception.rsvp,modified : g.reception.modified}
+          'mandvo': g.mandvo,
+          'garba':  g.garba,
+          'reception': g.reception,
+          'wedding' : g.wedding
           }
         }
-    )
+    );
   })
   .then(function(data){
     response.send(data);
