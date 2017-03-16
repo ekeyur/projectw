@@ -75,6 +75,13 @@ app.config(function($stateProvider,$urlRouterProvider){
   })
 
   .state({
+    name : 'rsvpattending',
+    url : '/rsvpattending',
+    templateUrl : 'rsvpattending.html',
+    controller : 'rsvpattendingController'
+  })
+
+  .state({
     name : 'rsvp',
     url : '/rsvp',
     params : {data : null},
@@ -201,10 +208,32 @@ app.controller('nhController',function($rootScope,hangularService){
   $rootScope.bgimg = "../assets/background.jpg";
   $rootScope.navcolor = "white";
 });
+
 app.controller('aboutusController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
 });
+
+app.controller('scheduleController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+});
+
+app.controller('galleryController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+});
+
+app.controller('contactController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+});
+
+app.controller('aboutusController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+});
+
 app.controller('thepartyController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+});
+
+app.controller('rsvpattendingController',function($scope,$rootScope,hangularService){
   $rootScope.bgimg = "";
 });
 
@@ -213,25 +242,17 @@ app.controller('thepartyController',function($rootScope,hangularService){
     $rootScope.bgimg = "";
     $rootScope.navcolor = "green";
     $scope.guestsInParty = $stateParams.data;
-  $scope.rsvp = function(){
-    $scope.guestsInParty.forEach(function(g){
-      if(g.mandvo.rsvp !== "No Response") {
-          console.log(g.mandvo.modified);
-          g.mandvo.modified = true;
-        }
-      if(g.garba.rsvp !== "No Response") {
-          console.log(g.garba.modified);
-          g.garba.modified = true;
-        }
-      if(g.wedding.rsvp !== "No Response") {
-        console.log(g.wedding.modified);
-        g.wedding.modified = true;}
-      if(g.reception.rsvp !== "No Response") {g.reception.modified = true;}
-    });
-    hangularService.rsvp($scope.guestsInParty).success(function(data){
-      console.log("Updated RSVP");
-      console.log(data);
-    });
+
+    $scope.rsvp = function(){
+      $scope.guestsInParty.forEach(function(g){
+        if(g.mandvo.rsvp !== "No Response") {g.mandvo.modified = true;}
+        if(g.garba.rsvp !== "No Response") {g.garba.modified = true;}
+        if(g.wedding.rsvp !== "No Response") {g.wedding.modified = true;}
+        if(g.reception.rsvp !== "No Response") {g.reception.modified = true;}
+      });
+      hangularService.rsvp($scope.guestsInParty).success(function(data){
+        $state.go('rsvpattending');
+      });
   };
 
   console.log($scope.guestsInParty);
