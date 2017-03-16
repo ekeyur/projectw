@@ -14,7 +14,7 @@
 
 .navbarlist{
   list-style-type: none;
-  /*margin-top: -5%;*/
+  margin-top:1%;
   margin-right: 2%;
   opacity: 0.9;
 }
@@ -44,7 +44,7 @@
 
 .title_div{
   position: relative;
-  width:400px;
+  width:50%;
   margin-left: 62vw;
   margin-top: 7vw;
   opacity: 0.9;
@@ -97,4 +97,64 @@
   border: 1px solid white;
   padding: 0.8vw 2.5vw;
   letter-spacing: 0.05vw;
+}
+
+/*search page*/
+.search_input_div{
+  text-align: center;
+
+}
+
+.search_input{
+  text-align: left;
+  width: 60vw;
+  padding: 1vw;
+}
+
+.result_div{
+  text-align: center;
+}
+
+.result_div button{
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+/*rsvp page*/
+table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+th{
+  padding: 1vw 5vw;
+}
+td{
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.rsvp_submit_button{
+  margin-left: 48%;
+  margin-top: 3vw;
+}
+
+/*add guest page*/
+h3{
+  margin-left: 2vw;
+  margin-bottom: 2vw;
+}
+
+.add_guest{
+  border: 1px solid black;
+  padding: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.button_div{
+  margin-left: 2vw;
+}
+
+.remove{
+  color: red;
 }

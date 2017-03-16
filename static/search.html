@@ -1,12 +1,13 @@
 <div class="">
-  <div>
-    <input  type="text" ng-change="searchQuery()" ng-model="query" placeholder="firstname">
+  <div class="search_input_div">
+    <p>Type your first name here:</p>
+    <input  class="search_input" type="text" ng-change="searchQuery()" ng-model="query" placeholder="firstname">
     <!-- <button ng-change="searchQuery()">Search</button> -->
   </div>
   <br>
-  <div class="" ng-if="guests.length > 0" ng-repeat="guest in guests">
+  <div class="result_div" ng-if="guests.length > 0" ng-repeat="guest in guests">
     <span>{{guest[0].group}} &nbsp; {{guest[0].city}}</span>
-    <div class="" ng-repeat="g in guest">
+    <div class="result_unit_div" ng-repeat="g in guest">
       <span class="">{{g.fname}}</span>&nbsp;
       <span class="">{{g.lname}}</span>&nbsp;
     </div>
