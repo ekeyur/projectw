@@ -28,6 +28,7 @@
         <li class="nav-links" ng-if="auth"><span ui-sref="allGuests">All Guests</span></li>
         <li class="nav-links" ng-if="auth"><span ui-sref="addGuest">Add a Guest</span></li>
         <li class="nav-links" ng-if="auth"><span ui-sref="uploadFile">Upload GuestList</span></li>
+        <li class="nav-links" ng-if="auth"><span ng-click="logout()">LogOut</span></li>
       </ul>
     </div>
     <ui-view></ui-view>

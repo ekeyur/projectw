@@ -145,7 +145,7 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
     return $http({
       method : 'POST',
       url : '/addguest',
-      data : data,
+      data : {data : data, token : $rootScope.auth} 
     });
   };
 
@@ -153,6 +153,7 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
     return $http({
       method : 'POST',
       url : '/deleteallguests',
+      data: {token : $rootScope.auth}
     });
   };
 
@@ -161,6 +162,7 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
       method : 'POST',
       url : '/upload',
       files : file,
+      data: {token : $rootScope.auth}
     });
   };
 
@@ -168,14 +170,15 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
     return $http({
       method : 'POST',
       url : '/addguestsfromuploadedfile',
+      data: {token : $rootScope.auth}
     });
   };
 
   service.getAllGuests = function(){
     return $http({
-      method : 'GET',
+      method : 'POST',
       url : '/allguests',
-      params: {token : $rootScope.auth}
+      data: {token : $rootScope.auth}
     });
   };
 

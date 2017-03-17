@@ -77,9 +77,9 @@ app.post('/login', function(request, response) {
  });
 
  function auth(request, response, next) {
-    console.log(request.query.token);
+    // console.log(request.query.token);
     //verify auth token
-    let token = request.query.token;
+    let token = request.body.token;
     if (!token) {
       response.status(401);
       response.json({error: "You are not logged in"});
@@ -160,8 +160,7 @@ app.post('/rsvpguest',function(request,response){
 app.use(auth);
 
 // Query to retrieve all the guests
-app.get('/allguests',function(request,response){
-  console.log(request.query.token);
+app.post('/allguests',function(request,response){
   Guest.find()
   .then(function(data){
     response.send(data);
