@@ -157,7 +157,7 @@ app.post('/rsvpguest',function(request,response){
 //     console.log("Err",err);
 //   });
 // });
-// app.use(auth);
+app.use(auth);
 
 // Query to retrieve all the guests
 app.post('/allguests',function(request,response){
