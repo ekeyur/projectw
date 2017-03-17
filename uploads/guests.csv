@@ -1,15 +1,14 @@
 Vikas,Bhatt,Vikas/Suhani Family,NJ,false,true,true,true
 Suhani,Bhatt,Vikas/Suhani Family,NJ,false,true,true,true
 Bhagya,Bhatt,Vikas/Suhani Family,NJ,false,true,true,true
-Vikas,Bhatt,Keyur,ATL,false,true,true,true
 Neeta,Dave,Mukes/Neeta Family,ATL,false,true,true,true
 Mukesh,Dave,Mukes/Neeta Family,ATL,false,true,true,true
 Sejal,Dave,Mukes/Neeta Family,ATL,false,true,true,true
 Samir,Dave,Mukes/Neeta Family,ATL,false,true,true,true
-Jayesh,Dave,Jayesh/Sangita Fmaily,ATL,false,true,true,true
-Sangita,Dave,Jayesh/Sangita Fmaily,ATL,false,true,true,true
-Mitesh,Dave,Jayesh/Sangita Fmaily,ATL,false,true,true,true
-Bhakti,Dave,Jayesh/Sangita Fmaily,ATL,false,true,true,true
+Jayesh,Dave,Jayesh/Sangita Fmaily,ATL,true,true,true,true
+Sangita,Dave,Jayesh/Sangita Fmaily,ATL,true,true,true,true
+Mitesh,Dave,Jayesh/Sangita Fmaily,ATL,true,true,true,true
+Bhakti,Dave,Jayesh/Sangita Fmaily,ATL,true,true,true,true
 Seema,Odhav,Seema/Raj Family,LA,false,true,true,true
 Raj,Odhav,Seema/Raj Family,LA,false,true,true,true
 Jyotsam,Ganatra ,Ganatra Family,SF,false,true,true,true
@@ -31,15 +30,15 @@ Son,Suthar,Arvind/Evonne Family,SF,false,true,true,true
 Daughter,Suthar,Arvind/Evonne Family,SF,false,true,true,true
 Bachi,Suthar ,Bachi/Parmandand Fmaily,NY,false,true,true,true
 Parmandand,Suthar,Bachi/Parmandand Fmaily,NY,false,true,true,true
-Bharat,Suthar ,Bharat/Sangita Family,CO,false,true,true,true
-Sangita,Suthar ,Bharat/Sangita Family,CO,false,true,true,true
-Raj,Suthar ,Bharat/Sangita Family,CO,false,true,true,true
-Dev,Suthar ,Bharat/Sangita Family,CO,false,true,true,true
+Bharat,Suthar ,Bharat/Sangita Family,CO,true,true,true,false
+Sangita,Suthar ,Bharat/Sangita Family,CO,true,true,true,false
+Raj,Suthar ,Bharat/Sangita Family,CO,true,true,true,false
+Dev,Suthar ,Bharat/Sangita Family,CO,true,true,true,false
 Mira,Suthar,Mira/Bipin Family,NC,false,true,true,true
 Bipin,Suthar ,Mira/Bipin Family,NC,false,true,true,true
 Darshan,Suthar,Darshan,NJ,false,true,true,true
-Dattesh,Suthar ,Dattesh/Meghna Fmaily,NJ,false,true,true,true
-Meghna,Suthar,Dattesh/Meghna Fmaily,NJ,false,true,true,true
+Dattesh,Suthar ,Dattesh/Meghna Fmaily,NJ,true,true,true,true
+Meghna,Suthar,Dattesh/Meghna Fmaily,NJ,true,true,true,true
 Gopalkaka/,Suthar,Gopalkaka/Kaki,N/A,false,true,true,true
 Kaki,Suthar ,Gopalkaka/Kaki,N/A,false,true,true,true
 Gunvantkaka,Suthar,Gunvantkaka/Kaki,N/A,false,true,true,true
@@ -61,9 +60,9 @@ Vijay,Suthar,Prakash/Laticia Family,NY,false,true,true,true
 Rita,Suthar,Rita,NY,false,true,true,true
 Satyam,Suthar ,Brother/Bhabi,ATL,false,true,true,true
 Tanvi,Suthar ,Brother/Bhabi,ATL,false,true,true,true
-Sunil,Suthar,Sunil/Bhavna Fmaily,LA,false,true,true,true
-Bhavna,Suthar,Sunil/Bhavna Fmaily,LA,false,true,true,true
-Himal,Suthar,Sunil/Bhavna Fmaily,LA,false,true,true,true
+Sunil,Suthar,Sunil/Bhavna Fmaily,LA,true,false,true,true
+Bhavna,Suthar,Sunil/Bhavna Fmaily,LA,true,false,true,true
+Himal,Suthar,Sunil/Bhavna Fmaily,LA,true,false,true,true
 Thakorlal,Suthar,Foi & Dada,India,false,true,true,true
 Hemaben,Suthar,Foi & Dada,India,false,true,true,true
 Uttam,Suthar,Uttam/Bina Family,N/A,false,true,true,true

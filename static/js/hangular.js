@@ -1,4 +1,4 @@
-var app = angular.module('hangular', ['ui.router','angularFileUpload']);
+var app = angular.module('hangular', ['ngCookies','ui.router','angularFileUpload']);
 // comment
 //States
 app.config(function($stateProvider,$urlRouterProvider){
@@ -110,8 +110,27 @@ app.config(function($stateProvider,$urlRouterProvider){
 
 
 //Factory
-app.factory('hangularService',function($http){
+app.factory('hangularService',function($http,$cookies,$rootScope){
 	var service = {};
+
+  $rootScope.cookieData = null;
+  $rootScope.auth = null;
+  $rootScope.cookieData = $cookies.getObject('cookieData');
+  // console.log("Printing initial cookie", $rootScope.cookieData);
+
+  if ($rootScope.cookieData) {
+    $rootScope.auth = $rootScope.cookieData.token;
+    $rootScope.username = $rootScope.cookieData.username;
+    console.log("Auth", $rootScope.auth);
+    // console.log("Username", $rootScope.username);
+  }
+
+  $rootScope.logout = function(){
+    $cookies.remove('cookieData');
+    $rootScope.cookieData = null;
+    $rootScope.auth = null;
+    // $rootScope.username = null;
+  };
 
 	service.searchGuests = function(query){
 		return $http({
@@ -153,10 +172,18 @@ app.factory('hangularService',function($http){
   };
 
   service.getAllGuests = function(){
-    // console.log(data);
     return $http({
       method : 'GET',
       url : '/allguests',
+      params: {token : $rootScope.auth}
+    });
+  };
+
+  service.login = function(data) {
+    return $http ({
+      method: 'POST',
+      url: '/login',
+      data: data,
     });
   };
 
@@ -194,7 +221,7 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
       let object = {
         fname : $scope.fname,
         lname : $scope.lname
-      }
+      };
       hangularService.searchGuests(object).success(function(data){
       $scope.guests = data;
       console.log($scope.guests);
@@ -258,10 +285,34 @@ app.controller('rsvpattendingController',function($rootScope,hangularService){
         $state.go('rsvpattending');
       });
   };
-
   console.log($scope.guestsInParty);
 });
 
+
+// Login Controller
+app.controller('loginController', function($scope, hangularService, $state, $cookies, $rootScope, $timeout) {
+  $scope.login = function(){
+    loginInfo = {
+      username: $scope.user,
+      password: $scope.pass
+    };
+    hangularService.login(loginInfo)
+    .error(function(data){
+      console.log("failed");
+      $scope.loginfailed = true;
+      $timeout(function(){$scope.loginfailed = false;}, 2500);
+    })
+    .success(function(data){
+      console.log(data);
+      $cookies.putObject('cookieData', data);
+      $rootScope.username = $scope.user;
+      $rootScope.auth = data.token;
+      console.log('Hello', $rootScope.username);
+      console.log('cookkie',$rootScope.auth);
+      $state.go('allGuests');
+    });
+  };
+});
 
   app.controller('addGuestController',function($rootScope,$scope,hangularService){
     $rootScope.bgimg = "";
@@ -307,7 +358,8 @@ app.controller('uploadfileController',function($scope,hangularService,FileUpload
 });
 
 app.controller('allGuestsController',function($scope,$state,hangularService){
-  hangularService.getAllGuests($scope.fileName).success(function(data){
+  console.log("I M IN ALL GUESTS");
+  hangularService.getAllGuests().success(function(data){
     $scope.guests = data;
   });
 });

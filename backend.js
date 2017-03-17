@@ -5,10 +5,11 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bluebird = require('bluebird');
 const lineReader = require('line-reader');
-// const uuidV1 = require('uuid/v1');
+const uuidV1 = require('uuid/v1');
 const eachLine = bluebird.promisify(lineReader.eachLine);
 const app = express();
 const config = require('./config');
+const rtoken = uuidV1();
 
 
 var storage = multer.diskStorage({
@@ -61,42 +62,34 @@ var guestSchema = new mongoose.Schema({
 
 var Guest = mongoose.model('Guest',guestSchema);
 
-// Query to retrieve all the guests
-app.get('/allguests',function(request,response){
-  Guest.find()
-  .then(function(data){
-    response.send(data);
-  })
-  .catch(function(err){
-    console.log("Error", err);
-  });
-});
+
 
 app.post('/login', function(request, response) {
-   var user = request.body.user;
-   var password = request.body.pass;
-   if (user === 'nehem' && password == 'hemang123neha'){
-     response.send('qwe123rty857hgs');
+    console.log(request.body);
+   var user = request.body.username;
+   var password = request.body.password;
+   if (user === config.user && password === config.pass){
+     console.log("helloguys");
+     response.send({token:rtoken});
    }else{
      response.send('Login Failed');
    }
  });
 
  function auth(request, response, next) {
+    console.log(request.query.token);
     //verify auth token
     let token = request.query.token;
-
     if (!token) {
       response.status(401);
       response.json({error: "You are not logged in"});
       return;
     }
-
-    if(user.token === 'qwe123rty857hgs') {
+    if(token === rtoken) {
         next();
       } else {
         response.status(401);
-        response.json({error: "You are not logged in"});
+        response.json({error: "You are not logged In"});
       }
   }
 
@@ -105,7 +98,7 @@ app.post('/login', function(request, response) {
 // Search Query based on the userinput
 app.get('/searchguests',function(request,response){
   // if(request.query.query.length >= 3){
-  console.log(request.query);
+  // console.log(request.query);
 
     Guest.find({
       $and:[
@@ -126,6 +119,56 @@ app.get('/searchguests',function(request,response){
       console.log(err.stack);
     });
   // }
+});
+
+app.post('/rsvpguest',function(request,response){
+  let guests = request.body;
+  bluebird.map(guests,function(g){
+    return Guest.update(
+      {'_id':g._id},
+        {
+          $set:
+          {
+          'mandvo': g.mandvo,
+          'garba':  g.garba,
+          'reception': g.reception,
+          'wedding' : g.wedding
+          }
+        }
+    );
+  })
+  .then(function(data){
+    response.send(data);
+  })
+  .catch(function(err){
+    console.log("Err",err);
+  });
+});
+
+
+
+// app.post('/partyguests',function(request,response){
+//   let group = request.body.group;
+//   Guest.find({'group':group})
+//   .then(function(data){
+//     response.send(data);
+//   })
+//   .catch(function(err){
+//     console.log("Err",err);
+//   });
+// });
+app.use(auth);
+
+// Query to retrieve all the guests
+app.get('/allguests',function(request,response){
+  console.log(request.query.token);
+  Guest.find()
+  .then(function(data){
+    response.send(data);
+  })
+  .catch(function(err){
+    console.log("Error", err);
+  });
 });
 
 //Add a single Guest API
@@ -168,6 +211,7 @@ app.post('/addguest',function(request,response){
     console.log("err",err);
   });
 });
+
 
 // Add Guests to Database from Uploaded csv file
 app.post('/addguestsfromuploadedfile',function(request,response){
@@ -219,6 +263,7 @@ app.post('/addguestsfromuploadedfile',function(request,response){
   });
 });
 
+
 app.post('/deleteallguests',function(request,response){
   Guest.remove()
   .then(function(data){
@@ -228,46 +273,6 @@ app.post('/deleteallguests',function(request,response){
     console.log("err",err);
   });
 });
-
-// app.post('/partyguests',function(request,response){
-//   let group = request.body.group;
-//   Guest.find({'group':group})
-//   .then(function(data){
-//     response.send(data);
-//   })
-//   .catch(function(err){
-//     console.log("Err",err);
-//   });
-// });
-
-
-
-app.post('/rsvpguest',function(request,response){
-  let guests = request.body;
-  console.log("Helloe");
-  console.log(guests);
-  bluebird.map(guests,function(g){
-    return Guest.update(
-      {'_id':g._id},
-        {
-          $set:
-          {
-          'mandvo': g.mandvo,
-          'garba':  g.garba,
-          'reception': g.reception,
-          'wedding' : g.wedding
-          }
-        }
-    );
-  })
-  .then(function(data){
-    response.send(data);
-  })
-  .catch(function(err){
-    console.log("Err",err);
-  });
-});
-
 
 /// File Upload
 app.post('/upload',upload.single('file') ,function(request, response) {
