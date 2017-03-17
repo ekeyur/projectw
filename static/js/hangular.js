@@ -117,7 +117,7 @@ app.factory('hangularService',function($http){
 		return $http({
 			method : 'GET',
 			url : '/searchguests',
-      params : {query: query},
+      params : query,
 		});
 	};
 
@@ -190,10 +190,14 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
   $rootScope.bgimg = "../assets/another.jpg";
   $rootScope.navcolor = "red";
   $scope.searchQuery = function(){
-    if($scope.query.length >=3){
-      hangularService.searchGuests($scope.query).success(function(data){
-        $scope.guests = data;
-        console.log($scope.guests);
+    if($scope.lname.length >3){
+      let object = {
+        fname : $scope.fname,
+        lname : $scope.lname
+      }
+      hangularService.searchGuests(object).success(function(data){
+      $scope.guests = data;
+      console.log($scope.guests);
     	});
     }
   };
@@ -233,7 +237,7 @@ app.controller('thepartyController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
 });
 
-app.controller('rsvpattendingController',function($scope,$rootScope,hangularService){
+app.controller('rsvpattendingController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
 });
 

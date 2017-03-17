@@ -1,8 +1,8 @@
 <div class="">
   <div class="search_input_div">
     <p>Type your first name here:</p>
-    <input  class="search_input" type="text" ng-change="searchQuery()" ng-model="query" placeholder="firstname">
-    <!-- <button ng-change="searchQuery()">Search</button> -->
+    <input  class="search_input" type="text" ng-model="fname" placeholder="firstname">
+    <input class="search_input" type="text" ng-change="searchQuery()" ng-model="lname" placeholder="lastname">
   </div>
   <br>
   <div class="result_div" ng-if="guests.length > 0" ng-repeat="guest in guests">

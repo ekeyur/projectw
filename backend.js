@@ -105,7 +105,15 @@ app.post('/login', function(request, response) {
 // Search Query based on the userinput
 app.get('/searchguests',function(request,response){
   // if(request.query.query.length >= 3){
-    Guest.find({'fname' : { $regex : new RegExp('\\b' + request.query.query + '\\b', "i") }})
+  console.log(request.query);
+
+    Guest.find({
+      $and:[
+        {'fname' : { $regex : new RegExp('\\b' + request.query.fname + '\\b', "i") }},
+        {'lname' : { $regex : new RegExp('\\b' + request.query.lname + '\\b', "i") }}
+      ]
+    }
+  )
     .then(function(data){
       return bluebird.map(data,function(g){
         return Guest.find({'group' : g.group});
