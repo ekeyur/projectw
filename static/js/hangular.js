@@ -364,13 +364,13 @@ app.controller('allGuestsController',function($scope,$state,hangularService){
   $scope.sortColumn = 'group';
   $scope.reverseSort = false;
 
+  hangularService.getAllGuests().success(function(data){
+    $scope.guests = data;
+  });
+
   $scope.sortData = function(column){
     $scope.reverseSort = ($scope.sortColumn === column) ? !$scope.reverseSort :false;
     $scope.sortColumn = column;
   };
 
-
-  hangularService.getAllGuests().success(function(data){
-    $scope.guests = data;
-  });
 });
