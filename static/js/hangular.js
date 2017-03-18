@@ -145,7 +145,7 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
     return $http({
       method : 'POST',
       url : '/addguest',
-      data : {data : data, token : $rootScope.auth} 
+      data : {data : data, token : $rootScope.auth}
     });
   };
 
@@ -361,7 +361,15 @@ app.controller('uploadfileController',function($scope,hangularService,FileUpload
 });
 
 app.controller('allGuestsController',function($scope,$state,hangularService){
-  console.log("I M IN ALL GUESTS");
+  $scope.sortColumn = 'group';
+  $scope.reverseSort = false;
+
+  $scope.sortData = function(column){
+    $scope.reverseSort = ($scope.sortColumn === column) ? !$scope.reverseSort :false;
+    $scope.sortColumn = column;
+  };
+
+
   hangularService.getAllGuests().success(function(data){
     $scope.guests = data;
   });

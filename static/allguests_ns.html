@@ -1,15 +1,15 @@
 <table border="2">
   <tr>
-  <th>First Name</th>
-  <th>Last Name</th>
-  <th>City</th>
-  <th>Group</th>
-  <th>Mandvo</th>
-  <th>Garba</th>
-  <th>Wedding</th>
-  <th>Reception</th>
+  <th ng-click="sortData(fname)">First Name</th>
+  <th ng-click="sortData(lname)">Last Name</th>
+  <th ng-click="sortData(city)">City</th>
+  <th ng-click="sortData(group)">Group</th>
+  <th ng-click="sortData(mandvo.rsvp)">Mandvo</th>
+  <th ng-click="sortData(garba.rsvp)">Garba</th>
+  <th ng-click="sortData(wedding.rsvp)">Wedding</th>
+  <th ng-click="sortData(reception.rsvp)">Reception</th>
 </tr>
-<tr ng-repeat="guest in guests | orderBy : 'group'">
+<tr ng-repeat="guest in guests | orderBy:sortColumn:reverseSort">
 <td>{{guest.fname}}</td>
 <td>{{guest.lname}}</td>
 <td>{{guest.city}}</td>

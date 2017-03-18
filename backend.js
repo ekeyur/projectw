@@ -147,17 +147,7 @@ app.post('/rsvpguest',function(request,response){
 
 
 
-// app.post('/partyguests',function(request,response){
-//   let group = request.body.group;
-//   Guest.find({'group':group})
-//   .then(function(data){
-//     response.send(data);
-//   })
-//   .catch(function(err){
-//     console.log("Err",err);
-//   });
-// });
-app.use(auth);
+// app.use(auth);
 
 // Query to retrieve all the guests
 app.post('/allguests',function(request,response){
