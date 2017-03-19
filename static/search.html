@@ -4,7 +4,7 @@
     <input  class="search_input" type="text" ng-model="fname" placeholder="firstname">
     <br>
     <br>
-    <input ng-show="fname" class="search_input" type="text" ng-change="searchQuery()" ng-model="lname" placeholder="lastname">
+    <input ng-if="fname.length >=3" class="search_input" type="text" ng-change="searchQuery()" ng-model="lname" placeholder="lastname">
   </div>
   <br>
   <div class="result_div" ng-if="guests.length > 0" ng-repeat="guest in guests">
