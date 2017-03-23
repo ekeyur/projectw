@@ -18,12 +18,11 @@
   <body ng-app="hangular" style="background-image: url({{bgimg}});background-size: cover;">
     <div class="nav" style="color : {{navcolor}};">
       <ul class="navbarlist cf">
-        <li class="nav-links" ><span ui-sref="contact">contact</span></li>
+        <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
+        <li class="nav-links"><span ui-sref="theparty">entourage</span></li>
+        <li class="nav-links"><span ui-sref="aboutus">proposal</span></li>
         <li class="nav-links"><span ui-sref="venue">venue</span></li>
         <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
-        <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
-        <li class="nav-links"><span ui-sref="theparty">the wedding party</span></li>
-        <li class="nav-links"><span ui-sref="aboutus">about us</span></li>
         <li class="nav-links"><span ui-sref="search">rsvp</span></li>
         <li class="nav-links" ng-if="auth"><span ui-sref="allGuests">All Guests</span></li>
         <li class="nav-links" ng-if="auth"><span ui-sref="addGuest">Add a Guest</span></li>

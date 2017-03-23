@@ -102,12 +102,23 @@
 }
 
 /*search page*/
+.search_title_div h1{
+  text-align: center;
+  color:white;
+  font-size: 3vw;
+  letter-spacing: 3vw;
+  padding-top:
+}
+
 .search_input_div{
   text-align: center;
   margin-top: 5vw;
 }
 
 .search_input{
+  background-color: transparent;
+  border-style: solid;
+  border: 1px solid white;
   text-align: left;
   width: 60vw;
   padding: 1vw;

@@ -217,8 +217,8 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
 
 // Initial
 app.controller('searchController', function($rootScope,$scope, $stateParams, $state, hangularService) {
-  $rootScope.bgimg = "../assets/another.jpg";
-  $rootScope.navcolor = "red";
+  $rootScope.bgimg = "../assets/rsvp_bg.jpg";
+  $rootScope.navcolor = "white";
   $scope.searchQuery = function(){
     if($scope.lname.length >3){
       let object = {
