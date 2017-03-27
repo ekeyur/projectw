@@ -236,6 +236,95 @@
   background-size: cover;
 }
 
+/*proposal page*/
+
+#sea{
+  position:absolute;
+  top: -5vw;
+  left: 15vw;
+  width: 30vw;
+}
+
+#yellow_block{
+  position:absolute;
+  left: 38vw;
+  bottom: 0;
+  width: 32vw;
+  height: 60vh;
+}
+
+
+
+@media (max-width: 1334px){
+  #yellow_block{
+    left:auto;
+    right: 0;
+    bottom: 0;
+    width: 80vw;
+    height: 65vh;
+  }
+}
+
+@media (max-width: 978px){
+  #yellow_block{
+    height: 85vh;
+  }
+}
+
+#proposal{
+  position:absolute;
+  right: 0;
+  top: 15vw;
+  width: 55vw;
+}
+
+#circle1{
+  position:absolute;
+  top: 3vw;
+  left: 7vw;
+  width: 15vw;
+}
+
+#circle2{
+  position:absolute;
+  top: 40vh;
+  left: -7.5vw;
+  width: 15vw;
+}
+
+#circle3{
+  position:absolute;
+  top: 65vh;
+  left: 92.5vw;
+  width: 15vw;
+}
+
+#rectangle{
+  position:absolute;
+  top: 70vh;
+  left: 10.5vw;
+  width: 15vw;
+}
+
+.proposal_wrapper h1{
+  position:absolute;
+  top:20vw;
+  left: 6vw;
+  letter-spacing: 2vw;
+  font-size: 2vw;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #161347;
+}
+
+@media (max-width: 978px){
+  .proposal_wrapper h1{
+    position:absolute;
+    top:60vw;
+    left: 35vw;
+    letter-spacing: 4vw;
+    font-size: 4vw;
+  }
+}
 
 /*rsvp page*/
 table{

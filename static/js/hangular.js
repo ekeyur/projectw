@@ -261,6 +261,7 @@ app.controller('contactController',function($rootScope,hangularService){
 
 app.controller('aboutusController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
 });
 
 app.controller('thepartyController',function($rootScope,hangularService){
