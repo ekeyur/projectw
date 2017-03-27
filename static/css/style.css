@@ -107,7 +107,7 @@
   color:white;
   font-size: 3vw;
   letter-spacing: 3vw;
-  padding-top:
+  margin-top: 9vw;
 }
 
 .search_input_div{
@@ -121,7 +121,7 @@
   border: 1px solid white;
   text-align: left;
   width: 60vw;
-  padding: 1vw;
+  padding: 1.5vw;
 }
 
 .result_div{
@@ -132,6 +132,110 @@
   margin-top: 1vw;
   margin-bottom: 2vw;
 }
+
+/*entourage page*/
+.entourage_wrapper{
+  width: 100vw;
+  height: 100vh;
+}
+
+#entourage_text_mobile{
+  display:none;
+}
+
+@media (max-width: 550px){
+  #entourage_text_mobile{
+    display:block;
+    width:100vw;
+  }
+}
+
+.entourage_div{
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  float: right;
+}
+
+@media (max-width: 1168px){
+  .entourage_div{
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
+@media (max-width: 550px){
+  .entourage_div{
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+#entourage_text{
+  position: absolute;
+  top: 36vw;
+  left:-20vw;
+  float:left;
+  width:20vw;
+}
+
+@media (max-width: 1168px){
+  #entourage_text{
+    top: -6.5vw;
+    left:-30vw;
+    width:30vw;
+  }
+}
+
+@media (max-width: 550px){
+  #entourage_text{
+    visibility: hidden;
+  }
+}
+
+.entourage_icon{
+  position: absolute;
+  left:15vw;
+  top: 14vw;
+  width: 12vw;
+}
+
+@media (max-width: 1168px){
+  .entourage_icon{
+    width: 20vw;
+    left: 26vw;
+    top: 24vw;
+  }
+}
+
+@media (max-width: 550px){
+  .entourage_icon{
+    width: 35vw;
+    left: 30vw;
+    top: 28vw;
+  }
+}
+
+#bride_family_div{
+  background-image: url(../assets/grey_block.jpg);
+  background-size: cover;
+}
+
+#groom_family_div{
+  background-image: url(../assets/yellow_block.jpg);
+  background-size: cover;
+}
+
+#bridesmaids_div{
+  background-image: url(../assets/pink_block.jpg);
+  background-size: cover;
+}
+
+#groomsmen_div{
+  background-image: url(../assets/navy_block.jpg);
+  background-size: cover;
+}
+
 
 /*rsvp page*/
 table{

@@ -265,6 +265,7 @@ app.controller('aboutusController',function($rootScope,hangularService){
 
 app.controller('thepartyController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
 });
 
 app.controller('rsvpattendingController',function($rootScope,hangularService){
