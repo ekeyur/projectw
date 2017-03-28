@@ -15,7 +15,7 @@
     <td ng-if="guest.mandvo.invited">
       <span>
         <span ng-if="!guest.mandvo.modified" ng-init="guest.mandvo.rsvp = 'No Response'">
-          <label ng-init="toggle=false" ng-click="toggleButton" ng-class="highlight:toggle"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.mandvo.rsvp">
+          <label ng-init="toggle=false" ng-click="toggleButton" ng-class= "{ 'highlight': toggle }"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.mandvo.rsvp">
           <label><img class="rsvp_icon" src="../assets/decline.png"></label><input  type="radio" value="Decline" ng-model="guest.mandvo.rsvp">
           <label><img class="rsvp_icon" src="../assets/no_response.png"></label><input  type="radio" value="No Response" ng-model="guest.mandvo.rsvp">
         </span>
@@ -26,7 +26,7 @@
     <td ng-if="guest.garba.invited">
       <span >
         <span ng-if="!guest.garba.modified" ng-init="guest.garba.rsvp = 'No Response'">
-          <label ng-init="toggle=false" ng-click="toggleButton" ng-class="highlight:toggle"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.garba.rsvp">
+        <label ng-click="toggleButton()" ng-class="{'highlight': toggle}"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.garba.rsvp">
           <label><img class="rsvp_icon" src="../assets/decline.png"></label><input  type="radio" value="Decline" ng-model="guest.garba.rsvp">
           <label><img class="rsvp_icon" src="../assets/no_response.png"></label><input  type="radio" value="No Response" ng-model="guest.garba.rsvp">
         </span>

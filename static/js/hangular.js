@@ -277,9 +277,12 @@ app.controller('rsvpattendingController',function($rootScope,hangularService){
   app.controller('rsvpController',function($rootScope,$state,$scope,$stateParams,hangularService){
     $rootScope.bgimg = "../assets/rsvp_bg.jpg";
     $rootScope.navcolor = "white";
+    $scope.toggle = false;
     $scope.toggleButton = function(){
-      $scope.toggle = !$scope.toggle
-    }
+      $scope.toggle = !$scope.toggle;
+      console.log($scope.toggle);
+    };
+
     $scope.guestsInParty = $stateParams.data;
 
     $scope.rsvp = function(){
