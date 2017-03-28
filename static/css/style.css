@@ -102,24 +102,56 @@
 }
 
 /*search page*/
+.search_title_div h1{
+  text-align: center;
+  color:white;
+  font-size: 3vw;
+  letter-spacing: 3vw;
+  margin-top: 9vw;
+}
+
 .search_input_div{
   text-align: center;
   margin-top: 5vw;
 }
 
 .search_input{
+  background-color: transparent;
+  border-style: solid;
+  border: 1px solid white;
   text-align: left;
   width: 60vw;
-  padding: 1vw;
+  padding: 1.5vw;
 }
 
 .result_div{
   text-align: center;
+  margin-top: 2vw;
+}
+
+.result_div span{
+  color:white;
+}
+
+.result_group{
+  font-size: 2vw;
+}
+
+.result_name{
+  margin-bottom: 1vw;
+}
+
+.result_unit_div{
+  margin-top: 1vw;
 }
 
 .result_div button{
-  margin-top: 1vw;
+  border: none;
+  margin-top: 2vw;
   margin-bottom: 2vw;
+  background-color: white;
+  padding:1vw 5vw;
+  color:#E66CB5;
 }
 
 /*rsvp page*/
@@ -127,6 +159,8 @@ table{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5vw;
+  color:white;
 }
 th{
   padding: 1vw 5vw;
@@ -135,10 +169,235 @@ td{
   padding-top: 1vw;
   padding-bottom: 1vw;
 }
-.rsvp_submit_button{
-  margin-left: 48%;
-  margin-top: 3vw;
+
+.rsvp_icon{
+  width: 3vw;
 }
+
+.rsvp_submit_button{
+  margin-left: 42%;
+  margin-top: 3vw;
+  border: none;
+  margin-bottom: 2vw;
+  background-color: white;
+  padding:1vw 5vw;
+  color:#E66CB5;
+}
+
+.rsvp_example_div{
+  text-align: center;
+}
+
+.rsvp_example_icon{
+  width: 6vw;
+}
+
+.rsvp_example_div{
+  color:white;
+}
+
+.rsvp_example_unit_div{
+  display:inline-block;
+  padding: 5vw;
+  text-align: center;
+}
+
+
+
+
+/*entourage page*/
+.entourage_wrapper{
+  width: 100vw;
+  height: 100vh;
+}
+
+#entourage_text_mobile{
+  display:none;
+}
+
+@media (max-width: 550px){
+  #entourage_text_mobile{
+    display:block;
+    width:100vw;
+  }
+}
+
+.entourage_div{
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  float: right;
+}
+
+@media (max-width: 1168px){
+  .entourage_div{
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
+@media (max-width: 550px){
+  .entourage_div{
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+#entourage_text{
+  position: absolute;
+  top: 36vw;
+  left:-20vw;
+  float:left;
+  width:20vw;
+}
+
+@media (max-width: 1168px){
+  #entourage_text{
+    top: -6.5vw;
+    left:-30vw;
+    width:30vw;
+  }
+}
+
+@media (max-width: 550px){
+  #entourage_text{
+    visibility: hidden;
+  }
+}
+
+.entourage_icon{
+  position: absolute;
+  left:15vw;
+  top: 14vw;
+  width: 12vw;
+}
+
+@media (max-width: 1168px){
+  .entourage_icon{
+    width: 20vw;
+    left: 26vw;
+    top: 24vw;
+  }
+}
+
+@media (max-width: 550px){
+  .entourage_icon{
+    width: 35vw;
+    left: 30vw;
+    top: 28vw;
+  }
+}
+
+#bride_family_div{
+  background-image: url(../assets/grey_block.jpg);
+  background-size: cover;
+}
+
+#groom_family_div{
+  background-image: url(../assets/yellow_block.jpg);
+  background-size: cover;
+}
+
+#bridesmaids_div{
+  background-image: url(../assets/pink_block.jpg);
+  background-size: cover;
+}
+
+#groomsmen_div{
+  background-image: url(../assets/navy_block.jpg);
+  background-size: cover;
+}
+
+/*proposal page*/
+
+#sea{
+  position:absolute;
+  top: -5vw;
+  left: 15vw;
+  width: 30vw;
+}
+
+#yellow_block{
+  position:absolute;
+  left: 38vw;
+  bottom: 0;
+  width: 32vw;
+  height: 60vh;
+}
+
+
+
+@media (max-width: 1334px){
+  #yellow_block{
+    left:auto;
+    right: 0;
+    bottom: 0;
+    width: 80vw;
+    height: 65vh;
+  }
+}
+
+@media (max-width: 978px){
+  #yellow_block{
+    height: 85vh;
+  }
+}
+
+#proposal{
+  position:absolute;
+  right: 0;
+  top: 15vw;
+  width: 55vw;
+}
+
+#circle1{
+  position:absolute;
+  top: 3vw;
+  left: 7vw;
+  width: 15vw;
+}
+
+#circle2{
+  position:absolute;
+  top: 40vh;
+  left: -7.5vw;
+  width: 15vw;
+}
+
+#circle3{
+  position:absolute;
+  top: 65vh;
+  left: 92.5vw;
+  width: 15vw;
+}
+
+#rectangle{
+  position:absolute;
+  top: 70vh;
+  left: 10.5vw;
+  width: 15vw;
+}
+
+.proposal_wrapper h1{
+  position:absolute;
+  top:20vw;
+  left: 6vw;
+  letter-spacing: 2vw;
+  font-size: 2vw;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #161347;
+}
+
+@media (max-width: 978px){
+  .proposal_wrapper h1{
+    position:absolute;
+    top:60vw;
+    left: 35vw;
+    letter-spacing: 4vw;
+    font-size: 4vw;
+  }
+}
+
 
 /*add guest page*/
 h3{

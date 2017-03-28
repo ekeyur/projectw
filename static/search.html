@@ -1,4 +1,7 @@
-<div class="">
+<div class="search_title_div">
+  <h1>RSVP</h1>
+</div>
+<div class="search_box_div">
   <div class="search_input_div">
     <!-- <p>Type your first name here:</p> -->
     <input  class="search_input" type="text" ng-model="fname" placeholder="firstname">
@@ -8,10 +11,10 @@
   </div>
   <br>
   <div class="result_div" ng-if="guests.length > 0" ng-repeat="guest in guests">
-    <span>{{guest[0].group}} &nbsp; {{guest[0].city}}</span>
+    <span class="result_group">{{guest[0].group}} &nbsp; {{guest[0].city}}</span>
     <div class="result_unit_div" ng-repeat="g in guest">
-      <span class="">{{g.fname}}</span>&nbsp;
-      <span class="">{{g.lname}}</span>&nbsp;
+      <span class="result_name">{{g.fname}}</span>&nbsp;
+      <span class="result_name">{{g.lname}}</span>&nbsp;
     </div>
     <button ng-click="getParty(guest)">RSVP</button>
   </div>

@@ -217,8 +217,8 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
 
 // Initial
 app.controller('searchController', function($rootScope,$scope, $stateParams, $state, hangularService) {
-  $rootScope.bgimg = "../assets/another.jpg";
-  $rootScope.navcolor = "red";
+  $rootScope.bgimg = "../assets/rsvp_bg.jpg";
+  $rootScope.navcolor = "white";
   $scope.searchQuery = function(){
     if($scope.lname.length >3){
       let object = {
@@ -261,10 +261,12 @@ app.controller('contactController',function($rootScope,hangularService){
 
 app.controller('aboutusController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
 });
 
 app.controller('thepartyController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
 });
 
 app.controller('rsvpattendingController',function($rootScope,hangularService){
@@ -273,8 +275,8 @@ app.controller('rsvpattendingController',function($rootScope,hangularService){
 
   // RSVP Controller
   app.controller('rsvpController',function($rootScope,$state,$scope,$stateParams,hangularService){
-    $rootScope.bgimg = "";
-    $rootScope.navcolor = "green";
+    $rootScope.bgimg = "../assets/rsvp_bg.jpg";
+    $rootScope.navcolor = "white";
     $scope.guestsInParty = $stateParams.data;
 
     $scope.rsvp = function(){
