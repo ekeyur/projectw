@@ -1,6 +1,5 @@
 const express = require('express');
 const multer = require('multer');
-// const upload = multer({dest: 'uploads/'});
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bluebird = require('bluebird');
@@ -23,13 +22,12 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage: storage })
 
-
 app.use(express.static('static'));
 app.use(bodyParser.json());
 
 mongoose.connect(config.database);
-// mongoose.connect('mongodb://localhost/hemguest');
-// comment
+// mongoose.connect('mongodb://localhost/projectw');
+// use bluebird for promises
 mongoose.Promise = bluebird;
 
 // MongoDb Schema
@@ -63,7 +61,6 @@ var guestSchema = new mongoose.Schema({
 var Guest = mongoose.model('Guest',guestSchema);
 
 
-
 app.post('/login', function(request, response) {
     console.log(request.body);
    var user = request.body.username;
@@ -79,18 +76,18 @@ app.post('/login', function(request, response) {
  function auth(request, response, next) {
     // console.log(request.query.token);
     //verify auth token
-    let token = request.body.token;
-    if (!token) {
+  let token = request.body.token;
+  if (!token) {
+    response.status(401);
+    response.json({error: "You are not logged in"});
+    return;
+  }
+  if(token === rtoken) {
+      next();
+    } else {
       response.status(401);
-      response.json({error: "You are not logged in"});
-      return;
+      response.json({error: "You are not logged In"});
     }
-    if(token === rtoken) {
-        next();
-      } else {
-        response.status(401);
-        response.json({error: "You are not logged In"});
-      }
   }
 
 
