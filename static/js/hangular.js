@@ -275,8 +275,8 @@ app.controller('rsvpattendingController',function($rootScope,hangularService){
 
   // RSVP Controller
   app.controller('rsvpController',function($rootScope,$state,$scope,$stateParams,hangularService){
-    $rootScope.bgimg = "";
-    $rootScope.navcolor = "green";
+    $rootScope.bgimg = "../assets/rsvp_bg.jpg";
+    $rootScope.navcolor = "white";
     $scope.guestsInParty = $stateParams.data;
 
     $scope.rsvp = function(){
