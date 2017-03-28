@@ -202,7 +202,9 @@ td{
   text-align: center;
 }
 
-
+.highlight{
+  border:1px solid white;
+}
 
 
 /*entourage page*/
