@@ -61,10 +61,38 @@ app.config(function($stateProvider,$urlRouterProvider){
   })
 
   .state({
-    name : 'theparty',
-    url : '/theparty',
-    templateUrl : 'theparty.html',
-    controller : 'thepartyController'
+    name : 'entourage',
+    url : '/entourage',
+    templateUrl : 'entourage.html',
+    controller : 'entourageController'
+  })
+
+  .state({
+    name : 'entourage.groom_family',
+    url : '/entourage/groom_family',
+    templateUrl : 'groom_family.html',
+    controller : 'groom_familyController'
+  })
+  //
+  .state({
+    name : 'entourage/bride_family',
+    url : '/entourage/bride_family',
+    templateUrl : 'bride_family.html',
+    controller : 'bride_familyController'
+  })
+  //
+  .state({
+    name : 'entourage/grooms_men',
+    url : '/entourage/grooms_men',
+    templateUrl : 'grooms_men.html',
+    controller : 'grooms_menController'
+  })
+  //
+  .state({
+    name : 'entourage/brides_maids',
+    url : '/entourage/brides_maids',
+    templateUrl : 'brides_maids.html',
+    controller : 'brides_maidsController'
   })
 
   .state({
@@ -265,7 +293,23 @@ app.controller('aboutusController',function($rootScope,hangularService){
   $rootScope.navcolor = "black";
 });
 
-app.controller('thepartyController',function($rootScope,hangularService){
+app.controller('entourageController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
+});
+app.controller('groom_familyController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
+});
+app.controller('bride_familyController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
+});
+app.controller('grooms_menController',function($rootScope,hangularService){
+  $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
+});
+app.controller('brides_maidsController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
 });
