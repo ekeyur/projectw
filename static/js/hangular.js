@@ -7,105 +7,105 @@ app.config(function($stateProvider,$urlRouterProvider){
   .state({
     name : 'login',
     url : '/login',
-    templateUrl : 'login.html',
+    templateUrl : 'templates/login.html',
     controller : 'loginController'
   })
 
   .state({
     name : 'nh',
     url : '/nh',
-    templateUrl : 'nh.html',
+    templateUrl : 'templates/nh.html',
     controller : 'nhController'
   })
 
   .state({
     name : 'venue',
     url : '/venue',
-    templateUrl : 'venue.html',
+    templateUrl : 'templates/venue.html',
     controller : 'venueController'
   })
 
   .state({
     name : 'schedule',
     url : '/schedule',
-    templateUrl : 'schedule.html',
+    templateUrl : 'templates/schedule.html',
     controller : 'scheduleController'
   })
 
   .state({
     name : 'gallery',
     url : '/gallery',
-    templateUrl : 'gallery.html',
+    templateUrl : 'templates/gallery.html',
     controller : 'galleryController'
   })
 
   .state({
     name : 'contact',
     url : '/contact',
-    templateUrl : 'contact.html',
+    templateUrl : 'templates/contact.html',
     controller : 'contactController'
   })
 
   .state({
     name : 'search',
     url : '/search',
-    templateUrl : 'search.html',
+    templateUrl : 'templates/search.html',
     controller : 'searchController'
   })
 
   .state({
     name : 'aboutus',
     url : '/aboutus',
-    templateUrl : 'aboutus.html',
+    templateUrl : 'templates/aboutus.html',
     controller : 'aboutusController'
   })
 
   .state({
     name : 'entourage',
     url : '/entourage',
-    templateUrl : 'entourage.html',
+    templateUrl : 'templates/entourage.html',
     controller : 'entourageController'
   })
 
   .state({
     name : 'entourage.groom_family',
     url : '/entourage/groom_family',
-    templateUrl : 'groom_family.html',
+    templateUrl : 'templates/groom_family.html',
     controller : 'groom_familyController'
   })
   //
   .state({
     name : 'entourage/bride_family',
     url : '/entourage/bride_family',
-    templateUrl : 'bride_family.html',
+    templateUrl : 'templates/bride_family.html',
     controller : 'bride_familyController'
   })
   //
   .state({
     name : 'entourage/grooms_men',
     url : '/entourage/grooms_men',
-    templateUrl : 'grooms_men.html',
+    templateUrl : 'templates/grooms_men.html',
     controller : 'grooms_menController'
   })
   //
   .state({
     name : 'entourage/brides_maids',
     url : '/entourage/brides_maids',
-    templateUrl : 'brides_maids.html',
+    templateUrl : 'templates/brides_maids.html',
     controller : 'brides_maidsController'
   })
 
   .state({
     name : 'addGuest',
     url : '/addguest',
-    templateUrl : 'addguest_ns.html',
+    templateUrl : 'templates/addguest_ns.html',
     controller : 'addGuestController'
   })
 
   .state({
     name : 'rsvpattending',
     url : '/rsvpattending',
-    templateUrl : 'rsvpattending.html',
+    templateUrl : 'templates/rsvpattending.html',
     controller : 'rsvpattendingController'
   })
 
@@ -113,7 +113,7 @@ app.config(function($stateProvider,$urlRouterProvider){
     name : 'rsvp',
     url : '/rsvp',
     params : {data : null},
-    templateUrl : 'rsvp.html',
+    templateUrl : 'templates/rsvp.html',
     controller : 'rsvpController'
   })
 
