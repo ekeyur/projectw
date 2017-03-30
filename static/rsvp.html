@@ -16,44 +16,44 @@
       <span>
         <span ng-if="!guest.mandvo.modified" ng-init="guest.mandvo.rsvp = 'No Response'">
           <!-- ng-init="toggle=false" ng-click="toggleButton" ng-class= "{ 'highlight': toggle }" -->
-          <label ng-click="setActive(guest.mandvo,'Accept')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.mandvo.rsvp">
-          <label ng-click="setActive(guest.mandvo,'Decline')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label><input  type="radio" value="Decline" ng-model="guest.mandvo.rsvp">
-          <label ng-click="setActive(guest.mandvo,'No Response')" ng-class= "{'highlight': isActive(guest.mandvo) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label><input  type="radio" value="No Response" ng-model="guest.mandvo.rsvp">
+          <label ng-click="setActive(guest.mandvo,'Accept')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+          <label ng-click="setActive(guest.mandvo,'Decline')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+          <label ng-click="setActive(guest.mandvo,'No Response')" ng-class= "{'highlight': isActive(guest.mandvo) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
         </span>
-        <span ng-if="guest.mandvo.modified">Already rsvped for Mandvo:
+        <span ng-if="guest.mandvo.modified">Already rsvped.
         </span>
       </span>
     </td>
     <td ng-if="guest.garba.invited">
       <span >
         <span ng-if="!guest.garba.modified" ng-init="guest.garba.rsvp = 'No Response'">
-          <label ng-click="setActive(guest.garba,'Accept')" ng-class= "{'highlight': isActive(guest.garba) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.garba.rsvp">
-          <label ng-click="setActive(guest.garba,'Decline')" ng-class= "{ 'highlight': isActive(guest.garba) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label><input  type="radio" value="Decline" ng-model="guest.garba.rsvp">
-          <label ng-click="setActive(guest.garba,'No Response')" ng-class= "{ 'highlight': isActive(guest.garba) === 'No Response'}"><img class="rsvp_icon" src="../assets/no_response.png"></label><input  type="radio" value="No Response" ng-model="guest.garba.rsvp">
+          <label ng-click="setActive(guest.garba,'Accept')" ng-class= "{'highlight': isActive(guest.garba) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+          <label ng-click="setActive(guest.garba,'Decline')" ng-class= "{ 'highlight': isActive(guest.garba) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+          <label ng-click="setActive(guest.garba,'No Response')" ng-class= "{ 'highlight': isActive(guest.garba) === 'No Response'}"><img class="rsvp_icon" src="../assets/no_response.png"></label>
         </span>
-        <span ng-if="guest.garba.modified">Already rsvped for Raas:
+        <span ng-if="guest.garba.modified">Already rsvped.
         </span>
       </span>
     </td>
     <td ng-if="guest.wedding.invited">
       <span >
         <span ng-if="!guest.wedding.modified" ng-init="guest.wedding.rsvp = 'No Response'">
-          <label ng-click="setActive(guest.wedding,'Accept')" ng-class= "{'highlight': isActive(guest.wedding) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.wedding.rsvp">
-          <label ng-click="setActive(guest.wedding,'Decline')" ng-class= "{'highlight': isActive(guest.wedding) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label><input  type="radio" value="Decline" ng-model="guest.wedding.rsvp">
-          <label ng-click="setActive(guest.wedding,'No Response')" ng-class= "{'highlight': isActive(guest.wedding) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label><input  type="radio" value="No Response" ng-model="guest.wedding.rsvp">
+          <label ng-click="setActive(guest.wedding,'Accept')" ng-class= "{'highlight': isActive(guest.wedding) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+          <label ng-click="setActive(guest.wedding,'Decline')" ng-class= "{'highlight': isActive(guest.wedding) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+          <label ng-click="setActive(guest.wedding,'No Response')" ng-class= "{'highlight': isActive(guest.wedding) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
         </span>
-        <span ng-if="guest.wedding.modified">Already rsvped for Wedding:
+        <span ng-if="guest.wedding.modified">Already rsvped.
         </span>
       </span>
     </td>
     <td ng-if="guest.reception.invited">
       <span >
         <span ng-if="!guest.reception.modified" ng-init="guest.reception.rsvp = 'No Response'">
-          <label ng-click="setActive(guest.reception,'Accept')" ng-class= "{'highlight': isActive(guest.reception) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label><input  type="radio" value="Accept" ng-model="guest.reception.rsvp">
-          <label ng-click="setActive(guest.reception,'Decline')" ng-class= "{'highlight': isActive(guest.reception) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label><input  type="radio" value="Decline" ng-model="guest.reception.rsvp">
-          <label ng-click="setActive(guest.reception,'No Response')" ng-class= "{'highlight': isActive(guest.reception) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label><input  type="radio" value="No Response" ng-model="guest.reception.rsvp">
+          <label ng-click="setActive(guest.reception,'Accept')" ng-class= "{'highlight': isActive(guest.reception) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+          <label ng-click="setActive(guest.reception,'Decline')" ng-class= "{'highlight': isActive(guest.reception) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+          <label ng-click="setActive(guest.reception,'No Response')" ng-class= "{'highlight': isActive(guest.reception) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
         </span>
-        <span ng-if="guest.reception.modified">Already rsvped for Reception:
+        <span ng-if="guest.reception.modified">Already rsvped.
         </span>
       </span>
     </td>
