@@ -339,7 +339,7 @@ td{
   }
 }
 
-@media (max-width: 978px){
+@media (max-width: 860px){
   #yellow_block{
     height: 85vh;
   }
@@ -383,9 +383,9 @@ td{
 .proposal_wrapper h1{
   position:absolute;
   top:20vw;
-  left: 6vw;
+  left: 7vw;
   letter-spacing: 2vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: 'Didact Gothic', sans-serif;
   color: #161347;
 }
@@ -396,8 +396,50 @@ td{
     top:60vw;
     left: 35vw;
     letter-spacing: 4vw;
-    font-size: 4vw;
+    font-size: 3vw;
   }
+}
+
+/*schedule page*/
+
+.schedule_wrapper{
+  font-family: 'Didact Gothic', sans-serif;
+  color:#83D300;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.schedule_wrapper h3{
+  font-size: 15px;
+  letter-spacing: 15px;
+  margin-top: 70px;
+  color: black;
+}
+
+.schedule_wrapper h4{
+  position: relative;
+  left: -30px;
+  color:white;
+  background-color: #83D300;
+  font-size: 13px;
+  letter-spacing: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  width: 300px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.schedule_wrapper h6{
+  margin-top: 20px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: 'Stalemate', cursive;
+  color: #9a9998;
 }
 
 

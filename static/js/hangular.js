@@ -249,6 +249,7 @@ app.controller('aboutusController',function($rootScope,hangularService){
 
 app.controller('scheduleController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
+  $rootScope.navcolor = "#ee77d7";
 });
 
 app.controller('galleryController',function($rootScope,hangularService){
