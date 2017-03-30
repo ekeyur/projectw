@@ -38,21 +38,25 @@ var guestSchema = new mongoose.Schema({
           invited : Boolean,
           rsvp : String,
           modified : Boolean,
+          active : Boolean,
           },
       mandvo : {
           invited : Boolean,
           rsvp : String,
           modified : Boolean,
+          active : Boolean,
           },
       wedding: {
             invited : Boolean,
             rsvp : String,
             modified : Boolean,
+            active : Boolean,
           },
       reception: {
             invited : Boolean,
             rsvp : String,
             modified : Boolean,
+            active : Boolean,
           },
       group  : String,
       city   : String
@@ -168,21 +172,25 @@ app.post('/addguest',function(request,response){
         invited : data.mandvo,
         rsvp : "No Response",
         modified : false,
+        active : false,
         },
     garba : {
         invited : data.garba,
         rsvp : "No Response",
         modified : false,
+        active : false,
         },
     wedding: {
           invited : data.wedding,
           rsvp : "No Response",
           modified : false,
+          active : false,
         },
     reception: {
           invited : data.reception,
           rsvp : "No Response",
           modified : false,
+          active : false,
         },
     group  : data.group,
     city   : data.city
@@ -214,21 +222,25 @@ app.post('/addguestsfromuploadedfile',function(request,response){
             invited : g[4],
             rsvp : "No Response",
             modified : false,
+            active : false,
             },
         garba : {
             invited : g[5],
             rsvp : "No Response",
             modified : false,
+            active : false,
             },
         wedding: {
               invited : g[6],
               rsvp : "No Response",
               modified : false,
+              active : false,
             },
         reception: {
               invited : g[7],
               rsvp : "No Response",
               modified : false,
+              active : false,
             },
         group  : g[2],
         city   : g[3]
