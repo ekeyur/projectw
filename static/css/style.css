@@ -203,7 +203,21 @@ td{
 }
 
 .highlight{
-  border:1px solid white;
+  border-radius: 50%;
+  border:5px solid white;
+}
+
+/*rsvp attending page*/
+.rsvpattending_wrapper{
+  margin-top: 40vh;
+}
+
+.rsvpattending_wrapper h1{
+  color: white;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 17px;
+  letter-spacing: 10px;
+  text-align: center;
 }
 
 
@@ -312,72 +326,8 @@ td{
 
 /*proposal page*/
 
-#sea{
-  position:absolute;
-  top: -5vw;
-  left: 15vw;
-  width: 30vw;
-}
-
-#yellow_block{
-  position:absolute;
-  left: 38vw;
-  bottom: 0;
-  width: 32vw;
-  height: 60vh;
-}
-
-
-
-@media (max-width: 1334px){
-  #yellow_block{
-    left:auto;
-    right: 0;
-    bottom: 0;
-    width: 80vw;
-    height: 65vh;
-  }
-}
-
-@media (max-width: 860px){
-  #yellow_block{
-    height: 85vh;
-  }
-}
-
 #proposal{
-  position:absolute;
-  right: 0;
-  top: 15vw;
-  width: 55vw;
-}
-
-#circle1{
-  position:absolute;
-  top: 3vw;
-  left: 7vw;
-  width: 15vw;
-}
-
-#circle2{
-  position:absolute;
-  top: 40vh;
-  left: -7.5vw;
-  width: 15vw;
-}
-
-#circle3{
-  position:absolute;
-  top: 65vh;
-  left: 92.5vw;
-  width: 15vw;
-}
-
-#rectangle{
-  position:absolute;
-  top: 70vh;
-  left: 10.5vw;
-  width: 15vw;
+  width: 100vw;
 }
 
 .proposal_wrapper h1{
@@ -440,6 +390,74 @@ td{
   letter-spacing: 1px;
   font-family: 'Stalemate', cursive;
   color: #9a9998;
+}
+
+/*schedule page*/
+.venue_wrapper{
+  font-family: 'Didact Gothic', sans-serif;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.venue_wrapper img{
+  position:absolute;
+  left: 0;
+  top: 50px;
+  width: 100vw;
+}
+
+@media (max-width: 900px){
+  .venue_wrapper img{
+    position:static;
+  }
+}
+
+.venue_content_wrapper{
+  position:absolute;
+  left: 0;
+  top: 50px;
+  width: 100vw;
+}
+
+@media (max-width: 900px){
+  .venue_content_wrapper{
+    position: static;
+  }
+}
+
+.venue_wrapper h2{
+  font-size: 19px;
+  letter-spacing: 10px;
+  padding-top: 6vw;
+  padding-bottom: 20px;
+}
+
+.venue_wrapper p{
+  font-size: 11px;
+}
+
+.hotel_name{
+  font-size: 13px !important;
+  letter-spacing: 1.5px;
+}
+
+.optional_hotel_title{
+  font-size: 15px;
+  margin-left:0;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+.optional_hotel_content{
+  display: none;
+  background-color: rgba(255,255, 255, 0.6);
+  padding: 20px;
+}
+
+.show{
+  display: block;
 }
 
 

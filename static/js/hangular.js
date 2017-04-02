@@ -55,7 +55,7 @@ app.config(function($stateProvider,$urlRouterProvider){
 
   .state({
     name : 'aboutus',
-    url : '/aboutus',
+    url : '/proposal',
     templateUrl : 'templates/aboutus.html',
     controller : 'aboutusController'
   })
@@ -315,7 +315,14 @@ app.controller('brides_maidsController',function($rootScope,hangularService){
 });
 
 app.controller('rsvpattendingController',function($rootScope,hangularService){
+  $rootScope.bgimg = "../assets/rsvp_bg.jpg";
+  $rootScope.navcolor = "white";
+});
+
+app.controller('venueController',function($scope,$rootScope){
   $rootScope.bgimg = "";
+  $rootScope.navcolor = "black";
+  $scope.show = false;
 });
 
   // RSVP Controller
