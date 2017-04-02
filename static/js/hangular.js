@@ -3,6 +3,8 @@ var app = angular.module('hangular', ['ngCookies','ui.router','angularFileUpload
 //States
 app.config(function($stateProvider,$urlRouterProvider){
 
+// State Providers
+
   $stateProvider
   .state({
     name : 'login',
