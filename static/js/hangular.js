@@ -250,7 +250,7 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
   $rootScope.bgimg = "../assets/rsvp_bg.jpg";
   $rootScope.navcolor = "white";
   $scope.searchQuery = function(){
-    if($scope.lname.length >3){
+    if($scope.lname.length > 3){
       let object = {
         fname : $scope.fname,
         lname : $scope.lname
