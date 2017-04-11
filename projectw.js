@@ -3,12 +3,14 @@ const multer = require('multer');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bluebird = require('bluebird');
+const mailer = require('nodemailer-promise');
 const lineReader = require('line-reader');
 const uuidV1 = require('uuid/v1');
 const eachLine = bluebird.promisify(lineReader.eachLine);
 const app = express();
 const config = require('./config');
 const rtoken = uuidV1();
+const textbelt = bluebird.promisifyAll(require('textbelt'));
 
 
 var storage = multer.diskStorage({
@@ -20,7 +22,22 @@ var storage = multer.diskStorage({
   }
 });
 
-var upload = multer({ storage: storage })
+var sendEmail = mailer.config({
+    email: config.email,
+    password: config.password,
+    server: config.server
+});
+
+var upload = multer({ storage: storage });
+
+var opts = {
+  fromAddr: 'ekeyur@gmail.com',
+  fromName: 'ekeyur',
+  region: 'us',
+  subject: 'RSVP'
+};
+
+
 
 app.use(express.static('static'));
 app.use(bodyParser.json());
@@ -122,6 +139,7 @@ app.get('/searchguests',function(request,response){
   // }
 });
 
+// RSVPing a guest
 app.post('/rsvpguest',function(request,response){
   let guests = request.body;
   bluebird.map(guests,function(g){
@@ -138,6 +156,25 @@ app.post('/rsvpguest',function(request,response){
         }
     );
   })
+
+
+
+  .then(function(data){
+    ///////////////////////////////////////////// Enable the below lines to send a text for rsvp
+    // let message = guests[0].group;
+    // textbelt.sendTextAsync('1234567890',message+" rsvped.",opts)
+
+  //////////////////////////////////////////// Enable the below lines to send an email for rsvp
+  //   var options = {
+  //     subject : guests[0].group,
+  //     senderName : 'rsvp',
+  //     receiver : 'ekeyur@gmail.com',
+  //     text : JSON.stringify(guests),
+  //   };
+  //   // returning promise for chaining purpose
+  //   return sendEmail(options);
+  
+  })
   .then(function(data){
     response.send(data);
   })
@@ -147,8 +184,10 @@ app.post('/rsvpguest',function(request,response){
 });
 
 
-
+/////////////////////////////////////////
+//Uncomment the below line
 // app.use(auth);
+///////////////////////////////////////////
 
 // Query to retrieve all the guests
 app.post('/allguests',function(request,response){
