@@ -122,13 +122,13 @@ app.config(function($stateProvider,$urlRouterProvider){
   .state({
     name : 'uploadFile',
     url : '/uploadfile',
-    templateUrl : 'uploadfile_ns.html',
+    templateUrl : 'templates/uploadfile_ns.html',
     controller : 'uploadfileController'
   })
   .state({
     name : 'allGuests',
     url : '/allguests',
-    templateUrl : 'allguests_ns.html',
+    templateUrl : 'templates/allguests_ns.html',
     controller : 'allGuestsController'
   });
 
