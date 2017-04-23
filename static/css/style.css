@@ -14,11 +14,23 @@
 
 /*index page*/
 
+#home_button{
+  float;left;
+  width: 2vw;
+}
+
+@media (max-width: 500px){
+  #home_button{
+    width: 6vw;
+  }
+}
+
 .navbarlist{
   list-style-type: none;
   margin-top:1%;
   margin-right: 2%;
   opacity: 0.9;
+  padding-left: 2%;
 }
 
 .nav-links{
@@ -52,53 +64,75 @@
   opacity: 0.9;
 }
 
-.neha{
-  position: absolute;
-  left:6.25vw;
-  top: 0vw;
-  color: white;
-  font-size: 2.5vw;
-  letter-spacing: 2.5vw;
-}
-
-.hemang{
-  position: absolute;
-  left:2vw;
-  top: 8vw;
-  color: white;
-  font-size: 2.5vw;
-  letter-spacing: 2.5vw;
-}
-
 .title_div img{
   display: block;
   position: absolute;
-  left:-13.5vw;
-  top: 1.5vw;
-  width: 55vw;
+  left:-30vw;
+  top: -5vw;
+  width: 40vw;
+}
+
+@media (max-width: 800px){
+  .title_div img{
+    left:-40vw;
+    width: 60vw;
+  }
 }
 
 .introduction{
   position: absolute;
-  color:white;
-  left:6vw;
-  top: 16vw;
-  font-size: 1.05vw;
+  color:#020F37;
+  left:-17vw;
+  top: 6vw;
+  font-size: 0.8vw;
   text-align: center;
   letter-spacing: 0.17vw;
   font-family: "century gothic", Arial;
   line-height: 1.58;
 }
 
+@media (max-width: 800px){
+  .introduction{
+    font-size: 1.5vw;
+    left:-5vw;
+    top: 10vw;
+  }
+}
+
+@media (max-width: 520px){
+  .introduction{
+    font-size: 3vw;
+    left:-29vw;
+    top: 16vw;
+  }
+}
+
 .rsvp_button{
   position: absolute;
-  left:10vw;
-  top: 21vw;
-  color:white;
+  background-color: white;
+  left:-13.5vw;
+  top: 10vw;
+  color:#020F37;
   font-size: 1.1vw;
   border: 1px solid white;
-  padding: 0.8vw 2.5vw;
+  padding: 0.4vw 2vw;
   letter-spacing: 0.05vw;
+}
+
+@media (max-width: 800px){
+  .rsvp_button{
+    font-size: 1.5vw;
+    left:2vw;
+    top: 16vw;
+  }
+}
+
+@media (max-width: 520px){
+  .rsvp_button{
+    font-size: 3vw;
+    left:-15vw;
+    top: 27vw;
+  }
 }
 
 /*search page*/
@@ -122,6 +156,7 @@
   text-align: left;
   width: 60vw;
   padding: 1.5vw;
+  color:white;
 }
 
 .result_div{
@@ -189,7 +224,9 @@ td{
 }
 
 .rsvp_example_icon{
-  width: 6vw;
+  width: 4vw;
+  -webkit-filter: grayscale(100%) brightness(150%);  /* Safari */
+  filter: grayscale(100%) brightness(550%);
 }
 
 .rsvp_example_div{
@@ -299,8 +336,8 @@ td{
 @media (max-width: 550px){
   .entourage_icon{
     width: 35vw;
-    left: 30vw;
-    top: 28vw;
+    left: 34vw;
+    top: 32vw;
   }
 }
 
@@ -324,10 +361,85 @@ td{
   background-size: cover;
 }
 
+/*bridesmaids page*/
+.bridesmaids_wrapper{
+  text-align: center;
+}
+
+.bridesmaid_icon{
+  width: 200px;
+}
+
+@media(max-width: 800px){
+  .bridesmaid_icon{
+    width: 150px;
+  }
+}
+
+@media(max-width: 504px){
+  .bridesmaid_text{
+    position: relative;
+    top: -100px;
+  }
+}
+
+.gallery{
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 60px;
+}
+
+@media(max-width: 504px){
+  .gallery{
+    position: relative;
+    top: -150px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.gallery_unit{
+  float:left;
+  margin: 15px;
+  text-align: center;
+}
+
+@media(max-width: 504px){
+  .gallery_unit{
+    margin: 10vw;
+  }
+}
+
+.gallery_img{
+  width: 300px;
+  height: 300px;
+}
+
+@media(max-width: 504px){
+  .gallery_img{
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
 /*proposal page*/
+
+.proposal_wrapper{
+  margin-bottom: 4vw;
+}
 
 #proposal{
   width: 100vw;
+}
+
+.proposal_wrapper img{
+  margin-bottom: 4vw;
+}
+
+@media (max-width: 978px){
+  .proposal_wrapper img{
+    margin-bottom: 23vw;
+  }
 }
 
 .proposal_wrapper h1{
@@ -343,10 +455,20 @@ td{
 @media (max-width: 978px){
   .proposal_wrapper h1{
     position:absolute;
-    top:60vw;
-    left: 35vw;
+    top:90vw;
+    left: 30vw;
     letter-spacing: 4vw;
     font-size: 3vw;
+  }
+}
+
+.proposal_wrapper p{
+  padding: 0 10vw 2vw 10vw;
+}
+
+@media (max-width: 978px){
+  .proposal_wrapper p:first-child{
+    margin-top: 10vw;
   }
 }
 
@@ -354,7 +476,7 @@ td{
 
 .schedule_wrapper{
   font-family: 'Didact Gothic', sans-serif;
-  color:#83D300;
+  color:#d3763f;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -373,7 +495,7 @@ td{
   position: relative;
   left: -30px;
   color:white;
-  background-color: #83D300;
+  background-color: #e3779d;
   font-size: 13px;
   letter-spacing: 7px;
   padding-top: 8px;
@@ -381,7 +503,7 @@ td{
   text-align: center;
   width: 300px;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .schedule_wrapper h6{
@@ -392,25 +514,45 @@ td{
   color: #9a9998;
 }
 
-/*schedule page*/
+/*venue page*/
 .venue_wrapper{
   font-family: 'Didact Gothic', sans-serif;
-  color: black;
+  color:white;
   text-align: center;
   margin-bottom: 50px;
 }
 
+@media (max-width: 900px){
+  .venue_wrapper{
+    color: black;
+  }
+}
 
-.venue_wrapper img{
+
+.hotel_pic_large{
   position:absolute;
   left: 0;
-  top: 50px;
+  top: 4vw;
   width: 100vw;
 }
 
 @media (max-width: 900px){
-  .venue_wrapper img{
-    position:static;
+  .hotel_pic_large{
+    display: none;
+  }
+}
+
+.hotel_pic_small{
+  position:static;
+  left: 0;
+  top: 50px;
+  width: 100vw;
+  display: none;
+}
+
+@media (max-width: 900px){
+  .hotel_pic_small{
+    display: block;
   }
 }
 
@@ -418,7 +560,9 @@ td{
   position:absolute;
   left: 0;
   top: 50px;
-  width: 100vw;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 @media (max-width: 900px){
@@ -429,13 +573,26 @@ td{
 
 .venue_wrapper h2{
   font-size: 19px;
-  letter-spacing: 10px;
-  padding-top: 6vw;
-  padding-bottom: 20px;
+  letter-spacing: 25px;
+  margin-top: 8vw;
+  margin-bottom: 40px;
+  color: #DD99BA;
+}
+
+@media (max-width: 414px){
+  .venue_wrapper h2{
+    font-size: 15px;
+    letter-spacing: 15px;
+    margin-top: 16vw;
+  }
 }
 
 .venue_wrapper p{
   font-size: 11px;
+}
+
+.venue_wrapper a{
+  color: #DD99BA;
 }
 
 .hotel_name{
@@ -443,17 +600,41 @@ td{
   letter-spacing: 1.5px;
 }
 
-.optional_hotel_title{
+.click_to_see{
   font-size: 15px;
   margin-left:0;
   letter-spacing: 3px;
   margin-top: 20px;
 }
 
+@media (max-width: 414px){
+  .click_to_see{
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 600px){
+  .map{
+    position: relative;
+    width: 100vw;
+    height: 75vw;
+    left:-5vw;
+    margin-top: 20px;
+  }
+}
+
 .optional_hotel_content{
   display: none;
   background-color: rgba(255,255, 255, 0.6);
   padding: 20px;
+  color:black;
+}
+
+.map{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .show{

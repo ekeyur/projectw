@@ -1,7 +1,8 @@
 <div class="venue_wrapper">
-  <img class="hotel_pic" src="../assets/hyatt.jpg">
+  <img class="hotel_pic_large" src="../assets/hyatt.jpg">
+  <img class="hotel_pic_small" src="../assets/hyatt1.jpg">
   <div class="venue_content_wrapper">
-    <h2>Main Hotel</h2>
+    <h2>MAIN HOTEL</h2>
 
     <p class="hotel_name">Hyatt Regency Grand Cypress</p>
     <p>1 Grand Cypres Blvd</p>
@@ -16,10 +17,21 @@
 
     <p>You can also call and mentions for Suthar/Delvadia wedding to make reservation over the phone</p>
 
-    <h3 class="optional_hotel_title" ng-click="show = !show">[ Click to see optional Hotel ]</h3>
+    <h3 class="click_to_see" ng-click="show_map = !show_map">[ Click to view it on Google Maps ]</h3>
 
+    <h3 class="click_to_see" ng-click="show_optional = !show_optional">[ Click to see optional Hotel ]</h3>
 
-    <div class="optional_hotel_content" ng-class="{show: show}">
+    <iframe
+      class = "map"
+      ng-class="{show: show_map}"
+      width="600"
+      height="450"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBeqaj0m92SEwMrreDLjuOjwU0U5MsPgpE
+      &q=Hyatt+Regency+Grand+Cypress" allowfullscreen>
+    </iframe>
+
+    <div class="optional_hotel_content" ng-class="{show: show_optional}">
       <p class="hotel_name">Delta Hotels by Marriott Orlando Lake Buena Vista
       <p>12490 S. Apopka Vineland Rd
       <p>Orlando, FL 32836

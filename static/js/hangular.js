@@ -249,6 +249,7 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
 app.controller('searchController', function($rootScope,$scope, $stateParams, $state, hangularService) {
   $rootScope.bgimg = "../assets/rsvp_bg.jpg";
   $rootScope.navcolor = "white";
+  $rootScope.homeimg = "../assets/home_img_white.png";
   $scope.searchQuery = function(){
     if($scope.lname.length >3){
       let object = {
@@ -271,10 +272,13 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
 app.controller('nhController',function($rootScope,hangularService){
   $rootScope.bgimg = "../assets/background.jpg";
   $rootScope.navcolor = "white";
+  $rootScope.homeimg = "../assets/home_img_white.png";
 });
 
 app.controller('aboutusController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
+  $rootScope.homeimg = "../assets/home_img_black.png";
+  $rootScope.navcolor = "black";
 });
 
 app.controller('scheduleController',function($rootScope,hangularService){
@@ -290,47 +294,51 @@ app.controller('contactController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
 });
 
-app.controller('aboutusController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
-  $rootScope.navcolor = "black";
-});
-
 app.controller('entourageController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
 });
 app.controller('groom_familyController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
 });
 app.controller('bride_familyController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
 });
 app.controller('grooms_menController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
 });
 app.controller('brides_maidsController',function($rootScope,hangularService){
   $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
 });
 
 app.controller('rsvpattendingController',function($rootScope,hangularService){
   $rootScope.bgimg = "../assets/rsvp_bg.jpg";
   $rootScope.navcolor = "white";
+  $rootScope.homeimg = "../assets/home_img_white.png";
 });
 
 app.controller('venueController',function($scope,$rootScope){
   $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
-  $scope.show = false;
+  $rootScope.homeimg = "../assets/home_img_black.png";
+  $scope.show_optional = false;
+  $scope.show_map = false;
 });
 
   // RSVP Controller
   app.controller('rsvpController',function($rootScope,$state,$scope,$stateParams,hangularService){
     $rootScope.bgimg = "../assets/rsvp_bg.jpg";
     $rootScope.navcolor = "white";
+    $rootScope.homeimg = "../assets/home_img_white.png";
     $scope.active = 'No Response';
 
     $scope.setActive = function(event,response) {

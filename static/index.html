@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NH</title>
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Stalemate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Stalemate|Special+Elite|Mr+Dafoe" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" href="img/favicon.ico"> -->
   </head>
 
@@ -15,10 +16,14 @@
   <script src="js/angular-cookies.js"></script>
   <script src="js/hangular.js"></script>
   <script src="js/angular-file-upload.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/lightgallery.js">
+  </script>
 
-  <body ng-app="hangular" style="background-image: url({{bgimg}});background-size: cover;background-repeat: no-repeat;height:100vh;background-position: 0% 0%;">
+  <body ng-app="hangular" style="background-image: url({{bgimg}});background-size: cover;background-repeat: no-repeat;height:100vh;background-position: 25% 0%;">
     <div class="nav" style="color : {{navcolor}};">
       <ul class="navbarlist cf">
+        <a href="/"><img id="home_button" src="{{homeimg}}"></a>
         <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
         <li class="nav-links"><span ui-sref="entourage">entourage</span></li>
         <li class="nav-links"><span ui-sref="aboutus">proposal</span></li>
