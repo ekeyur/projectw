@@ -8,32 +8,34 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- <link rel="icon" href="img/favicon.ico"> -->
   </head>
-
   <script src="js/angular.js"></script>
   <script src="js/angular-ui-router.js"></script>
   <script src="js/angular-cookies.js"></script>
   <script src="js/hangular.js"></script>
   <script src="js/angular-file-upload.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/lightgallery.js">
-  </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="js/script.js"></script>
   <body ng-app="hangular" style="background-image: url({{bgimg}});background-size: cover;background-repeat: no-repeat;height:100vh;background-position: 25% 0%;">
     <div class="nav" style="color : {{navcolor}};">
-      <ul class="navbarlist cf">
-        <a href="/"><img id="home_button" src="{{homeimg}}"></a>
-        <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
-        <li class="nav-links"><span ui-sref="entourage">entourage</span></li>
-        <li class="nav-links"><span ui-sref="aboutus">proposal</span></li>
-        <li class="nav-links"><span ui-sref="venue">venue</span></li>
-        <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
-        <li class="nav-links"><span ui-sref="search">rsvp</span></li>
-        <li class="nav-links" ng-if="auth"><span ui-sref="allGuests">All Guests</span></li>
-        <li class="nav-links" ng-if="auth"><span ui-sref="addGuest">Add a Guest</span></li>
-        <li class="nav-links" ng-if="auth"><span ui-sref="uploadFile">Upload GuestList</span></li>
-        <li class="nav-links" ng-if="auth"><span ng-click="logout()">LogOut</span></li>
+      <ul id="navbarlist" class="cf">
+        <a id="home_button_a" href="/"><img id="home_button" src="{{homeimg}}"></a>
+        <img id="menu_button" src="{{menuimg}}">
+        <div id="nav-links-div" class="cf">
+          <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
+          <li class="nav-links"><span ui-sref="entourage">entourage</span></li>
+          <li class="nav-links"><span ui-sref="aboutus">proposal</span></li>
+          <li class="nav-links"><span ui-sref="venue">venue</span></li>
+          <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
+          <li class="nav-links"><span ui-sref="search">rsvp</span></li>
+          <li class="nav-links" ng-if="auth"><span ui-sref="allGuests">All Guests</span></li>
+          <li class="nav-links" ng-if="auth"><span ui-sref="addGuest">Add a Guest</span></li>
+          <li class="nav-links" ng-if="auth"><span ui-sref="uploadFile">Upload GuestList</span></li>
+          <li class="nav-links" ng-if="auth"><span ng-click="logout()">LogOut</span></li>
+        </div>
       </ul>
     </div>
     <ui-view></ui-view>
