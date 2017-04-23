@@ -3,12 +3,14 @@ const multer = require('multer');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bluebird = require('bluebird');
+const mailer = require('nodemailer-promise');
 const lineReader = require('line-reader');
 const uuidV1 = require('uuid/v1');
 const eachLine = bluebird.promisify(lineReader.eachLine);
 const app = express();
 const config = require('./config');
 const rtoken = uuidV1();
+const textbelt = bluebird.promisifyAll(require('textbelt'));
 
 
 var storage = multer.diskStorage({
@@ -20,7 +22,20 @@ var storage = multer.diskStorage({
   }
 });
 
-var upload = multer({ storage: storage })
+var sendEmail = mailer.config({
+    email: config.email,
+    password: config.password,
+    server: config.server
+});
+
+var upload = multer({ storage: storage });
+
+var opts = {
+  fromAddr: 'ekeyur@gmail.com',
+  fromName: 'ekeyur',
+  region: 'us',
+  subject: 'RSVP'
+};
 
 app.use(express.static('static'));
 app.use(bodyParser.json());
@@ -38,32 +53,27 @@ var guestSchema = new mongoose.Schema({
           invited : Boolean,
           rsvp : String,
           modified : Boolean,
-          active : Boolean,
           },
       mandvo : {
           invited : Boolean,
           rsvp : String,
           modified : Boolean,
-          active : Boolean,
           },
       wedding: {
             invited : Boolean,
             rsvp : String,
             modified : Boolean,
-            active : Boolean,
           },
       reception: {
             invited : Boolean,
             rsvp : String,
             modified : Boolean,
-            active : Boolean,
           },
       group  : String,
       city   : String
 });
 
 var Guest = mongoose.model('Guest',guestSchema);
-
 
 app.post('/login', function(request, response) {
     console.log(request.body);
@@ -122,6 +132,7 @@ app.get('/searchguests',function(request,response){
   // }
 });
 
+// RSVPing a guest
 app.post('/rsvpguest',function(request,response){
   let guests = request.body;
   bluebird.map(guests,function(g){
@@ -138,6 +149,29 @@ app.post('/rsvpguest',function(request,response){
         }
     );
   })
+
+
+
+  // .then(function(data){
+
+
+    ///////////////////////////////////////////// Enable the below lines to send a text for rsvp
+    // let message = guests[0].group;
+    // textbelt.sendTextAsync('1234567890',message+" rsvped.",opts)
+
+  //////////////////////////////////////////// Enable the below lines to send an email for rsvp
+  //   var options = {
+  //     subject : guests[0].group,
+  //     senderName : 'rsvp',
+  //     receiver : 'ekeyur@gmail.com',
+  //     text : JSON.stringify(guests),
+  //   };
+  //   // returning promise for chaining purpose
+  //   return sendEmail(options);
+
+  // })
+
+
   .then(function(data){
     response.send(data);
   })
@@ -147,8 +181,10 @@ app.post('/rsvpguest',function(request,response){
 });
 
 
-
+/////////////////////////////////////////
+//Uncomment the below line
 // app.use(auth);
+///////////////////////////////////////////
 
 // Query to retrieve all the guests
 app.post('/allguests',function(request,response){
@@ -163,42 +199,42 @@ app.post('/allguests',function(request,response){
 
 //Add a single Guest API
 app.post('/addguest',function(request,response){
-  let data = request.body;
-
-  let guest = new Guest({
+  var data = request.body.data;
+  console.log(data);
+  console.log("hsdfasdfasd");
+  console.log(data.mandvo);
+  let guest1 = new Guest({
     fname : data.fname,
     lname : data.lname,
     mandvo : {
-        invited : data.mandvo,
+        invited : data.mandvo === 'true',
         rsvp : "No Response",
         modified : false,
-        active : false,
         },
     garba : {
-        invited : data.garba,
+        invited : data.garba === 'true',
         rsvp : "No Response",
         modified : false,
-        active : false,
         },
     wedding: {
-          invited : data.wedding,
+          invited : data.wedding === 'true',
           rsvp : "No Response",
           modified : false,
-          active : false,
         },
     reception: {
-          invited : data.reception,
+          invited : data.reception === 'true',
           rsvp : "No Response",
           modified : false,
-          active : false,
         },
     group  : data.group,
     city   : data.city
   });
 
-  guest.save(Guest)
+  console.log(guest1);
+
+  guest1.save(Guest)
   .then(function(data){
-    // console.log(data);
+    console.log("After Database Call",data);
     response.send(data);
   })
   .catch(function(err){
@@ -222,25 +258,21 @@ app.post('/addguestsfromuploadedfile',function(request,response){
             invited : g[4],
             rsvp : "No Response",
             modified : false,
-            active : false,
             },
         garba : {
             invited : g[5],
             rsvp : "No Response",
             modified : false,
-            active : false,
             },
         wedding: {
               invited : g[6],
               rsvp : "No Response",
               modified : false,
-              active : false,
             },
         reception: {
               invited : g[7],
               rsvp : "No Response",
               modified : false,
-              active : false,
             },
         group  : g[2],
         city   : g[3]

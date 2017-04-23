@@ -122,13 +122,13 @@ app.config(function($stateProvider,$urlRouterProvider){
   .state({
     name : 'uploadFile',
     url : '/uploadfile',
-    templateUrl : 'uploadfile_ns.html',
+    templateUrl : 'templates/uploadfile_ns.html',
     controller : 'uploadfileController'
   })
   .state({
     name : 'allGuests',
     url : '/allguests',
-    templateUrl : 'allguests_ns.html',
+    templateUrl : 'templates/allguests_ns.html',
     controller : 'allGuestsController'
   });
 
@@ -251,7 +251,7 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
   $rootScope.navcolor = "white";
   $rootScope.homeimg = "../assets/home_img_white.png";
   $scope.searchQuery = function(){
-    if($scope.lname.length >3){
+    if($scope.lname.length > 3){
       let object = {
         fname : $scope.fname,
         lname : $scope.lname
