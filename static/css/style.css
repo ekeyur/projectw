@@ -26,7 +26,9 @@
 }
 
 #home_button_a{
+  position: relative;
   display: inline-block;
+  z-index: 100;
 }
 
 
@@ -470,6 +472,7 @@ td{
 .gallery_img{
   width: 300px;
   height: 300px;
+  border-radius: 20px;
 }
 
 @media(max-width: 504px){
@@ -532,6 +535,7 @@ td{
 .family_gallery_img{
   width: 300px;
   height: 300px;
+  border-radius: 20px;
 }
 
 @media(max-width: 820px){
@@ -787,4 +791,10 @@ h3{
 .upload_wrapper {
   padding-left: 100px;
   padding-top: 100px;
+}
+
+/*allguests page*/
+
+.allguests_table{
+  color:black;
 }

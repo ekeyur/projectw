@@ -1,22 +1,23 @@
-<table border="2">
-  <tr>
-  <th ng-click="sortData(fname)">First Name</th>
-  <th ng-click="sortData(lname)">Last Name</th>
-  <th ng-click="sortData(city)">City</th>
-  <th ng-click="sortData(group)">Group</th>
-  <th ng-click="sortData(mandvo.rsvp)">Mandvo</th>
-  <th ng-click="sortData(garba.rsvp)">Garba</th>
-  <th ng-click="sortData(wedding.rsvp)">Wedding</th>
-  <th ng-click="sortData(reception.rsvp)">Reception</th>
-</tr>
-<tr ng-repeat="guest in guests | orderBy:sortColumn:reverseSort">
-<td>{{guest.fname}}</td>
-<td>{{guest.lname}}</td>
-<td>{{guest.city}}</td>
-<td>{{guest.group}}</td>
-<td><span ng-if="guest.mandvo.invited">{{guest.mandvo.rsvp}}</span></td>
-<td><span ng-if="guest.garba.invited">{{guest.garba.rsvp}}</span></td>
-<td><span ng-if="guest.wedding.invited">{{guest.wedding.rsvp}}</span></td>
-<td><span ng-if="guest.reception.invited">{{guest.reception.rsvp}}</span></td>
-</tr>
-</table>
+
+  <table class="allguests_table" border="2">
+    <tr>
+    <th ng-click="sortData(fname)">First Name</th>
+    <th ng-click="sortData(lname)">Last Name</th>
+    <th ng-click="sortData(city)">City</th>
+    <th ng-click="sortData(group)">Group</th>
+    <th ng-click="sortData(mandvo.rsvp)">Mandvo</th>
+    <th ng-click="sortData(garba.rsvp)">Garba</th>
+    <th ng-click="sortData(wedding.rsvp)">Wedding</th>
+    <th ng-click="sortData(reception.rsvp)">Reception</th>
+  </tr>
+  <tr ng-repeat="guest in guests | orderBy:sortColumn:reverseSort">
+  <td>{{guest.fname}}</td>
+  <td>{{guest.lname}}</td>
+  <td>{{guest.city}}</td>
+  <td>{{guest.group}}</td>
+  <td><span ng-if="guest.mandvo.invited">{{guest.mandvo.rsvp}}</span></td>
+  <td><span ng-if="guest.garba.invited">{{guest.garba.rsvp}}</span></td>
+  <td><span ng-if="guest.wedding.invited">{{guest.wedding.rsvp}}</span></td>
+  <td><span ng-if="guest.reception.invited">{{guest.reception.rsvp}}</span></td>
+  </tr>
+  </table>
