@@ -14,6 +14,11 @@
 
 /*index page*/
 
+table{
+  color: black;
+  font-size: 1.2em;
+}
+
 #home_button{
   float;left;
   width: 2vw;

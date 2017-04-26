@@ -2,7 +2,7 @@
   <tr>
   <th ng-click="sortData(fname)">First Name</th>
   <th ng-click="sortData(lname)">Last Name</th>
-  <th ng-click="sortData(city)">City</th>
+  <!-- <th ng-click="sortData(city)">City</th> -->
   <th ng-click="sortData(group)">Group</th>
   <th ng-click="sortData(mandvo.rsvp)">Mandvo</th>
   <th ng-click="sortData(garba.rsvp)">Garba</th>
@@ -12,7 +12,7 @@
 <tr ng-repeat="guest in guests | orderBy:sortColumn:reverseSort">
 <td>{{guest.fname}}</td>
 <td>{{guest.lname}}</td>
-<td>{{guest.city}}</td>
+<!-- <td>{{guest.city}}</td> -->
 <td>{{guest.group}}</td>
 <td><span ng-if="guest.mandvo.invited">{{guest.mandvo.rsvp}}</span></td>
 <td><span ng-if="guest.garba.invited">{{guest.garba.rsvp}}</span></td>

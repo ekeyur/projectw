@@ -457,7 +457,7 @@ app.controller('uploadfileController',function($rootScope, $scope,hangularServic
 });
 
 app.controller('allGuestsController',function($rootScope, $scope,$state,hangularService){
-  $rootScope.navcolor = "black";
+  $rootScope.navcolor = "red";
   $rootScope.bgimg = "";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
