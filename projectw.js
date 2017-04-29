@@ -207,22 +207,22 @@ app.post('/addguest',function(request,response){
     fname : data.fname,
     lname : data.lname,
     mandvo : {
-        invited : data.mandvo === 'true',
+        invited : data.mandvo === true,
         rsvp : "No Response",
         modified : false,
         },
     garba : {
-        invited : data.garba === 'true',
+        invited : data.garba === true,
         rsvp : "No Response",
         modified : false,
         },
     wedding: {
-          invited : data.wedding === 'true',
+          invited : data.wedding === true,
           rsvp : "No Response",
           modified : false,
         },
     reception: {
-          invited : data.reception === 'true',
+          invited : data.reception === true,
           rsvp : "No Response",
           modified : false,
         },
