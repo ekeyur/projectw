@@ -414,6 +414,7 @@ app.controller('loginController', function($rootScope, $scope, hangularService, 
       var obj = {
                   "fname":$scope.fname,
                   "lname":$scope.lname,
+                  "mandvo":$scope.mandvo,
                   "garba":$scope.garba,
                   "wedding":$scope.wedding,
                   "reception":$scope.reception,
