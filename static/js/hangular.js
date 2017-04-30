@@ -292,7 +292,9 @@ app.controller('scheduleController',function($rootScope,hangularService){
 });
 
 app.controller('galleryController',function($rootScope,hangularService){
-
+  $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
+  $rootScope.menuimg = "../assets/menu_black.png";
 });
 
 app.controller('contactController',function($rootScope,hangularService){

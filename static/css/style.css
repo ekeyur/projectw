@@ -31,14 +31,31 @@ table{
   width: 2vw;
 }
 
+@media (max-width: 1350px){
+  #home_button{
+    position: relative;
+    top: 1vh;
+    width: 2vw;
+  }
+}
+
 @media (max-width: 1000px){
   #home_button{
+    position: relative;
+    top: 1vh;
     width: 4vw;
+  }
+}
+
+@media (max-width: 650px){
+  #home_button{
+    top: 1.5vh;
   }
 }
 
 @media (max-width: 500px){
   #home_button{
+    top: 0;
     width: 6vw;
   }
 }
@@ -182,7 +199,7 @@ table{
 @media (max-width: 520px){
   .introduction{
     font-size: 3vw;
-    left:-29vw;
+    left:-31vw;
     top: 16vw;
   }
 }
@@ -194,7 +211,7 @@ table{
   top: 5vw;
   color:#020F37;
   font-size: 1.1vw;
-  border: 1px solid white;
+  border: none;
   padding: 0.4vw 2vw;
   letter-spacing: 0.05vw;
 }
@@ -222,7 +239,7 @@ table{
 @media (max-width: 520px){
   .rsvp_button{
     font-size: 3vw;
-    left:-15vw;
+    left:-18vw;
     top: 27vw;
   }
 }
@@ -690,6 +707,19 @@ td{
   width: 100vw;
 }
 
+#arrow{
+  position: fixed;
+  bottom:-3vh;
+  width: 3vw;
+  left: 48.5vw;
+}
+
+@media(max-width: 1000px){
+  #arrow{
+    display: none;
+  }
+}
+
 .proposal_wrapper img{
   margin-bottom: 4vw;
 }
@@ -911,6 +941,22 @@ td{
   display: block;
 }
 
+/*gallery page*/
+.gallery_wrapper{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: grey;
+}
+
+#slider{
+  position: relative;
+}
+
+.gallery_pic{
+  width: 100%;
+  height: 100%;
+}
 
 /*add guest page*/
 h3{
