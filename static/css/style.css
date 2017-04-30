@@ -12,11 +12,18 @@
     clear: both;
 }
 
+
 /*index page*/
 
 table{
   color: black;
   font-size: 1.2em;
+}
+
+.nav{
+  position: absolute;
+  width: 100vw;
+  z-index: 100;
 }
 
 #home_button{
@@ -62,7 +69,7 @@ table{
   float: right;
   padding: 0.5% 2.5% 0.5% 0.5%;
   /*color: white;*/
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media (max-width: 500px){
@@ -99,27 +106,36 @@ table{
 
 .front_page_wrapper{
   width: 100vw;
-  height: 75vw;
+  height: 100vh;
   background-image: url(../assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 25% 85%;
   overflow: hidden;
 }
 
 .title_div{
   position: relative;
+  top: 5vw;
   width:50%;
   margin-left: 62vw;
   margin-top: 7vw;
-  opacity: 0.9;
 }
 
 .title_div img{
   display: block;
   position: absolute;
-  left:-30vw;
-  top: -5vw;
-  width: 40vw;
+  left:-10vw;
+  top: -8vw;
+  width: 35vw;
+}
+
+@media (max-width: 1300px){
+  .title_div img{
+    font-size: 1.5vw;
+    left:-28.5vw;
+    top: -5vw;
+  }
 }
 
 @media (max-width: 800px){
@@ -132,13 +148,21 @@ table{
 .introduction{
   position: absolute;
   color:#020F37;
-  left:-17vw;
-  top: 6vw;
+  left:0vw;
+  top: 1vw;
   font-size: 0.8vw;
   text-align: center;
   letter-spacing: 0.17vw;
   font-family: "century gothic", Arial;
   line-height: 1.58;
+}
+
+@media (max-width: 1300px){
+  .introduction{
+    font-size: 1.5vw;
+    left:-20.5vw;
+    top: 5vw;
+  }
 }
 
 @media (max-width: 800px){
@@ -160,8 +184,8 @@ table{
 .rsvp_button{
   position: absolute;
   background-color: white;
-  left:-13.5vw;
-  top: 10vw;
+  left:3vw;
+  top: 5vw;
   color:#020F37;
   font-size: 1.1vw;
   border: 1px solid white;
@@ -171,6 +195,14 @@ table{
 
 .rsvp_button:hover{
   padding: 0.3vw 1.9vw;
+}
+
+@media (max-width: 1300px){
+  .rsvp_button{
+    font-size: 1.5vw;
+    left:-13.5vw;
+    top: 12vw;
+  }
 }
 
 @media (max-width: 800px){
@@ -190,6 +222,20 @@ table{
 }
 
 /*search page*/
+
+.search_wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/rsvp_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.search_wrapper_more{
+  height: auto;
+}
+
 .search_title_div h1{
   text-align: center;
   color:white;
@@ -244,6 +290,16 @@ table{
 }
 
 /*rsvp page*/
+.rsvp_wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/rsvp_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+
 table{
   text-align: center;
   margin-left: auto;
@@ -300,10 +356,16 @@ td{
 
 /*rsvp attending page*/
 .rsvpattending_wrapper{
-  margin-top: 40vh;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/rsvp_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
 }
 
 .rsvpattending_wrapper h1{
+  padding-top: 40vh;
   color: white;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 17px;
@@ -332,7 +394,7 @@ td{
 .entourage_div{
   position: relative;
   width: 40vw;
-  height: 40vw;
+  height: 50vh;
   float: right;
 }
 
@@ -352,7 +414,7 @@ td{
 
 #entourage_text{
   position: absolute;
-  top: 36vw;
+  top: 43vh;
   left:-20vw;
   float:left;
   width:20vw;
@@ -375,7 +437,7 @@ td{
 .entourage_icon{
   position: absolute;
   left:15vw;
-  top: 14vw;
+  top: 14vh;
   width: 12vw;
 }
 
@@ -427,7 +489,19 @@ td{
 
 /*bridesmaids page*/
 .bridesmaids_wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/rsvp_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
   text-align: center;
+}
+
+.groomsmen_wrapper{
+  text-align: center;
+  background-color: #161447;
+  color: white;
 }
 
 .bridesmaid_icon{
@@ -448,9 +522,9 @@ td{
 }
 
 .gallery{
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-bottom: 60px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding-bottom: 100px;
 }
 
 @media(max-width: 504px){
@@ -464,7 +538,7 @@ td{
 
 .gallery_unit{
   float:left;
-  margin: 15px;
+  margin: 2vw 1vw;
   text-align: center;
 }
 
@@ -474,9 +548,33 @@ td{
   }
 }
 
+.best{
+  margin-left: 37vw;
+}
+
+@media(max-width: 504px){
+  .best{
+    margin-left: 10vw;
+  }
+}
+
+.head{
+  clear:left;
+}
+
+.last{
+  margin-left: 14vw;
+}
+
+@media(max-width: 504px){
+  .last{
+    margin-left: 10vw;
+  }
+}
+
 .gallery_img{
-  width: 300px;
-  height: 300px;
+  width: 22vw;
+  height: 22vw;
   border-radius: 20px;
 }
 
@@ -489,8 +587,28 @@ td{
 
 /*family page*/
 
-.family_wrapper{
+.bridefamily_wrapper{
   text-align: center;
+  background-color: #c9c8c6;
+  height: 100vh;
+}
+
+@media(max-width: 800px){
+  .bridefamily_wrapper{
+    height: auto;
+  }
+}
+
+.groomfamily_wrapper{
+  text-align: center;
+  background-color: #ffc356;
+  height: 100vh;
+}
+
+@media(max-width: 800px){
+  .groomfamily_wrapper{
+    height: auto;
+  }
 }
 
 .family_icon{
@@ -538,8 +656,8 @@ td{
 }
 
 .family_gallery_img{
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
   border-radius: 20px;
 }
 
@@ -601,15 +719,20 @@ td{
 }
 
 /*schedule page*/
-
 .schedule_wrapper{
+  overflow: auto;
   font-family: 'Didact Gothic', sans-serif;
   color:#d3763f;
   text-align: center;
-  margin-top: 80px;
   margin-bottom: 80px;
-  margin-left: 30px;
   margin-right: 30px;
+  padding-top: 50px;
+}
+
+@media(max-width: 479px){
+  .schedule_wrapper{
+    margin-right: 0;
+  }
 }
 
 .schedule_wrapper h3{
@@ -617,6 +740,15 @@ td{
   letter-spacing: 15px;
   margin-top: 70px;
   color: black;
+}
+
+
+@media(max-width: 479px){
+  .schedule_wrapper h3{
+    line-height: 30px;
+    position: relative;
+    z-index: -100;
+  }
 }
 
 .schedule_wrapper h4{
@@ -634,11 +766,16 @@ td{
   margin-bottom: 40px;
 }
 
+@media(max-width: 479px){
+  .schedule_wrapper h4{
+    width: 110vw;
+  }
+}
+
 .schedule_wrapper h6{
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 1px;
-  font-family: 'Stalemate', cursive;
   color: #9a9998;
 }
 
@@ -648,6 +785,7 @@ td{
   color:white;
   text-align: center;
   margin-bottom: 50px;
+  overflow: auto;
 }
 
 @media (max-width: 900px){
@@ -656,11 +794,9 @@ td{
   }
 }
 
-
 .hotel_pic_large{
   position:absolute;
   left: 0;
-  top: 4vw;
   width: 100vw;
 }
 
@@ -687,7 +823,7 @@ td{
 .venue_content_wrapper{
   position:absolute;
   left: 0;
-  top: 50px;
+  top: 70px;
   width: 90vw;
   margin-left: 5vw;
   margin-right: 5vw;

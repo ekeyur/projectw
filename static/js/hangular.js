@@ -247,7 +247,7 @@ app.factory('hangularService',function($http,$cookies,$rootScope){
 
 // Initial
 app.controller('searchController', function($rootScope,$scope, $stateParams, $state, hangularService) {
-  $rootScope.bgimg = "../assets/rsvp_bg.jpg";
+
   $rootScope.navcolor = "white";
   $rootScope.homeimg = "../assets/home_img_white.png";
   $rootScope.menuimg = "../assets/menu_white.png";
@@ -271,83 +271,82 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
 });
 
 app.controller('nhController',function($rootScope,hangularService){
-  $rootScope.bgimg = "../assets/background.jpg";
-  $rootScope.navcolor = "white";
-  $rootScope.homeimg = "../assets/home_img_white.png";
-  $rootScope.menuimg = "../assets/menu_white.png";
+
+  $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
+  $rootScope.menuimg = "../assets/menu_black.png";
 });
 
 app.controller('aboutusController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
+
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.navcolor = "black";
   $rootScope.menuimg = "../assets/menu_black.png";
 });
 
 app.controller('scheduleController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
-  $rootScope.navcolor = "#ee77d7";
-  $rootScope.homeimg = "../assets/home_img_black.png";
-});
 
-app.controller('galleryController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
-});
-
-app.controller('contactController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
-});
-
-app.controller('entourageController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
   $rootScope.navcolor = "black";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
 });
+
+app.controller('galleryController',function($rootScope,hangularService){
+
+});
+
+app.controller('contactController',function($rootScope,hangularService){
+
+});
+
+app.controller('entourageController',function($rootScope,hangularService){
+
+  $rootScope.navcolor = "black";
+  $rootScope.homeimg = "../assets/home_img_black.png";
+  $rootScope.menuimg = "../assets/menu_black.png";
+
+});
 app.controller('groom_familyController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
+
   $rootScope.navcolor = "black";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
 });
 app.controller('bride_familyController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
+
   $rootScope.navcolor = "black";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
 });
 app.controller('grooms_menController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
-  $rootScope.navcolor = "black";
-  $rootScope.homeimg = "../assets/home_img_black.png";
-  $rootScope.menuimg = "../assets/menu_black.png";
+
+  $rootScope.navcolor = "white";
+  $rootScope.homeimg = "../assets/home_img_white.png";
+  $rootScope.menuimg = "../assets/menu_white.png";
 });
 app.controller('brides_maidsController',function($rootScope,hangularService){
-  $rootScope.bgimg = "";
+
   $rootScope.navcolor = "black";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
 });
 
 app.controller('rsvpattendingController',function($rootScope,hangularService){
-  $rootScope.bgimg = "../assets/rsvp_bg.jpg";
   $rootScope.navcolor = "white";
   $rootScope.homeimg = "../assets/home_img_white.png";
   $rootScope.menuimg = "../assets/menu_white.png";
 });
 
-app.controller('venueController',function($scope,$rootScope){
-  $rootScope.bgimg = "";
+app.controller('venueController',function($scope,$rootScope,hangularService){
   $rootScope.navcolor = "black";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
   $scope.show_optional = false;
-  $scope.show_map = false;
 });
 
   // RSVP Controller
   app.controller('rsvpController',function($rootScope,$state,$scope,$stateParams,hangularService){
-    $rootScope.bgimg = "../assets/rsvp_bg.jpg";
+
     $rootScope.navcolor = "white";
     $rootScope.homeimg = "../assets/home_img_white.png";
     $rootScope.menuimg = "../assets/menu_white.png";
@@ -380,7 +379,7 @@ app.controller('venueController',function($scope,$rootScope){
 // Login Controller
 app.controller('loginController', function($rootScope, $scope, hangularService, $state, $cookies, $rootScope, $timeout) {
   $rootScope.navcolor = "black";
-  $rootScope.bgimg = "";
+
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
   $scope.login = function(){
@@ -408,7 +407,7 @@ app.controller('loginController', function($rootScope, $scope, hangularService, 
 
   app.controller('addGuestController',function($rootScope,$scope,hangularService){
     $rootScope.navcolor = "black";
-    $rootScope.bgimg = "";
+
     $rootScope.homeimg = "../assets/home_img_black.png";
     $rootScope.menuimg = "../assets/menu_black.png";
     $scope.AddG = function(){
@@ -444,7 +443,7 @@ app.controller('loginController', function($rootScope, $scope, hangularService, 
 
 app.controller('uploadfileController',function($rootScope, $scope,hangularService,FileUploader){
   $rootScope.navcolor = "black";
-  $rootScope.bgimg = "";
+
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
   var uploader = $scope.uploader = new FileUploader({
@@ -458,7 +457,7 @@ app.controller('uploadfileController',function($rootScope, $scope,hangularServic
 
 app.controller('allGuestsController',function($rootScope, $scope,$state,hangularService){
   $rootScope.navcolor = "red";
-  $rootScope.bgimg = "";
+
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
   $scope.sortColumn = 'group';
