@@ -31,6 +31,12 @@ table{
   width: 2vw;
 }
 
+@media (max-width: 1000px){
+  #home_button{
+    width: 4vw;
+  }
+}
+
 @media (max-width: 500px){
   #home_button{
     width: 6vw;
@@ -242,6 +248,12 @@ table{
   font-size: 3vw;
   letter-spacing: 3vw;
   margin-top: 9vw;
+}
+
+@media(max-width: 900px){
+  .search_title_div h1{
+    margin-top: 20vw;
+  }
 }
 
 .search_input_div{
