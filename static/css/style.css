@@ -694,12 +694,6 @@ td{
   margin-bottom: 4vw;
 }
 
-@media (max-width: 978px){
-  .proposal_wrapper img{
-    margin-bottom: 23vw;
-  }
-}
-
 .proposal_wrapper h1{
   position:absolute;
   top:20vw;
@@ -712,11 +706,11 @@ td{
 
 @media (max-width: 978px){
   .proposal_wrapper h1{
-    position:absolute;
-    top:90vw;
-    left: 30vw;
+    position:static;
     letter-spacing: 4vw;
     font-size: 3vw;
+    margin-bottom: 4vh;
+    text-align: center;
   }
 }
 
