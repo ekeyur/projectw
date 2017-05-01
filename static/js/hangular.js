@@ -295,6 +295,7 @@ app.controller('galleryController',function($rootScope,hangularService){
   $rootScope.navcolor = "black";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
+  new IdealImageSlider.Slider('#slider');
 });
 
 app.controller('contactController',function($rootScope,hangularService){
@@ -340,9 +341,9 @@ app.controller('rsvpattendingController',function($rootScope,hangularService){
 });
 
 app.controller('venueController',function($scope,$rootScope,hangularService){
-  $rootScope.navcolor = "black";
-  $rootScope.homeimg = "../assets/home_img_black.png";
-  $rootScope.menuimg = "../assets/menu_black.png";
+  $rootScope.navcolor = "white";
+  $rootScope.homeimg = "../assets/home_img_white.png";
+  $rootScope.menuimg = "../assets/menu_white.png";
   $scope.show_optional = false;
 });
 
