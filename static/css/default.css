@@ -35,6 +35,16 @@
 		 -o-transition: 0.3s ease-out;
 			transition: 0.3s ease-out;
 }
+
+@media(max-width: 600px){
+	.iis-previous-nav,
+	.iis-next-nav {
+		width: 6vw;
+		height: 6vw;
+		background-size: 4vw 4vw;
+	}
+}
+
 .iis-previous-nav {
 	left: 5%;
 	background-position: 35% 50%;
