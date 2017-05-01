@@ -949,6 +949,11 @@ td{
   background-color: grey;
 }
 
+#slider_wrapper{
+  position: relative;
+  width: 100%;
+}
+
 #slider{
   position: relative;
 }
