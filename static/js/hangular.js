@@ -402,6 +402,19 @@ app.controller('venueController',function($scope,$rootScope,hangularService){
       });
   };
   console.log($scope.guestsInParty);
+
+  setTimeout(function(){
+    var rsvpheight = $(".rsvp_helper").height();
+    var height = $(window).height();
+    var width = $(window).width();
+    var propotion = width/height;
+
+    if(rsvpheight<height){
+      $(".rsvp_wrapper").addClass("rsvp_wrapper_less")
+    }else{
+      $(".rsvp_wrapper").removeClass("rsvp_wrapper_less")
+    }
+  },10)
 });
 
 

@@ -10,7 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/ideal-image-slider.css">
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
     <!-- <link rel="icon" href="img/favicon.ico"> -->
   </head>
@@ -29,12 +32,12 @@
         <a id="home_button_a" href="/"><img id="home_button" src="{{homeimg}}"></a>
         <img id="menu_button" src="{{menuimg}}">
         <div id="nav-links-div" class="cf">
-          <li class="nav-links"><span ui-sref="gallery">gallery</span></li>
-          <li class="nav-links"><span ui-sref="entourage">entourage</span></li>
-          <li class="nav-links"><span ui-sref="aboutus">proposal</span></li>
-          <li class="nav-links"><span ui-sref="venue">venue</span></li>
-          <li class="nav-links"><span ui-sref="schedule">schedule</span></li>
-          <li class="nav-links"><span ui-sref="search">rsvp</span></li>
+          <li class="nav-links"><span class="nav-links-button" ui-sref="gallery">gallery</span></li>
+          <li class="nav-links"><span class="nav-links-button" ui-sref="entourage">entourage</span></li>
+          <li class="nav-links"><span class="nav-links-button" ui-sref="aboutus">proposal</span></li>
+          <li class="nav-links"><span class="nav-links-button" ui-sref="venue">venue</span></li>
+          <li class="nav-links"><span class="nav-links-button" ui-sref="schedule">schedule</span></li>
+          <li class="nav-links"><span class="nav-links-button" ui-sref="search">rsvp</span></li>
           <li class="nav-links" ng-if="auth"><span ui-sref="allGuests">All Guests</span></li>
           <li class="nav-links" ng-if="auth"><span ui-sref="addGuest">Add a Guest</span></li>
           <li class="nav-links" ng-if="auth"><span ui-sref="uploadFile">Upload GuestList</span></li>
@@ -42,7 +45,7 @@
         </div>
       </ul>
     </div>
-    <ui-view></ui-view>
+    <ui-view autoscroll></ui-view>
   </body>
 
 </html>

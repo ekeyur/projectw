@@ -301,6 +301,12 @@ table{
   font-size: 2vw;
 }
 
+@media(max-width: 700px){
+  .result_group{
+    font-size: 4vw;
+  }
+}
+
 .result_name{
   margin-bottom: 1vw;
 }
@@ -321,21 +327,38 @@ table{
 /*rsvp page*/
 .rsvp_wrapper{
   width: 100vw;
-  height: 100vh;
   background-image: url(../assets/rsvp_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: auto;
+  padding-top: 10vh;
+}
+
+.rsvp_wrapper_less{
+  height: 100vh;
 }
 
 
-table{
+.rsvp_table{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5vw;
   color:white;
 }
+
+@media(max-width: 700px){
+  .rsvp_table{
+    font-size: 3vw;
+  }
+  .rsvp_label{
+    display: inline-block;
+    height: 3vw;
+    width: 3vw;
+    margin-bottom: 0 !important;
+  }
+}
+
 th{
   padding: 1vw 5vw;
 }
@@ -348,6 +371,23 @@ td{
   width: 3vw;
 }
 
+@media(max-width: 700px){
+  .rsvp_icon{
+    position: relative;
+    top: -1vw;
+    left: -0.25vw;
+  }
+}
+
+@media(max-width: 550px){
+  .rsvp_icon{
+    position: relative;
+    top: -1.25vw;
+    left: -0.5vw;
+  }
+}
+
+
 .rsvp_submit_button{
   margin-left: 42%;
   margin-top: 3vw;
@@ -358,6 +398,13 @@ td{
   color:#E66CB5;
 }
 
+@media(max-width: 700px){
+  .rsvp_submit_button{
+    margin-top: 10vh;
+    margin-left: 39%;
+  }
+}
+
 .rsvp_example_div{
   text-align: center;
 }
@@ -366,6 +413,12 @@ td{
   width: 4vw;
   -webkit-filter: grayscale(100%) brightness(150%);  /* Safari */
   filter: grayscale(100%) brightness(550%);
+}
+
+@media(max-width: 700px){
+  .rsvp_example_icon{
+    width: 8vw;
+  }
 }
 
 .rsvp_example_div{
@@ -381,6 +434,13 @@ td{
 .highlight{
   border-radius: 50%;
   border:5px solid white;
+}
+
+@media(max-width: 700px){
+  .highlight{
+    border-radius: 50%;
+    border:2px solid white;
+  }
 }
 
 /*rsvp attending page*/
@@ -519,7 +579,6 @@ td{
 /*bridesmaids page*/
 .bridesmaids_wrapper{
   width: 100vw;
-  height: 100vh;
   background-image: url(../assets/rsvp_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -791,6 +850,16 @@ td{
   }
 }
 
+@media (max-width: 978px){
+  .proposal_wrapper h1{
+    position:static;
+    letter-spacing: 5vw;
+    font-size: 6vw;
+    margin-bottom: 4vh;
+    text-align: center;
+  }
+}
+
 .proposal_wrapper p{
   padding: 0 10vw 2vw 10vw;
 }
@@ -993,7 +1062,6 @@ td{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: grey;
 }
 
 #slider_wrapper{
@@ -1042,4 +1110,11 @@ h3{
 
 .allguests_table{
   color:black;
+}
+
+/*login page*/
+
+.login_wrapper{
+  padding-top: 200px;
+  padding-left: 100px;
 }

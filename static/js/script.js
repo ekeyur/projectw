@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  var height = $(window).height();
+  var width = $(window).width();
+  var propotion = width/height;
+
   $("#menu_button").on("click", function(){
     $("#nav-links-div").toggle();
   })
@@ -11,11 +15,13 @@ $(document).ready(function(){
     $("#arrow").hide()
   })
 
-  new IdealImageSlider.Slider('#slider');
+  if(width<500){
+    $(".nav-links-button").on("click", function(){
+      $("#nav-links-div").hide();
+    })
+  }
 
-  var height = $(window).height();
-  var width = $(window).width();
-  var propotion = width/height;
+  new IdealImageSlider.Slider('#slider');
 
   if(propotion<1372/912){
     $("#slider_wrapper").css("top", function(){

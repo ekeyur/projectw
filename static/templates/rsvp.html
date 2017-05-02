@@ -1,77 +1,79 @@
 <div class="rsvp_wrapper">
-  <table>
-  <tr>
-    <th>Name</th>
-    <th ng-if="guestsInParty[0].mandvo.invited">Mandvo</th>
-    <th ng-if="guestsInParty[0].garba.invited">Rass</th>
-    <th ng-if="guestsInParty[0].wedding.invited">Wedding</th>
-    <th ng-if="guestsInParty[0].reception.invited">Reception</th>
-  </tr>
-  <tr ng-repeat="guest in guestsInParty">
-    <td>
-      <span>{{guest.fname}}</span>
-      <span>{{guest.lname}}</span>
-    </td>
-    <td ng-if="guest.mandvo.invited">
-      <span>
-        <span ng-if="!guest.mandvo.modified" ng-init="guest.mandvo.rsvp = 'No Response'">
-          <!-- ng-init="toggle=false" ng-click="toggleButton" ng-class= "{ 'highlight': toggle }" -->
-          <label ng-click="setActive(guest.mandvo,'Accept')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
-          <label ng-click="setActive(guest.mandvo,'Decline')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
-          <label ng-click="setActive(guest.mandvo,'No Response')" ng-class= "{'highlight': isActive(guest.mandvo) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
+  <div class="rsvp_helper">
+    <table class = "rsvp_table">
+    <tr>
+      <th>Name</th>
+      <th ng-if="guestsInParty[0].mandvo.invited">Mandvo</th>
+      <th ng-if="guestsInParty[0].garba.invited">Garba</th>
+      <th ng-if="guestsInParty[0].wedding.invited">Wedding</th>
+      <th ng-if="guestsInParty[0].reception.invited">Reception</th>
+    </tr>
+    <tr ng-repeat="guest in guestsInParty">
+      <td>
+        <span>{{guest.fname}}</span>
+        <span>{{guest.lname}}</span>
+      </td>
+      <td ng-if="guest.mandvo.invited">
+        <span>
+          <span ng-if="!guest.mandvo.modified" ng-init="guest.mandvo.rsvp = 'No Response'">
+            <!-- ng-init="toggle=false" ng-click="toggleButton" ng-class= "{ 'highlight': toggle }" -->
+            <label class="rsvp_label" ng-click="setActive(guest.mandvo,'Accept')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.mandvo,'Decline')" ng-class= "{'highlight': isActive(guest.mandvo) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.mandvo,'No Response')" ng-class= "{'highlight': isActive(guest.mandvo) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
+          </span>
+          <span ng-if="guest.mandvo.modified">Already rsvped.
+          </span>
         </span>
-        <span ng-if="guest.mandvo.modified">Already rsvped.
+      </td>
+      <td ng-if="guest.garba.invited">
+        <span >
+          <span ng-if="!guest.garba.modified" ng-init="guest.garba.rsvp = 'No Response'">
+            <label class="rsvp_label" ng-click="setActive(guest.garba,'Accept')" ng-class= "{'highlight': isActive(guest.garba) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.garba,'Decline')" ng-class= "{ 'highlight': isActive(guest.garba) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.garba,'No Response')" ng-class= "{ 'highlight': isActive(guest.garba) === 'No Response'}"><img class="rsvp_icon" src="../assets/no_response.png"></label>
+          </span>
+          <span ng-if="guest.garba.modified">Already rsvped.
+          </span>
         </span>
-      </span>
-    </td>
-    <td ng-if="guest.garba.invited">
-      <span >
-        <span ng-if="!guest.garba.modified" ng-init="guest.garba.rsvp = 'No Response'">
-          <label ng-click="setActive(guest.garba,'Accept')" ng-class= "{'highlight': isActive(guest.garba) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
-          <label ng-click="setActive(guest.garba,'Decline')" ng-class= "{ 'highlight': isActive(guest.garba) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
-          <label ng-click="setActive(guest.garba,'No Response')" ng-class= "{ 'highlight': isActive(guest.garba) === 'No Response'}"><img class="rsvp_icon" src="../assets/no_response.png"></label>
+      </td>
+      <td ng-if="guest.wedding.invited">
+        <span >
+          <span ng-if="!guest.wedding.modified" ng-init="guest.wedding.rsvp = 'No Response'">
+            <label class="rsvp_label" ng-click="setActive(guest.wedding,'Accept')" ng-class= "{'highlight': isActive(guest.wedding) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.wedding,'Decline')" ng-class= "{'highlight': isActive(guest.wedding) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.wedding,'No Response')" ng-class= "{'highlight': isActive(guest.wedding) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
+          </span>
+          <span ng-if="guest.wedding.modified">Already rsvped.
+          </span>
         </span>
-        <span ng-if="guest.garba.modified">Already rsvped.
+      </td>
+      <td ng-if="guest.reception.invited">
+        <span >
+          <span ng-if="!guest.reception.modified" ng-init="guest.reception.rsvp = 'No Response'">
+            <label class="rsvp_label" ng-click="setActive(guest.reception,'Accept')" ng-class= "{'highlight': isActive(guest.reception) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.reception,'Decline')" ng-class= "{'highlight': isActive(guest.reception) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
+            <label class="rsvp_label" ng-click="setActive(guest.reception,'No Response')" ng-class= "{'highlight': isActive(guest.reception) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
+          </span>
+          <span ng-if="guest.reception.modified">Already rsvped.
+          </span>
         </span>
-      </span>
-    </td>
-    <td ng-if="guest.wedding.invited">
-      <span >
-        <span ng-if="!guest.wedding.modified" ng-init="guest.wedding.rsvp = 'No Response'">
-          <label ng-click="setActive(guest.wedding,'Accept')" ng-class= "{'highlight': isActive(guest.wedding) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
-          <label ng-click="setActive(guest.wedding,'Decline')" ng-class= "{'highlight': isActive(guest.wedding) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
-          <label ng-click="setActive(guest.wedding,'No Response')" ng-class= "{'highlight': isActive(guest.wedding) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
-        </span>
-        <span ng-if="guest.wedding.modified">Already rsvped.
-        </span>
-      </span>
-    </td>
-    <td ng-if="guest.reception.invited">
-      <span >
-        <span ng-if="!guest.reception.modified" ng-init="guest.reception.rsvp = 'No Response'">
-          <label ng-click="setActive(guest.reception,'Accept')" ng-class= "{'highlight': isActive(guest.reception) === 'Accept' }"><img class="rsvp_icon" src="../assets/accept.png"></label>
-          <label ng-click="setActive(guest.reception,'Decline')" ng-class= "{'highlight': isActive(guest.reception) === 'Decline' }"><img class="rsvp_icon" src="../assets/decline.png"></label>
-          <label ng-click="setActive(guest.reception,'No Response')" ng-class= "{'highlight': isActive(guest.reception) === 'No Response' }"><img class="rsvp_icon" src="../assets/no_response.png"></label>
-        </span>
-        <span ng-if="guest.reception.modified">Already rsvped.
-        </span>
-      </span>
-    </td>
-  </tr>
-  </table>
-  <button class="rsvp_submit_button" type="button" ng-click="rsvp()">Submit</button>
-  <div class="rsvp_example_div">
-    <div class="rsvp_example_unit_div">
-      <img class="rsvp_example_icon" src="../assets/accept.png">
-      <h5>Accept</h5>
-    </div>
-    <div class="rsvp_example_unit_div">
-      <img class="rsvp_example_icon" src="../assets/decline.png">
-      <h5>Decline</h5>
-    </div>
-    <div class="rsvp_example_unit_div">
-      <img class="rsvp_example_icon" src="../assets/no_response.png">
-      <h5>No response</h5>
+      </td>
+    </tr>
+    </table>
+    <button class="rsvp_submit_button" type="button" ng-click="rsvp()">Submit</button>
+    <div class="rsvp_example_div">
+      <div class="rsvp_example_unit_div">
+        <img class="rsvp_example_icon" src="../assets/accept.png">
+        <h5>Accept</h5>
+      </div>
+      <div class="rsvp_example_unit_div">
+        <img class="rsvp_example_icon" src="../assets/decline.png">
+        <h5>Decline</h5>
+      </div>
+      <div class="rsvp_example_unit_div">
+        <img class="rsvp_example_icon" src="../assets/no_response.png">
+        <h5>No response</h5>
+      </div>
     </div>
   </div>
-</div>  
+</div>
