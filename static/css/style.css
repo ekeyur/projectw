@@ -170,7 +170,7 @@ table{
 
 .introduction{
   position: absolute;
-  color:#020F37;
+  color:#f67a29;
   left:0vw;
   top: 1vw;
   font-size: 0.8vw;
@@ -587,6 +587,9 @@ td{
 }
 
 .groomsmen_wrapper{
+  width: 100vw;
+  background-size: cover;
+  overflow: auto;
   text-align: center;
   background-color: #161447;
   color: white;
@@ -988,7 +991,7 @@ td{
 }
 
 .venue_wrapper h2{
-  font-size: 19px;
+  font-size: 21px;
   letter-spacing: 25px;
   margin-top: 8vw;
   margin-bottom: 40px;
@@ -1004,7 +1007,8 @@ td{
 }
 
 .venue_wrapper p{
-  font-size: 11px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
 }
 
 .venue_wrapper a{
@@ -1017,7 +1021,7 @@ td{
 }
 
 .click_to_see{
-  font-size: 15px;
+  font-size: 16px;
   margin-left:0;
   letter-spacing: 3px;
   margin-top: 20px;
@@ -1066,7 +1070,6 @@ td{
 
 #slider_wrapper{
   position: relative;
-  width: 100%;
 }
 
 #slider{

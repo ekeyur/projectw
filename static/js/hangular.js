@@ -306,7 +306,7 @@ app.controller('galleryController',function($rootScope,hangularService){
       return top+"px";
     })
   }else{
-    $("#slider").css("top", 0)
+    $("#slider").css("top", 0);
   }
 
   $(window).resize(function(){
@@ -415,6 +415,7 @@ app.controller('venueController',function($scope,$rootScope,hangularService){
       $(".rsvp_wrapper").removeClass("rsvp_wrapper_less")
     }
   },10)
+
 });
 
 
