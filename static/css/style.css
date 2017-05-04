@@ -153,7 +153,7 @@ table{
   width: 35vw;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1000px){
   .title_div img{
     font-size: 1.5vw;
     left:-28.5vw;
@@ -180,7 +180,7 @@ table{
   line-height: 1.58;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1000px){
   .introduction{
     font-size: 1.5vw;
     left:-20.5vw;
@@ -220,7 +220,7 @@ table{
   padding: 0.3vw 1.9vw;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1000px){
   .rsvp_button{
     font-size: 1.5vw;
     left:-13.5vw;
