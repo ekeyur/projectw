@@ -712,6 +712,7 @@ td{
 @media(max-width: 800px){
   .bridefamily_wrapper{
     height: auto;
+    overflow: auto;
   }
 }
 
@@ -725,6 +726,7 @@ td{
 @media(max-width: 800px){
   .groomfamily_wrapper{
     height: auto;
+    overflow: auto;
   }
 }
 
