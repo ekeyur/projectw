@@ -271,14 +271,12 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
 });
 
 app.controller('nhController',function($rootScope,hangularService){
-
   $rootScope.navcolor = "black";
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
 });
 
 app.controller('aboutusController',function($rootScope,hangularService){
-
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.navcolor = "black";
   $rootScope.menuimg = "../assets/menu_black.png";
@@ -400,8 +398,31 @@ app.controller('venueController',function($scope,$rootScope,hangularService){
       hangularService.rsvp($scope.guestsInParty).success(function(data){
         $state.go('rsvpattending');
       });
-  };
-  console.log($scope.guestsInParty);
+    };
+     $scope.displayMandvo = function(){
+       return $scope.guestsInParty.some(function(e){
+         return e.mandvo.invited;
+       });
+     };
+     $scope.displayGarba = function(){
+       return $scope.guestsInParty.some(function(e){
+         return e.garba.invited;
+       });
+     };
+     $scope.displayWedding = function(){
+       return $scope.guestsInParty.some(function(e){
+         return e.wedding.invited;
+       });
+     };
+     $scope.displayReception = function(){
+       return $scope.guestsInParty.some(function(e){
+         return e.reception.invited;
+       });
+     };
+
+
+
+
 
   setTimeout(function(){
     var rsvpheight = $(".rsvp_helper").height();
