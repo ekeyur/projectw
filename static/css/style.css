@@ -706,6 +706,7 @@ td{
   text-align: center;
   background-color: #c9c8c6;
   height: 100vh;
+  overflow: hidden;
 }
 
 @media(max-width: 800px){
@@ -718,6 +719,7 @@ td{
   text-align: center;
   background-color: #ffc356;
   height: 100vh;
+  overflow: hidden;
 }
 
 @media(max-width: 800px){
@@ -875,13 +877,14 @@ td{
 
 /*schedule page*/
 .schedule_wrapper{
-  overflow: auto;
   font-family: 'Didact Gothic', sans-serif;
   color:#d3763f;
   text-align: center;
   margin-bottom: 80px;
   margin-right: 30px;
   padding-top: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media(max-width: 479px){
@@ -940,7 +943,8 @@ td{
   color:white;
   text-align: center;
   margin-bottom: 50px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 900px){
@@ -1016,8 +1020,9 @@ td{
 }
 
 .hotel_name{
-  font-size: 13px !important;
+  font-size: 16px !important;
   letter-spacing: 1.5px;
+  color: #010626;
 }
 
 .click_to_see{
