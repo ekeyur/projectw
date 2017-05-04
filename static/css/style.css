@@ -264,12 +264,44 @@ table{
   color:white;
   font-size: 3vw;
   letter-spacing: 3vw;
-  margin-top: 9vw;
+  margin-top: 9vh;
+  margin-bottom: 6vh;
 }
 
 @media(max-width: 900px){
   .search_title_div h1{
+    font-size: 6vw;
     margin-top: 20vw;
+  }
+}
+
+.search_title_div p{
+  position: relative;
+  left: -2.5vw;
+  text-align: center;
+  color:white;
+  font-size: 0.7vw;
+  font-family: 'Didact Gothic', sans-serif;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+@media(max-width: 1500px){
+  .search_title_div p{
+    left: 0;
+    font-size: 1vw;
+  }
+}
+
+@media(max-width: 1300px){
+  .search_title_div p{
+    font-size: 1.5vw;
+  }
+}
+
+@media(max-width: 900px){
+  .search_title_div p{
+    font-size: 3vw;
   }
 }
 
