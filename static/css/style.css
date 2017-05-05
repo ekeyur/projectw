@@ -1150,9 +1150,18 @@ h3{
 
 /*allguests page*/
 
+.allguests_wrapper{
+  padding-top: 5vh;
+  width: 100vw;
+}
+
 .allguests_table{
   color:black;
+  margin-top: 5vh;
+  width: 100% !important;
+  font-size: 0.8vw;
 }
+
 
 /*login page*/
 
