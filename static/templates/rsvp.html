@@ -10,10 +10,10 @@
       <th ng-if="guestsInParty[0].reception.invited">Reception</th> -->
 
 
-      <th ng-if="displayMandvo()">Mandvo</th>
-      <th ng-if="displayGarba()">Garba</th>
-      <th ng-if="displayWedding()">Wedding</th>
-      <th ng-if="displayReception()">Reception</th>
+      <th><span ng-if="displayMandvo()">Mandvo</span></th>
+      <th><span ng-if="displayGarba()">Garba</span></th>
+      <th><span ng-if="displayWedding()">Wedding</span></th>
+      <th><span ng-if="displayReception()">Reception</span></th>
     </tr>
     <tr ng-repeat="guest in guestsInParty">
       <td>
