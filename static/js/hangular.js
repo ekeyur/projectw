@@ -294,32 +294,6 @@ app.controller('galleryController',function($rootScope,hangularService){
   $rootScope.homeimg = "../assets/home_img_black.png";
   $rootScope.menuimg = "../assets/menu_black.png";
   new IdealImageSlider.Slider('#slider');
-  var height = $(window).height();
-  var width = $(window).width();
-  var propotion = width/height;
-
-  if(propotion<1372/912){
-    $("#slider_wrapper").css("top", function(){
-      var top = (height-width*2/3)/2;
-      return top+"px";
-    })
-  }else{
-    $("#slider").css("top", 0);
-  }
-
-  $(window).resize(function(){
-    var height = $(window).height();
-    var width = $(window).width();
-    var propotion = width/height;
-    if(propotion<1372/912){
-      $("#slider_wrapper").css("top", function(){
-        var top = (height-width*2/3)/2;
-        return top+"px";
-      })
-    }else{
-      $("#slider").css("top", 0)
-    }
-  })
 });
 
 app.controller('contactController',function($rootScope,hangularService){
