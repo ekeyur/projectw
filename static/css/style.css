@@ -1061,6 +1061,12 @@ td{
   color: white;
 }
 
+@media (max-width: 900px){
+  .hotel_name{
+    color: black;
+  }
+}
+
 .optional_hotel_name{
   color:black;
 }
