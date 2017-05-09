@@ -745,7 +745,7 @@ td{
   overflow: hidden;
 }
 
-@media(max-width: 800px){
+@media(max-width: 893px){
   .bridefamily_wrapper{
     height: auto;
     overflow: auto;
@@ -759,7 +759,7 @@ td{
   overflow: hidden;
 }
 
-@media(max-width: 800px){
+@media(max-width: 1128px){
   .groomfamily_wrapper{
     height: auto;
     overflow: auto;
@@ -833,14 +833,36 @@ td{
   }
 }
 
+.groomfamily_wrapper .family_gallery_unit{
+  margin: 15px 2.5vw !important;
+}
+
+@media(max-width: 504px){
+  .groomfamily_wrapper .family_gallery_unit{
+    margin: 10vw !important;
+  }
+}
+
 .family_gallery_img{
   width: 20vw;
   height: 20vw;
   border-radius: 20px;
 }
 
-@media(max-width: 820px){
+@media(max-width: 893px){
   .family_gallery_img{
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
+.groomfamily_wrapper .family_gallery_img{
+  width: 18vw;
+  height: 18vw;
+}
+
+@media(max-width: 1128px){
+  .groomfamily_wrapper .family_gallery_img{
     width: 80vw;
     height: 80vw;
   }
