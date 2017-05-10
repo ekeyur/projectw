@@ -759,7 +759,7 @@ td{
   overflow: hidden;
 }
 
-@media(max-width: 1128px){
+@media(max-width: 1000px){
   .groomfamily_wrapper{
     height: auto;
     overflow: auto;
@@ -805,6 +805,7 @@ td{
   }
 }
 
+
 .family_gallery{
   margin-left: 30px;
   margin-right: 30px;
@@ -813,6 +814,28 @@ td{
 
 @media(max-width: 454px){
   .family_gallery{
+    position: relative;
+    top: -150px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 0;
+  }
+}
+
+.groomfamily_wrapper .family_gallery{
+  margin-left: 12vw;
+  margin-right: 30px;
+  padding-bottom: 60px;
+}
+
+@media(max-width: 1030px){
+  .groomfamily_wrapper .family_gallery{
+    margin-left: 6vw;
+  }
+}
+
+@media(max-width: 454px){
+  .groomfamily_wrapper .family_gallery{
     position: relative;
     top: -150px;
     margin-left: 0px;
@@ -834,7 +857,7 @@ td{
 }
 
 .groomfamily_wrapper .family_gallery_unit{
-  margin: 15px 2.5vw !important;
+  margin: 15px 1vw !important;
 }
 
 @media(max-width: 504px){
@@ -857,11 +880,11 @@ td{
 }
 
 .groomfamily_wrapper .family_gallery_img{
-  width: 18vw;
-  height: 18vw;
+  width: 17vw;
+  height: 17vw;
 }
 
-@media(max-width: 1128px){
+@media(max-width: 1000px){
   .groomfamily_wrapper .family_gallery_img{
     width: 80vw;
     height: 80vw;
