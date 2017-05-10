@@ -1051,8 +1051,8 @@ td{
   color:white;
   text-align: center;
   margin-bottom: 50px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
+  height: 100vh;
 }
 
 @media (max-width: 900px){
