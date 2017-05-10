@@ -246,6 +246,31 @@ table{
   }
 }
 
+.copyright{
+  position: absolute;
+  bottom: 1vw;
+  left: 2vw;
+  font-size: 0.8vw;
+  color:black;
+}
+
+@media (max-width: 1050px){
+  .copyright{
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 500px){
+  .copyright{
+    font-size: 2.5vw;
+  }
+}
+
+.copyright p{
+  margin-top:0vw;
+  margin-bottom:0vw;
+}
+
 /*search page*/
 
 .search_wrapper{
@@ -1065,7 +1090,7 @@ td{
 .venue_content_wrapper{
   position:absolute;
   left: 0;
-  top: 0px;
+  top: 75px;
   width: 90vw;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -1080,7 +1105,6 @@ td{
 .venue_wrapper h2{
   font-size: 21px;
   letter-spacing: 25px;
-  padding-top: 8vw;
   margin-bottom: 40px;
   color: #DD99BA;
 }
