@@ -1246,13 +1246,18 @@ h3{
 .allguests_wrapper{
   padding-top: 5vh;
   width: 100vw;
+  padding-left: 5vw;
 }
 
 .allguests_table{
   color:black;
+  text-align: center;
   margin-top: 5vh;
-  width: 100% !important;
+  width: 95% !important;
   font-size: 0.8vw;
+}
+.allguests_table tbody tr th{
+  padding: 5px;
 }
 
 
