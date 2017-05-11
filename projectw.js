@@ -183,7 +183,7 @@ app.post('/rsvpguest',function(request,response){
 
 /////////////////////////////////////////
 //Uncomment the below line
-// app.use(auth);
+app.use(auth);
 ///////////////////////////////////////////
 
 // Query to retrieve all the guests

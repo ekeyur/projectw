@@ -249,9 +249,10 @@ table{
 .copyright{
   position: absolute;
   bottom: 1vw;
-  left: 2vw;
+  right: 2vw;
   font-size: 0.8vw;
-  color:black;
+  text-align: center;
+  color: #f67a29;
 }
 
 @media (max-width: 1050px){
@@ -266,7 +267,12 @@ table{
   }
 }
 
-.copyright p{
+.copyright span a {
+  color: #f67a29;
+}
+
+.copyright span{
+  color: #f67a29;
   margin-top:0vw;
   margin-bottom:0vw;
 }
