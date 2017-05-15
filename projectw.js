@@ -80,7 +80,6 @@ app.post('/login', function(request, response) {
    var user = request.body.username;
    var password = request.body.password;
    if (user === config.user && password === config.pass){
-     console.log("helloguys");
      response.send({token:rtoken});
    }else{
      response.send('Login Failed');
@@ -178,6 +177,12 @@ app.post('/rsvpguest',function(request,response){
   .catch(function(err){
     console.log("Err",err);
   });
+});
+
+/// File Upload
+app.post('/upload',upload.single('file') ,function(request, response) {
+  console.log("file uploaded");
+  response.end();
 });
 
 
@@ -304,13 +309,10 @@ app.post('/deleteallguests',function(request,response){
   });
 });
 
-/// File Upload
-app.post('/upload',upload.single('file') ,function(request, response) {
-  response.end();
-});
+
 
 
 // Starting the Server
 app.listen(config.port,function(){
-  console.log("It's Showtime");
+  console.log("It's Showtime on 3008");
 });

@@ -136,9 +136,6 @@ app.config(function($stateProvider,$urlRouterProvider){
 });
 
 //Directives
-
-
-
 //Factory
 app.factory('hangularService',function($http,$cookies,$rootScope){
 	var service = {};
@@ -489,6 +486,7 @@ app.controller('uploadfileController',function($rootScope, $scope,hangularServic
     url : '/upload'
   });
   uploader.onCompleteAll = function(){
+    console.log("upload completed");
     console.info('onCompleteAll');
   };
 
