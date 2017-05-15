@@ -186,21 +186,7 @@ app.post('/upload',upload.single('file') ,function(request, response) {
 });
 
 
-/////////////////////////////////////////
-//Uncomment the below line
-app.use(auth);
-///////////////////////////////////////////
 
-// Query to retrieve all the guests
-app.post('/allguests',function(request,response){
-  Guest.find()
-  .then(function(data){
-    response.send(data);
-  })
-  .catch(function(err){
-    console.log("Error", err);
-  });
-});
 
 //Add a single Guest API
 app.post('/addguest',function(request,response){
@@ -309,7 +295,21 @@ app.post('/deleteallguests',function(request,response){
   });
 });
 
+/////////////////////////////////////////
+//Uncomment the below line
+app.use(auth);
+///////////////////////////////////////////
 
+// Query to retrieve all the guests
+app.post('/allguests',function(request,response){
+  Guest.find()
+  .then(function(data){
+    response.send(data);
+  })
+  .catch(function(err){
+    console.log("Error", err);
+  });
+});
 
 
 // Starting the Server
