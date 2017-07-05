@@ -249,7 +249,7 @@ app.controller('searchController', function($rootScope,$scope, $stateParams, $st
   $rootScope.homeimg = "../assets/home_img_white.png";
   $rootScope.menuimg = "../assets/menu_white.png";
   $scope.searchQuery = function(){
-    if($scope.lname.length > 3){
+    if($scope.lname.length > 2){
       let object = {
         fname : $scope.fname,
         lname : $scope.lname
