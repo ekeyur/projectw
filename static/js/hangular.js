@@ -135,10 +135,11 @@ app.config(function($stateProvider,$urlRouterProvider){
   $urlRouterProvider.otherwise('/nh');
 });
 
-//Directives
+
 //Factory
 app.factory('hangularService',function($http,$cookies,$rootScope){
-	var service = {};
+
+  var service = {};
 
   $rootScope.cookieData = null;
   $rootScope.auth = null;
