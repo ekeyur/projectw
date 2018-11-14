@@ -30,7 +30,7 @@ var sendEmail = mailer.config({
 
 var upload = multer({ storage: storage });
 
-var opts = {
+var mail_Options = {
   fromAddr: 'ekeyur@gmail.com',
   fromName: 'ekeyur',
   region: 'us',
@@ -103,8 +103,6 @@ app.post('/login', function(request, response) {
     }
   }
 
-
-
 // Search Query based on the userinput
 app.get('/searchguests',function(request,response){
   // if(request.query.query.length >= 3){
@@ -148,29 +146,6 @@ app.post('/rsvpguest',function(request,response){
         }
     );
   })
-
-
-
-  // .then(function(data){
-
-
-    ///////////////////////////////////////////// Enable the below lines to send a text for rsvp
-    // let message = guests[0].group;
-    // textbelt.sendTextAsync('1234567890',message+" rsvped.",opts)
-
-  //////////////////////////////////////////// Enable the below lines to send an email for rsvp
-  //   var options = {
-  //     subject : guests[0].group,
-  //     senderName : 'rsvp',
-  //     receiver : 'ekeyur@gmail.com',
-  //     text : JSON.stringify(guests),
-  //   };
-  //   // returning promise for chaining purpose
-  //   return sendEmail(options);
-
-  // })
-
-
   .then(function(data){
     response.send(data);
   })
@@ -184,9 +159,6 @@ app.post('/upload',upload.single('file') ,function(request, response) {
   console.log("file uploaded");
   response.end();
 });
-
-
-
 
 //Add a single Guest API
 app.post('/addguest',function(request,response){

@@ -20,5 +20,8 @@
     "nodemailer-promise": "^1.0.3",
     "textbelt": "0.0.3",
     "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "@angular/cli": "^7.0.5"
   }
 }
