@@ -12,7 +12,6 @@ const config = require('./config');
 const rtoken = uuidV1();
 const textbelt = bluebird.promisifyAll(require('textbelt'));
 
-
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'uploads/');
@@ -22,20 +21,20 @@ var storage = multer.diskStorage({
   }
 });
 
-var sendEmail = mailer.config({
-    email: config.email,
-    password: config.password,
-    server: config.server
-});
+// var sendEmail = mailer.config({
+//     email: config.email,
+//     password: config.password,
+//     server: config.server
+// });
 
 var upload = multer({ storage: storage });
 
-var mail_Options = {
-  fromAddr: 'ekeyur@gmail.com',
-  fromName: 'ekeyur',
-  region: 'us',
-  subject: 'RSVP'
-};
+// var mail_Options = {
+//   fromAddr: 'ekeyur@gmail.com',
+//   fromName: 'ekeyur',
+//   region: 'us',
+//   subject: 'RSVP'
+// };
 
 app.use(express.static('static'));
 app.use(bodyParser.json());

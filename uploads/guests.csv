@@ -1,134 +1,595 @@
-Chandu,Gami,Chandu & Narmada Gami Family,Neha,true,false,true,true
-Narmada,Gami,Chandu & Narmada Gami Family,Neha,true,false,true,true
-Jitendra,Ghodasara,Ankit & Suzan Ghodasara Family,Neha,true,true,true,true
-Jejevanti,Ghodasara,Ankit & Suzan Ghodasara Family,Neha,true,true,true,true
-Ankit,Ghodasara,Ankit & Suzan Ghodasara Family,Neha,true,true,true,true
-Suzan,Ghodasara,Ankit & Suzan Ghodasara Family,Neha,true,true,true,true
-Baby G,Ghodasara,Ankit & Suzan Ghodasara Family,Neha,true,true,true,true
-Ranchoddas,Ghodasara,Ranchoddas & Jaya Ghodasara,Neha,true,false,true,true
-Jaya,Ghodasara,Ranchoddas & Jaya Ghodasara,Neha,true,false,true,true
-Nimish,Godhani,Nimish & Naina Godhani Family,Neha,true,true,true,true
-Naina,Godhani,Nimish & Naina Godhani Family,Neha,true,true,true,true
-Akshat,Godhani,Nimish & Naina Godhani Family,Neha,true,true,true,true
-Dhiru,Gondha,Dhiru & Saroj Gondha,Neha,false,true,true,true
-Saroj,Gondha,Dhiru & Saroj Gondha,Neha,false,true,true,true
-Vithal,Gondha,Vithal & Ranjan Gondha,Neha,false,true,true,true
-Ranjan,Gondha,Vithal & Ranjan Gondha,Neha,false,true,true,true
-Nitin,Jasani,Nitin & Umi Jasani ,Neha,false,true,true,true
-Umi,Jasani,Nitin & Umi Jasani ,Neha,false,true,true,true
-Vinod,Jasani,Vinod & Hansa Jasani,Neha,true,true,true,true
-Hansa,Jasani,Vinod & Hansa Jasani,Neha,true,true,true,true
-Kamlesh,Javiya,Kamlesh & Sushila Javiya Family,Neha,true,true,true,true
-Sushila,Javiya,Kamlesh & Sushila Javiya Family,Neha,true,true,true,true
-Shivali,Javiya,Kamlesh & Sushila Javiya Family,Neha,true,true,true,true
-Bakul,Kalaria,Bakul & Parul Kalaria Family,Neha,true,true,true,true
-Parul,Kalaria,Bakul & Parul Kalaria Family,Neha,true,true,true,true
-Fery,Kalaria,Bakul & Parul Kalaria Family,Neha,true,true,true,true
-Forum,Kalaria,Bakul & Parul Kalaria Family,Neha,true,true,true,true
-Chandrakant,Kalaria,Chandrakant & Kina Kalaria Family,Neha,true,true,true,true
-Kina,Kalaria,Chandrakant & Kina Kalaria Family,Neha,true,true,true,true
-Janki,Kalaria,Chandrakant & Kina Kalaria Family,Neha,true,true,true,true
-Ronak,Kalaria,Chandrakant & Kina Kalaria Family,Neha,true,true,true,true
-Rajesh,Kalaria,Rajesh & Rekha Kalaria Family,Neha,true,true,true,true
-Rekha,Kalaria,Rajesh & Rekha Kalaria Family,Neha,true,true,true,true
-Deep,Kalaria,Rajesh & Rekha Kalaria Family,Neha,true,true,true,true
-Jeet,Kalaria,Rajesh & Rekha Kalaria Family,Neha,true,true,true,true
-Bharat,Kanani,Bharat & Pravina Kanani,Neha,false,true,true,true
-Pravina,Kanani,Bharat & Pravina Kanani,Neha,false,true,true,true
-Rajnikant,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Dimple,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Shailesh,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Jigna,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Aayush,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Yashvi,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Damodarfuva,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Muktafai,Kaneria,Rajnikant & Shailesh Kaneria Family,Neha,true,true,true,true
-Navin,Kanjiya,Dr. Navin & Urmila Kanjiya,Neha,false,true,true,true
-Urmilla,Kanjiya,Dr. Navin & Urmila Kanjiya,Neha,false,true,true,true
-Pravina,Khant,Pravina & Vijay Khant Family,Neha,true,true,true,true
-Vijay,Khant,Pravina & Vijay Khant Family,Neha,true,true,true,true
-Sejal,Khant,Pravina & Vijay Khant Family,Neha,true,true,true,true
-Ashish,Khant,Pravina & Vijay Khant Family,Neha,true,true,true,true
-Chuni,Makadia,Chunilal & Pushpa Makadia Family,Neha,true,true,true,true
-Pushpa,Makadia,Chunilal & Pushpa Makadia Family,Neha,true,true,true,true
-Nishant,Makadia,Chunilal & Pushpa Makadia Family,Neha,true,true,true,true
-Nirma,Makadia,Chunilal & Pushpa Makadia Family,Neha,true,true,true,true
-Dia,Makadia,Chunilal & Pushpa Makadia Family,Neha,true,true,true,true
-Dushyant,Makadia,Dushyant & Shivani Makadia Family,Neha,true,true,true,true
-Shivani,Makadia,Dushyant & Shivani Makadia Family,Neha,true,true,true,true
-Aarya,Makadia,Dushyant & Shivani Makadia Family,Neha,true,true,true,true
-Aaskha,Makadia,Dushyant & Shivani Makadia Family,Neha,true,true,true,true
-Purshottam,Mandavia,Purshottam & Savita Mandavia Family,Neha,true,true,true,true
-Savita,Mandavia,Purshottam & Savita Mandavia Family,Neha,true,true,true,true
-Amit,Mandavia,Purshottam & Savita Mandavia Family,Neha,true,true,true,true
-Parina,Mandavia,Purshottam & Savita Mandavia Family,Neha,true,true,true,true
-Rushil,Mandavia,Purshottam & Savita Mandavia Family,Neha,true,true,true,true
-Krish,Mandavia,Purshottam & Savita Mandavia Family,Neha,true,true,true,true
-Jayanti,Marvania,Jayanti & Jaya Marvania Family,Neha,true,true,true,true
-Jaya,Marvania,Jayanti & Jaya Marvania Family,Neha,true,true,true,true
-Miten,Marvania,Jayanti & Jaya Marvania Family,Neha,true,true,true,true
-Deesha,Marvania,Jayanti & Jaya Marvania Family,Neha,true,true,true,true
-Sia,Marvania,Jayanti & Jaya Marvania Family,Neha,true,true,true,true
-Kiyan,Marvania,Jayanti & Jaya Marvania Family,Neha,true,true,true,true
-Rati,Marvania,Rati & Saroj Marvania Family,Neha,true,true,true,true
-Saroj,Marvania,Rati & Saroj Marvania Family,Neha,true,true,true,true
-Perry,Marvania,Rati & Saroj Marvania Family,Neha,true,true,true,true
-Zeenat,Marvania,Rati & Saroj Marvania Family,Neha,true,true,true,true
-Raj,Marvania,Rati & Saroj Marvania Family,Neha,true,true,true,true
-Neha,Marvania,Rati & Saroj Marvania Family,Neha,true,true,true,true
-Sheila,Marvania,Sheila & Chand Marvania,Neha,true,true,true,true
-Chand,Marvania,Sheila & Chand Marvania,Neha,true,true,true,true
-Vinay,Marvania,Vinay & Varsha Marvania Family,Neha,true,true,true,true
-Varsha,Marvania,Vinay & Varsha Marvania Family,Neha,true,true,true,true
-Sunny,Marvania,Vinay & Varsha Marvania Family,Neha,true,true,true,true
-Shrina,Marvania,Vinay & Varsha Marvania Family,Neha,true,true,true,true
-Ashvin,Patel,Dr. Ashvin & Meena Patel,Neha,false,true,true,true
-Meena,Patel,Dr. Ashvin & Meena Patel,Neha,false,true,true,true
-Jayesh,Patel,Dr. Jayesh & Mira Patel Family,Neha,true,true,true,true
-Mira,Patel,Dr. Jayesh & Mira Patel Family,Neha,true,true,true,true
-Sonam,Patel,Dr. Jayesh & Mira Patel Family,Neha,true,true,true,true
-Soham,Patel,Dr. Jayesh & Mira Patel Family,Neha,true,true,true,true
-Manjulakaki,Patel,Dr. Jayesh & Mira Patel Family,Neha,true,true,true,true
-Kiran,Patel,Kiran & Jaya Patel,Neha,true,true,true,true
-Jaya,Patel,Kiran & Jaya Patel,Neha,true,true,true,true
-Piyush,Patel,Piyush & Setu Patel Family,Neha,true,true,true,true
-Setu,Patel,Piyush & Setu Patel Family,Neha,true,true,true,true
-Amay,Patel,Piyush & Setu Patel Family,Neha,true,true,true,true
-Aashay,Patel,Piyush & Setu Patel Family,Neha,true,true,true,true
-Aneri,Patel,Piyush & Setu Patel Family,Neha,true,true,true,true
-Pravin,Saija,Dr. Pravin & Arti Saija,Neha,true,true,true,true
-Arti,Saija,Dr. Pravin & Arti Saija,Neha,true,true,true,true
-Dhiraj,Saparia,Dhiraj & Usha Saparia Family,Neha,true,true,true,true
-Usha,Saparia,Dhiraj & Usha Saparia Family,Neha,true,true,true,true
-Kishan,Saparia,Dhiraj & Usha Saparia Family,Neha,true,true,true,true
-Gita,Saparia,Dhiraj & Usha Saparia Family,Neha,true,true,true,true
-Amu,Vachhani,Amu & Kanta Vachhani,Neha,true,true,true,true
-Kanta,Vachhani,Amu & Kanta Vachhani,Neha,true,true,true,true
-Kanti,Vachhani,Kanti & Indu Vachhani Family,Neha,true,true,true,true
-Indu,Vachhani,Kanti & Indu Vachhani Family,Neha,true,true,true,true
-Ravi,Vachhani,Kanti & Indu Vachhani Family,Neha,true,true,true,true
-Hetal,Vachhani,Kanti & Indu Vachhani Family,Neha,true,true,true,true
-Aarna,Vachhani,Kanti & Indu Vachhani Family,Neha,true,true,true,true
-Manhar,Vachhani,Manhar & Narmada Vachhani Family,Neha,true,true,true,true
-Narmada,Vachhani,Manhar & Narmada Vachhani Family,Neha,true,true,true,true
-Herit,Vachhani,Manhar & Narmada Vachhani Family,Neha,true,true,true,true
-Silva,Vachhani,Manhar & Narmada Vachhani Family,Neha,true,true,true,true
-Monika,Vachhani,Monika & Aakar Vachhani,Neha,true,true,true,true
-Aakar,Vachhani,Monika & Aakar Vachhani,Neha,true,true,true,true
-Purshottam,Vachhani,Purshottam & Niru Vachhani,Neha,true,true,true,true
-Niru,Vachhani,Purshottam & Niru Vachhani,Neha,true,true,true,true
-Vinu,Vachhani,Dr. Vinu & Pushpa Vachhani Family,Neha,true,true,true,true
-Pushpa,Vachhani,Dr. Vinu & Pushpa Vachhani Family,Neha,true,true,true,true
-Raj,Vachhani,Dr. Vinu & Pushpa Vachhani Family,Neha,true,true,true,true
-Kusum,Gondha,Kusum Gondha,Neha,true,true,true,true
-Viveka,Gondha,Kusum Gondha,Neha,true,true,true,true
-Harshkant,Kalaria,Harshkant & Jagruti Kalaria Family,Neha,true,true,true,true
-Jagruti,Kalaria,Harshkant & Jagruti Kalaria Family,Neha,true,true,true,true
-Shiv,Kalaria,Harshkant & Jagruti Kalaria Family,Neha,true,true,true,true
-Aayu,Kalaria,Harshkant & Jagruti Kalaria Family,Neha,true,true,true,true
-Shailesh,Dalsania,Shailesh & Seema Dalsania Family,Neha,true,true,true,true
-Seema,Dalsania,Shailesh & Seema Dalsania Family,Neha,true,true,true,true
-Kruti,Dalsania,Shailesh & Seema Dalsania Family,Neha,true,true,true,true
-Ansh,Dalsania,Shailesh & Seema Dalsania Family,Neha,true,true,true,true
-Dipak,Aggarwal,Dipak & Savita Aggarwal,Neha,false,false,false,true
-Savita,Aggarwal,Dipak & Savita Aggarwal,Neha,false,false,false,true
+﻿fname,lname,group,city,mandvo,garba,wedding,reception
+Gautum,Chokhsi,Mr. and Mrs. Chokshi,,TRUE,FALSE,TRUE,FALSE
+Sulochana,Chokhsi,Mr. and Mrs. Chokshi,,TRUE,FALSE,TRUE,FALSE
+Keyur,Dalsania,Keyur Dalsania & Family,,TRUE,FALSE,TRUE,TRUE
+Shivani,Dalsania,Keyur Dalsania & Family,,TRUE,FALSE,TRUE,TRUE
+Parsotam,Dalsania,Keyur Dalsania & Family,,TRUE,FALSE,TRUE,FALSE
+Manjuben,Dalsania,Keyur Dalsania & Family,,TRUE,FALSE,TRUE,FALSE
+Suman,Pandya,Mr. and Mrs. Pandya,,TRUE,FALSE,TRUE,TRUE
+Lata,Pandya,Mr. and Mrs. Pandya,,TRUE,FALSE,TRUE,TRUE
+Crystal,Finnerty,Crystal ,,FALSE,FALSE,TRUE,TRUE
+Jaynti,Ghetia,Mr. and Mrs. Ghetia,,TRUE,FALSE,TRUE,FALSE
+Kanta,Ghetia,Mr. and Mrs. Ghetia,,TRUE,FALSE,TRUE,FALSE
+Malisa,Hamptom,Malisa,,FALSE,FALSE,TRUE,TRUE
+Ajay,Kapadia,Mr. and Mrs. Kapadia,,TRUE,FALSE,TRUE,FALSE
+Aruna,Kapadia,Mr. and Mrs. Kapadia,,TRUE,FALSE,TRUE,FALSE
+Manikant,Lodaya,Mr. and Mrs. Lodaya,,FALSE,FALSE,TRUE,FALSE
+Lilavanti,Lodaya,Mr. and Mrs. Lodaya,,FALSE,FALSE,TRUE,FALSE
+Michael,Martucci,Michael,,TRUE,FALSE,TRUE,TRUE
+Plus one,Plus one,Michael,,FALSE,FALSE,TRUE,TRUE
+Suzanne,Mattern,Suzanne,,FALSE,FALSE,TRUE,TRUE
+Ron,Norris,Mr. and Mrs. Norris,,FALSE,FALSE,FALSE,TRUE
+Mrs.,Norris,Mr. and Mrs. Norris,,FALSE,FALSE,FALSE,TRUE
+Amu,Patel,Mr. and Mrs. Amu Patel,,FALSE,FALSE,TRUE,FALSE
+Jashu,Patel,Mr. and Mrs. Amu Patel,,FALSE,FALSE,TRUE,FALSE
+Arvind,Patel ,Mr. and Mrs. Arvind Patel,,TRUE,FALSE,TRUE,FALSE
+Koki,Patel,Mr. and Mrs. Arvind Patel,,TRUE,FALSE,TRUE,FALSE
+Ashok,Patel,Mr. and Mrs. Ashok Patel,,TRUE,FALSE,TRUE,FALSE
+Mita,Patel,Mr. and Mrs. Ashok Patel,,TRUE,FALSE,TRUE,FALSE
+Ashwin,Patel,Mr. and Mrs. Ashwin Patel,FL,TRUE,FALSE,TRUE,FALSE
+Hemaxi,Patel,Mr. and Mrs. Ashwin Patel,,TRUE,FALSE,TRUE,FALSE
+Atul,Patel,Atul Patel & Family,FL,TRUE,FALSE,TRUE,TRUE
+Kavita,Patel,Atul Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Sudha,Patel,Atul Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Shivani,Patel,Atul Patel & Family,,FALSE,FALSE,TRUE,FALSE
+Savan,Patel,Atul Patel & Family,,FALSE,FALSE,TRUE,FALSE
+Chandrakant,Patel,Mr. and Mrs. Chandrakant Patel,,FALSE,FALSE,TRUE,FALSE
+Maya,Patel,Mr. and Mrs. Chandrakant Patel,,TRUE,FALSE,TRUE,FALSE
+Ghanshyam,Patel,Ghanshyam Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Smita,Patel,Ghanshyam Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Chandrakant,Patel,Ghanshyam Patel & Family,,TRUE,FALSE,FALSE,FALSE
+Usha,Patel,Ghanshyam Patel & Family,,TRUE,FALSE,FALSE,FALSE
+Haresh,Patel,Haresh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Deepa,Patel,Haresh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Sunny,Patel,Haresh Patel & Family,,FALSE,FALSE,TRUE,FALSE
+,Patel,Haresh Patel & Family,,TRUE,FALSE,TRUE,FALSE
+,Patel,Haresh Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Hitesh,Patel,Mr. and Mrs. Hitesh Patel,,TRUE,FALSE,TRUE,FALSE
+Shital,Patel,Mr. and Mrs. Hitesh Patel,,TRUE,FALSE,TRUE,FALSE
+Jatin,Patel,Mr. and Mrs. Jatin Patel,,TRUE,FALSE,TRUE,FALSE
+Smita,Patel,Mr. and Mrs. Jatin Patel,,TRUE,FALSE,TRUE,FALSE
+Ken,Patel,Mr. and Mrs. Ken Patel,,TRUE,FALSE,TRUE,FALSE
+Jayshree,Patel,Mr. and Mrs. Ken Patel,,TRUE,FALSE,TRUE,FALSE
+Mahesh ,Patel,Mr. and Mrs. Mahesh Patel,,FALSE,FALSE,TRUE,FALSE
+Gita,Patel,Mr. and Mrs. Mahesh Patel,,TRUE,FALSE,TRUE,FALSE
+Manoj ,Patel,Manoj Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Annu ,Patel,Manoj Patel & Family,,TRUE,FALSE,TRUE,FALSE
+,Patel,Manoj Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Meena,Patel,Meena,,TRUE,FALSE,TRUE,FALSE
+Nilesh,Patel,Nilesh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Jagruti,Patel,Nilesh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Asmita,Patel,Nilesh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Ramesh,Patel,Mr. and Mrs. Ramesh Patel,,TRUE,FALSE,TRUE,FALSE
+Smita,Patel,Mr. and Mrs. Ramesh Patel,,TRUE,FALSE,TRUE,FALSE
+Sameer,Patel,Mr. and Mrs. Sameer Patel,,TRUE,FALSE,TRUE,FALSE
+Minal ,Patel,Mr. and Mrs. Sameer Patel,,TRUE,FALSE,TRUE,FALSE
+Sandeep,Patel,Mr. and Mrs. Sandeep Patel,,TRUE,FALSE,TRUE,FALSE
+Kumud,Patel,Mr. and Mrs. Sandeep Patel,,TRUE,FALSE,TRUE,FALSE
+Vipul,Patel,Vipul Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Vaishali,Patel,Vipul Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Vijal,Patel,Vipul Patel & Family,,,,,
+Deepak,Patidar,Mr. and Mrs. Deepak Patidar,,TRUE,FALSE,TRUE,FALSE
+Bella,Patidar,Mr. and Mrs. Deepak Patidar,,TRUE,FALSE,TRUE,FALSE
+Indravadan,Shah,Mr. and Mrs. Indravadan Shah,,TRUE,FALSE,TRUE,FALSE
+Usha,Shah,Mr. and Mrs. Indravadan Shah,,TRUE,FALSE,TRUE,FALSE
+Mahesh ,Shah,Mr. and Mrs. Mahesh Shah,,FALSE,FALSE,TRUE,FALSE
+Rashmi,Shah,Mr. and Mrs. Mahesh Shah,,FALSE,FALSE,TRUE,FALSE
+Manoj ,Shah,Mr. and Mrs. Manoj Shah,,TRUE,FALSE,TRUE,FALSE
+Pana,Shah,Mr. and Mrs. Manoj Shah,,TRUE,FALSE,TRUE,FALSE
+Raskin,Shah,Mr. and Mrs. Raskin Shah,,TRUE,FALSE,TRUE,TRUE
+Neha,Shah,Mr. and Mrs. Raskin Shah,,TRUE,FALSE,TRUE,TRUE
+Chetan,Shelat,Mr. and Mrs. Chetan Shelat,,TRUE,FALSE,TRUE,FALSE
+Jigisha,Shelat,Mr. and Mrs. Chetan Shelat,,TRUE,FALSE,TRUE,FALSE
+Kirit,Bhalani,Mr. and Mrs. Kirit Bhalani,,FALSE,FALSE,FALSE,TRUE
+Bhanu,Bhalani,Mr. and Mrs. Kirit Bhalani,,FALSE,FALSE,FALSE,TRUE
+Ashit,Dalal,Mr. and Mrs. Ashit Dalal,,TRUE,FALSE,FALSE,TRUE
+Chitali,Dalal,Mr. and Mrs. Ashit Dalal,,TRUE,FALSE,FALSE,TRUE
+Nitin,Hate,Mr. and Mrs. Nitin Hate,,TRUE,FALSE,FALSE,TRUE
+Vidya,Hate,Mr. and Mrs. Nitin Hate,,TRUE,FALSE,FALSE,TRUE
+Ramesh,Mathur,Mr. and Mrs. Ramesh Mathur,,TRUE,FALSE,FALSE,TRUE
+Uma,Mathur,Mr. and Mrs. Ramesh Mathur,,TRUE,FALSE,FALSE,TRUE
+Kiran,Modi,Mr. and Mrs. Kiran Modi,,TRUE,FALSE,FALSE,TRUE
+Gita,Modi,Mr. and Mrs. Kiran Modi,,TRUE,FALSE,FALSE,TRUE
+Priti,Modi,Mr. and Mrs. Kiran Modi,,,,,
+Ravi,Palaniyandi,Mr. and Mrs. Ravi Palaniyandi,,TRUE,FALSE,FALSE,TRUE
+Ambika,Palaniyandi,Mr. and Mrs. Ravi Palaniyandi,,TRUE,FALSE,FALSE,TRUE
+Bharat,Patel,Mr. and Mrs. Bharat Patel,,TRUE,FALSE,FALSE,TRUE
+Dipti,Patel,Mr. and Mrs. Bharat Patel,,TRUE,FALSE,FALSE,TRUE
+Ramesh,Patel,Mr. and Mrs. Ramesh Patel,,TRUE,FALSE,FALSE,TRUE
+Nilam,Patel,Mr. and Mrs. Ramesh Patel,,TRUE,FALSE,FALSE,TRUE
+Ravi,Ramen,Mr. and Mrs. Ravi Ramen,,TRUE,FALSE,FALSE,TRUE
+Shruti,Ramen,Mr. and Mrs. Ravi Ramen,,TRUE,FALSE,FALSE,TRUE
+Ravi,Rao,Mr. and Mrs. Ravi Rao,,TRUE,FALSE,FALSE,TRUE
+Mrs. ,Rao,Mr. and Mrs. Ravi Rao,,TRUE,FALSE,FALSE,TRUE
+Yas,Sachdev,Mr. and Mrs. Yas Sachdev,,TRUE,FALSE,FALSE,TRUE
+Sarita,Sachdev,Mr. and Mrs. Yas Sachdev,,TRUE,FALSE,FALSE,TRUE
+Ashok,Shah,Ashok Shah & Family,,TRUE,FALSE,TRUE,TRUE
+Gita,Shah,Ashok Shah & Family,,TRUE,FALSE,TRUE,TRUE
+Megha,Shah,Ashok Shah & Family,,,,,
+Chirag,Shah,Ashok Shah & Family,,,,,
+Sachin,Shenoy,Shenoy,,TRUE,FALSE,FALSE,TRUE
+Simon,Symonides,Mr. and Mrs. Simon Symonides,,FALSE,FALSE,FALSE,TRUE
+Mrs. ,Symonides,Mr. and Mrs. Simon Symonides,,FALSE,FALSE,FALSE,TRUE
+Gary,Torres,Torres,,FALSE,FALSE,FALSE,TRUE
+Guest,Guest,Torres,,FALSE,FALSE,FALSE,TRUE
+Shyam,Verma,Shyam Verma & Family,,TRUE,FALSE,FALSE,TRUE
+Anita,Verma,Shyam Verma & Family,,TRUE,FALSE,FALSE,TRUE
+Sean,Verma,Shyam Verma & Family,,FALSE,FALSE,FALSE,TRUE
+Gangadhar,Barik,Mr. and Mrs. Barik,,FALSE,FALSE,TRUE,FALSE
+Anita,Barik,Mr. and Mrs. Barik,,FALSE,FALSE,TRUE,FALSE
+Hari,Bhadja,Mr. and Mrs. Hari Bhadja,,FALSE,FALSE,TRUE,TRUE
+Damu,Bhadja,Mr. and Mrs. Hari Bhadja,,FALSE,FALSE,TRUE,TRUE
+Bharat,Padalia,Mr. and Mrs. Bharat Padalia,,FALSE,FALSE,TRUE,TRUE
+Meena,Padalia,Mr. and Mrs. Bharat Padalia,,TRUE,TRUE,TRUE,TRUE
+Raj & Spouse,,,,,,,
+Puja & Spouse,,,,,,,
+Limba,Pansara,Mr. and Mrs. Limba Pansara,,FALSE,FALSE,FALSE,TRUE
+Hema,Pansara,Mr. and Mrs. Limba Pansara,,FALSE,FALSE,FALSE,TRUE
+Tulsi,Pipila,Mr. and Mrs. Tulsi Pipila,,FALSE,FALSE,FALSE,TRUE
+Harsha,Pipila,Mr. and Mrs. Tulsi Pipila,,FALSE,FALSE,FALSE,TRUE
+Lakha,Ghedia,Mr. and Mrs. Lakha Ghedia,,FALSE,FALSE,FALSE,TRUE
+Bharti,Ghedia,Mr. and Mrs. Lakha Ghedia,,FALSE,FALSE,FALSE,TRUE
+,Prasan,Mr. and Mrs. Prasan,,FALSE,FALSE,TRUE,FALSE
+,Prasan,Mr. and Mrs. Prasan,,FALSE,FALSE,TRUE,FALSE
+Jeram,Chapla,Jeram Chapla & Family,,TRUE,FALSE,TRUE,TRUE
+Saroj,Chapla,Jeram Chapla & Family,,TRUE,FALSE,TRUE,TRUE
+Kavita,Chapla,Jeram Chapla & Family,,TRUE,FALSE,TRUE,TRUE
+Ashok,Chavda,Ashok Chavda & Family,,TRUE,FALSE,TRUE,TRUE
+Bhanu,Chavda,Ashok Chavda & Family,,TRUE,FALSE,TRUE,TRUE
+Mitesh,Chavda,Ashok Chavda & Family,,TRUE,FALSE,TRUE,TRUE
+Sky,Chavda,Ashok Chavda & Family,,TRUE,FALSE,TRUE,TRUE
+Avani,Chavda,Ashok Chavda & Family,,TRUE,FALSE,TRUE,TRUE
+Natavarlal,Dalsania,Natavralal Dalsania & Family,,TRUE,FALSE,TRUE,TRUE
+Rama,Dalsania,Natavralal Dalsania & Family,,TRUE,FALSE,TRUE,TRUE
+Ami,Dalsania,Natavralal Dalsania & Family,,TRUE,FALSE,TRUE,TRUE
+Kanti,Bhalani,Kanti Bhalani & Family,,TRUE,FALSE,TRUE,TRUE
+Gita,Bhalani,Kanti Bhalani & Family,,TRUE,FALSE,TRUE,TRUE
+Ba,Bhalani,Kanti Bhalani & Family,,TRUE,FALSE,TRUE,FALSE
+Jayesh,Patel,Jayesh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Parul,Patel,Jayesh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Jaas,Patel,Jayesh Patel & Family,,,,,
+Vishu,Patel,Jayesh Patel & Family,,,,,
+Kamal,Faldu,Kamal Faldu & Family,,TRUE,TRUE,TRUE,TRUE
+Usha,Faldu,Kamal Faldu & Family,,TRUE,TRUE,TRUE,TRUE
+Prayag,Faldu,Kamal Faldu & Family,,TRUE,TRUE,TRUE,TRUE
+Premal,Faldu,Kamal Faldu & Family,,TRUE,TRUE,TRUE,TRUE
+Naren,Jadeja,Naren Jadeja & Family,,TRUE,FALSE,TRUE,TRUE
+Rama,Jadeja,Naren Jadeja & Family,,TRUE,FALSE,TRUE,TRUE
+Shivam,Jadeja,Naren Jadeja & Family,,TRUE,FALSE,TRUE,TRUE
+Hitesh,Patel,Hitesh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Manisha,Patel,Hitesh Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Rudrakh,Patel,Hitesh Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Manan,Patel,Hitesh Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Kaushik,Patel,Kaushik Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Alpa,Patel,Kaushik Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Kanti,Patel,Kaushik Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Champa,Patel,Kaushik Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Murti,Patel,Kaushik Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Devi,Patel,Kaushik Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Mahesh ,Patel,Mahesh & Jaya Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Jaya,Patel,Mahesh & Jaya Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Bijal,Patel,Mahesh & Jaya Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Myank,Patel,Mahesh & Jaya Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Kinjal,Patel,Mahesh & Jaya Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Rajesh,Patel,Rajesh & Tulsi Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Tusli,Patel,Rajesh & Tulsi Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Laxma,Patel,Rajesh & Tulsi Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Pratik,Patel,Rajesh & Tulsi Patel & Family,,TRUE,FALSE,TRUE,
+Lisa,Patel,Rajesh & Tulsi Patel & Family,,TRUE,FALSE,TRUE,FALSE
+Ramesh,Patel,Ramesh & Sumitra Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Sumitra,Patel,Ramesh & Sumitra Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Bhavin,Patel,Ramesh & Sumitra Patel & Family,,TRUE,FALSE,TRUE,TRUE
+Sunil,Patel,Hiral Patel & Family,,,,,
+Hiral,Patel,Hiral Patel & Family,,,,,
+Sonam,Patel,Hiral Patel & Family,,,,,
+Daughter,Patel,Hiral Patel & Family,,,,,
+Naran,Rola,Naran Rola & Family,,TRUE,FALSE,TRUE,TRUE
+Dina,Rola,Naran Rola & Family,,TRUE,FALSE,TRUE,TRUE
+Mukesh,Rola,Naran Rola & Family,,,,,
+Jigna,Rola,Naran Rola & Family,,,,,
+Vasant,Thakkar,Vasant Thakkar & Family,,TRUE,FALSE,TRUE,TRUE
+Gita,Thakkar,Vasant Thakkar & Family,,TRUE,FALSE,TRUE,TRUE
+Hetal,,Vasant Thakkar & Family,,FALSE,FALSE,TRUE,FALSE
+Tracy,,Vasant Thakkar & Family,,FALSE,FALSE,TRUE,FALSE
+Kid,,Vasant Thakkar & Family,,FALSE,FALSE,TRUE,FALSE
+Kid,,Vasant Thakkar & Family,,FALSE,FALSE,TRUE,FALSE
+Kanta,Virani,Mrs. Virani,,TRUE,FALSE,TRUE,TRUE
+Nazish,Ahmed,Nazish Ahmed & Family,,FALSE,FALSE,TRUE,FALSE
+Zuhair,Ahmed,Nazish Ahmed & Family,,FALSE,FALSE,TRUE,FALSE
+Raiyan,Ahmed,Nazish Ahmed & Family,,FALSE,FALSE,TRUE,FALSE
+Chad,Bassi,Chad Bassi,,FALSE,FALSE,TRUE,FALSE
+Vorice,Batts,Mr. & Mrs. Batts,,TRUE,FALSE,TRUE,TRUE
+Noriss,Batts,Mr. & Mrs. Batts,,FALSE,FALSE,TRUE,FALSE
+Sharmie,Bhagwandeen,Sharmie Bhagwandeen,,FALSE,FALSE,TRUE,FALSE
+Shawniece,Boss,Mr. & Mrs. Boss,,FALSE,FALSE,TRUE,FALSE
+Bryan,Boss,Mr. & Mrs. Boss,,FALSE,FALSE,TRUE,FALSE
+Carly,Chapman,Mr. & Mrs. Chapman,,TRUE,FALSE,TRUE,TRUE
+Ashton,Chapman,Mr. & Mrs. Chapman,,FALSE,FALSE,TRUE,FALSE
+Cynthia,Correa,Cynthia Correa,,FALSE,FALSE,TRUE,FALSE
+Gene,Corse,Gene Corse,,FALSE,FALSE,TRUE,FALSE
+Ben,Bituin,Dr. Ben Bituin,,FALSE,FALSE,TRUE,FALSE
+Erica,Elkins,Mr. & Mrs. Elkins,,TRUE,FALSE,TRUE,TRUE
+Scott,Elkins,Mr. & Mrs. Elkins,,FALSE,FALSE,TRUE,FALSE
+Ellen,Espenschied,Ellen Espenschied,,TRUE,FALSE,TRUE,TRUE
+Shaz,Ghori,Mr. & Mrs. Ghori,,TRUE,TRUE,TRUE,TRUE
+Jane,Ghori,Mr. & Mrs. Ghori,,TRUE,TRUE,TRUE,TRUE
+Don,Godfree,Don Godfree & Family,,TRUE,TRUE,TRUE,TRUE
+Tori,Godfree,Don Godfree & Family,,TRUE,TRUE,TRUE,TRUE
+Ainsley,Godfree,Don Godfree & Family,,TRUE,TRUE,TRUE,TRUE
+Ashley,Haines,Ashley Haines,,TRUE,TRUE,TRUE,TRUE
+Michelle,Haldeman,Michelle Haldeman,,TRUE,TRUE,TRUE,TRUE
+Sang,Han,Sang Han,,TRUE,TRUE,TRUE,TRUE
+Rose,James,Rose James,,TRUE,TRUE,TRUE,TRUE
+Thomas,Joseph,Thomas Joseph,,TRUE,TRUE,TRUE,TRUE
+Swati,Makadia,Swati Makadia & Family,,TRUE,TRUE,TRUE,TRUE
+Sunal,Makadia,Swati Makadia & Family,,TRUE,TRUE,TRUE,TRUE
+Amaya,Makadia,Swati Makadia & Family,,TRUE,TRUE,TRUE,TRUE
+April,Nelson,April Nelson,,TRUE,TRUE,TRUE,TRUE
+Andy,Orta,Andy Orta,,TRUE,TRUE,TRUE,TRUE
+Amy,Patel,Amy & Taral Patel ,,TRUE,TRUE,TRUE,TRUE
+Taral,Patel,Amy & Taral Patel ,,TRUE,TRUE,TRUE,TRUE
+Payal,Patel,Payal & Jigs Patel,,TRUE,TRUE,TRUE,TRUE
+Jigs,Patel,Payal & Jigs Patel,,TRUE,TRUE,TRUE,TRUE
+Shetal,Patel,Shetal & Keyur Patel,,TRUE,TRUE,TRUE,TRUE
+Keyur,Patel,Shetal & Keyur Patel,,TRUE,TRUE,TRUE,TRUE
+Eileen,Rivero,Eileen Rivero,,TRUE,TRUE,TRUE,TRUE
+Sharon,Shah,Dr. Sharon & Sunny Shah,,TRUE,TRUE,TRUE,TRUE
+Sunny,Shah,Dr. Sharon & Sunny Shah,,TRUE,TRUE,TRUE,TRUE
+Abbie,Skov,Mr. & Mrs. Skov,,TRUE,TRUE,TRUE,TRUE
+Jarret,Skov,Mr. & Mrs. Skov,,TRUE,TRUE,TRUE,TRUE
+Sneha,Suthar,Sneha & Tarak Suthar,,TRUE,TRUE,TRUE,TRUE
+Tarak,Suthar,Sneha & Tarak Suthar,,TRUE,TRUE,TRUE,TRUE
+Jim,Swienconeck,Jim Swienconeck,,TRUE,TRUE,TRUE,TRUE
+Kathleen,Telusma,Mr. & Mrs. Telusma,,TRUE,TRUE,TRUE,TRUE
+Mathis,Telusma,Mr. & Mrs. Telusma,,TRUE,TRUE,TRUE,TRUE
+Nahad,Wassel,Nahad Wassel,,TRUE,TRUE,TRUE,TRUE
+Pallavi,Yalla,Mrs. Pallavi & Dr. Kayshup Yalla,,TRUE,TRUE,TRUE,TRUE
+Kayshup,Yalla,Mrs. Pallavi & Dr. Kayshup Yalla,,TRUE,TRUE,TRUE,TRUE
+Dhavan,Bhalodia,Dhavan & Sweta Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Sweta,Bhalodia,Dhavan & Sweta Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Kid,Bhalodia,Dhavan & Sweta Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Raju,Bhut,Raju & Bhavana Bhut Family,,TRUE,TRUE,TRUE,TRUE
+Bhavana,Bhut,Raju & Bhavana Bhut Family,,TRUE,TRUE,TRUE,TRUE
+Kid,Bhut,Raju & Bhavana Bhut Family,,TRUE,TRUE,TRUE,TRUE
+Kid 2,Bhut,Raju & Bhavana Bhut Family,,TRUE,TRUE,TRUE,TRUE
+Suresh,Bhut,Suresh and Wife Bhut,,TRUE,TRUE,TRUE,TRUE
+Wife,Bhut,Suresh and Wife Bhut,,TRUE,TRUE,TRUE,TRUE
+Viraj,Panara,Dr. Viraj & Mrs. Tusha Panara,,TRUE,TRUE,TRUE,TRUE
+Tusha,Panara,Dr. Viraj & Mrs. Tusha Panara,,TRUE,TRUE,TRUE,TRUE
+Bipin,Popat,Dr. Bipin & Darling Popat,,TRUE,TRUE,TRUE,TRUE
+Darling,Popat,Dr. Bipin & Darling Popat,,TRUE,TRUE,TRUE,TRUE
+Vimal,Faldu,Vimal & Manisha Faldu,,TRUE,TRUE,TRUE,TRUE
+Manisha,Faldu,Vimal & Manisha Faldu,,TRUE,TRUE,TRUE,TRUE
+Kid,Faldu,Vimal & Manisha Faldu,,TRUE,TRUE,TRUE,TRUE
+Kid 2,Faldu,Vimal & Manisha Faldu,,TRUE,TRUE,TRUE,TRUE
+Raju,Kaneria,Raju & Alka Kaneria,,TRUE,TRUE,TRUE,TRUE
+Alka,Kaneria,Raju & Alka Kaneria,,TRUE,TRUE,TRUE,TRUE
+Hasmukh,Panara,Hasmukh & Vanita Panara,,TRUE,TRUE,TRUE,TRUE
+Vanita,Panara,Hasmukh & Vanita Panara,,TRUE,TRUE,TRUE,TRUE
+Ramit,Panara,Ramit & Mintu Panara,,TRUE,TRUE,TRUE,TRUE
+Mintu,Panara,Ramit & Mintu Panara,,TRUE,TRUE,TRUE,TRUE
+Shantilal,Panara,Shantilal & Rasila Panara,,TRUE,TRUE,TRUE,TRUE
+Rasila,Panara,Shantilal & Rasila Panara,,TRUE,TRUE,TRUE,TRUE
+Ekta,Patel,Ekta Patel,,TRUE,TRUE,TRUE,TRUE
+Pravin,Popat,Pravin & Lakshmi Popat,,TRUE,TRUE,TRUE,TRUE
+Lakshmi,Popat,Pravin & Lakshmi Popat,,TRUE,TRUE,TRUE,TRUE
+Samir,Vishnagari,Samir & Surbhi Vishnagari Family,,TRUE,TRUE,TRUE,TRUE
+Surbhi,Vishnagari,Samir & Surbhi Vishnagari Family,,TRUE,TRUE,TRUE,TRUE
+Prabhaben,Vishnagari,Samir & Surbhi Vishnagari Family,,TRUE,TRUE,TRUE,TRUE
+Parsotam,Vishnagari,Samir & Surbhi Vishnagari Family,,TRUE,TRUE,TRUE,TRUE
+Kid,Vishnagari,Samir & Surbhi Vishnagari Family,,TRUE,TRUE,TRUE,TRUE
+Kid 2,Vishnagari,Samir & Surbhi Vishnagari Family,,TRUE,TRUE,TRUE,TRUE
+Anil,Vishnagra,Anil & Sheela Vishnagra,,TRUE,TRUE,TRUE,TRUE
+Sheela,Vishnagra,Anil & Sheela Vishnagra,,TRUE,TRUE,TRUE,TRUE
+Jaman,Banugaria,Jaman & Vanita Banugaria Family,,TRUE,TRUE,TRUE,TRUE
+Vanita,Banugaria,Jaman & Vanita Banugaria Family,,TRUE,TRUE,TRUE,TRUE
+Chatrabhuj,Banugaria,Jaman & Vanita Banugaria Family,,TRUE,TRUE,TRUE,TRUE
+Jamku,Banugaria,Jaman & Vanita Banugaria Family,,TRUE,TRUE,TRUE,TRUE
+Umang,Banugaria,Jaman & Vanita Banugaria Family,,TRUE,TRUE,TRUE,TRUE
+Amit,Barochia,Dr. Amit & Kajal Barochia Family,,TRUE,TRUE,TRUE,TRUE
+Kajal,Barochia,Dr. Amit & Kajal Barochia Family,,TRUE,TRUE,TRUE,TRUE
+Kush,Barochia,Amit & Kajal Barochia Family,,TRUE,TRUE,TRUE,TRUE
+Aayush,Barochia,Amit & Kajal Barochia Family,,TRUE,TRUE,TRUE,TRUE
+Hemangi,Barochia,Hemangi & Sanjay Barochia,,TRUE,TRUE,TRUE,TRUE
+Sanjay,Barochia,Hemangi & Sanjay Barochia,,TRUE,TRUE,TRUE,TRUE
+Anil,Bhalani,Anil & Sanjay Bhalani,,TRUE,TRUE,TRUE,TRUE
+Urmila,Bhalani,Anil & Sanjay Bhalani,,TRUE,TRUE,TRUE,TRUE
+Apul,Bhalani,Apul & Neena Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Neena,Bhalani,Apul & Neena Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Rishan,Bhalani,Apul & Neena Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Aarika,Bhalani,Apul & Neena Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Ashvina,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Roshani,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Akash,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Sneha,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Suraj,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Baa,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Bapuji,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Kantabaa,Bhalani,Ashvin & Roshani Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Avish,Bhalani,Avish & Bansi Bhalani,,TRUE,TRUE,TRUE,TRUE
+Bansi,Bhalani,Avish & Bansi Bhalani,,TRUE,TRUE,TRUE,TRUE
+Harish,Bhalani,Harish & Anila Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Anila,Bhalani,Harish & Anila Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Parag,Bhalani,Harish & Anila Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Mena,Bhalani,Harish & Anila Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Aashna,Bhalani,Harish & Anila Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Arjun,Bhalani,Harish & Anila Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Preeti,Bhalani,Harish & Anila Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Havish,Bhalani,Havish & Radha Bhalani,,TRUE,TRUE,TRUE,TRUE
+Radha,Bhalani,Havish & Radha Bhalani,,TRUE,TRUE,TRUE,TRUE
+Hemant,Bhalani,Hemant & Vanita Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Vanita,Bhalani,Hemant & Vanita Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Shyam,Bhalani,Hemant & Vanita Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Jay,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Santa,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Chetan,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Rinku,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Ruchi,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Ketan,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Hiral,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Krish,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Sahana,Bhalani,Jay & Santa Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Kanti,Bhalani,Kanti & Rama Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Rama,Bhalani,Kanti & Rama Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Akta,Bhalani,Kanti & Rama Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Anup,Bhalani,Kanti & Rama Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Krupa,Bhalani,Kanti & Rama Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Manish,Bhalani,Manish & Hiral Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Hiral,Bhalani,Manish & Hiral Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Amaya,Bhalani,Manish & Hiral Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Mansukh,Bhalani,Mansukh & Neeta Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Neeta,Bhalani,Mansukh & Neeta Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Janki,Bhalani,Mansukh & Neeta Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Mohit,Bhalani,Mansukh & Neeta Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Mukesh,Bhalani,Mukesh & Mital Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Mital,Bhalani,Mukesh & Mital Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Meet,Bhalani,Mukesh & Mital Bhalani Family,,TRUE,TRUE,TRUE,TRUE
+Nalin,Bhalani,Nalin & Archana Bhalani,,TRUE,TRUE,TRUE,TRUE
+Archana,Bhalani,Nalin & Archana Bhalani,,TRUE,TRUE,TRUE,TRUE
+Pravina,Bhalani,Pravina Bhalani,,TRUE,TRUE,TRUE,TRUE
+Amrutlal,Bhalodia,Amrutlal & Lalita Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Lalita,Bhalodia,Amrutlal & Lalita Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Keyur,Bhalodia,Amrutlal & Lalita Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Merry,Bhalodia,Amrutlal & Lalita Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Sanvi,Bhalodia,Amrutlal & Lalita Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Dhiren,Bhalodia,Dhiren & Charu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Charu,Bhalodia,Dhiren & Charu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Kevan,Bhalodia,Dhiren & Charu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Kerry,Bhalodia,Dhiren & Charu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Ketan,Bhalodia,Ketan & Pintu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Pintu,Bhalodia,Ketan & Pintu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Riya,Bhalodia,Ketan & Pintu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Ritu,Bhalodia,Ketan & Pintu Bhalodia Family,,TRUE,TRUE,TRUE,TRUE
+Nilesh,Bhuva,Nilesh & Ashila Bhuva,,TRUE,TRUE,TRUE,TRUE
+Ashila,Bhuva,Nilesh & Ashila Bhuva,,TRUE,TRUE,TRUE,TRUE
+John,Birath,John & Nimisha Birath Family,,TRUE,TRUE,TRUE,TRUE
+Nimisha,Birath,John & Nimisha Birath Family,,TRUE,TRUE,TRUE,TRUE
+Meera,Birath,John & Nimisha Birath Family,,TRUE,TRUE,TRUE,TRUE
+Shaila,Birath,John & Nimisha Birath Family,,TRUE,TRUE,TRUE,TRUE
+Kevin,Chapla,Kevin & Pooja Chapla,,TRUE,TRUE,TRUE,TRUE
+Pooja,Chapla,Kevin & Pooja Chapla,,TRUE,TRUE,TRUE,TRUE
+Thakarshi,Chapla,Thakarshi & Manjula Chapla Family,,TRUE,TRUE,TRUE,TRUE
+Manjula,Chapla,Thakarshi & Manjula Chapla Family,,TRUE,TRUE,TRUE,TRUE
+Niraj,Chapla,Thakarshi & Manjula Chapla Family,,TRUE,TRUE,TRUE,TRUE
+Namrata,Chapla,Thakarshi & Manjula Chapla Family,,TRUE,TRUE,TRUE,TRUE
+Bapuji,Chapla,Thakarshi & Manjula Chapla Family,,TRUE,TRUE,TRUE,TRUE
+Baa,Chapla,Thakarshi & Manjula Chapla Family,,TRUE,TRUE,TRUE,TRUE
+Vijay,Chikani,Vijay & Indu Chikani Family,,TRUE,TRUE,TRUE,TRUE
+Indu,Chikani,Vijay & Indu Chikani Family,,TRUE,TRUE,TRUE,TRUE
+Sarvesh,Chikani,Vijay & Indu Chikani Family,,TRUE,TRUE,TRUE,TRUE
+Navinchandra,Dadhaniya,Navinchandra & Rasila Dadhaniya Family,,TRUE,TRUE,TRUE,TRUE
+Rasila,Dadhaniya,Navinchandra & Rasila Dadhaniya Family,,TRUE,TRUE,TRUE,TRUE
+Chirag,Dadhaniya,Navinchandra & Rasila Dadhaniya Family,,TRUE,TRUE,TRUE,TRUE
+Parag,Dadhaniya,Navinchandra & Rasila Dadhaniya Family,,TRUE,TRUE,TRUE,TRUE
+Shreya,Dadhaniya,Navinchandra & Rasila Dadhaniya Family,,TRUE,TRUE,TRUE,TRUE
+Apul,Dalsania,Apu & Viral Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Viral,Dalsania,Apu & Viral Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Avi,Dalsania,Apu & Viral Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Bhupat,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Meena,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Ashwin,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Sonal,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Shriya,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Priya,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Riya,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Jeet,Dalsania,Ashwin & Bhupat Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Hari,Dalsania,Hari & Nayantara Dalsania,,TRUE,TRUE,TRUE,TRUE
+Nayantara,Dalsania,Hari & Nayantara Dalsania,,TRUE,TRUE,TRUE,TRUE
+Keshor,Dalsania,Keshor & Manisha Dalsania,,TRUE,TRUE,TRUE,TRUE
+Manisha,Dalsania,Keshor & Manisha Dalsania,,TRUE,TRUE,TRUE,TRUE
+Vinu,Dalsania,Vinu & Kiran Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Kiran,Dalsania,Vinu & Kiran Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Kevan,Dalsania,Vinu & Kiran Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Esha,Dalsania,Vinu & Kiran Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Jenney,Dalsania,Vinu & Kiran Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Umang,Dalsania,Vinu & Kiran Dalsania Family,,TRUE,TRUE,TRUE,TRUE
+Arvind,Delvadia,Arvind & Rita Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Rita,Delvadia,Arvind & Rita Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Parth,Delvadia,Arvind & Rita Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Kirit,Delvadia,Kirit & Varsha Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Varsha,Delvadia,Kirit & Varsha Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Nishit,Delvadia,Kirit & Varsha Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Kaka,Delvadia,Kirit & Varsha Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Kaki,Delvadia,Kirit & Varsha Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Mukund,Delvadia,Mukund Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Nirju,Delvadia,Mukund Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Jigar,Delvadia,Mukund Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Kid,Delvadia,Mukund Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Kid 2,Delvadia,Mukund Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Pravin,Delvadia,Pravin & Bharti Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Bharit,Delvadia,Pravin & Bharti Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Kunal,Delvadia,Pravin & Bharti Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Rasik,Delvadia,Dr. Rasik & Vijya Delvadia & Family,,TRUE,TRUE,TRUE,TRUE
+Vijya,Delvadia,Dr. Rasik & Vijya Delvadia & Family,,TRUE,TRUE,TRUE,TRUE
+Neel,Delvadia,Dr. Rasik & Vijya Delvadia & Family,,TRUE,TRUE,TRUE,TRUE
+Bapuji,Delvadia,Dr. Rasik & Vijya Delvadia & Family,,TRUE,TRUE,TRUE,TRUE
+Shobhna,Delvadia,Shobhna Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Parth,Delvadia,Shobhna Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Wife,Delvadia,Shobhna Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Ruby,Delvadia,Shobhna Delvadia Family,,TRUE,TRUE,TRUE,TRUE
+Husband,Gheddia,Dr. Husband & Bharti Gheddia,,TRUE,TRUE,TRUE,TRUE
+Bharti,Gheddia,Dr. Husband & Bharti Gheddia,,TRUE,TRUE,TRUE,TRUE
+Arvind,Faldu,Arvind & lla Faldu Family,,TRUE,TRUE,TRUE,TRUE
+lla,Faldu,Arvind & lla Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Om,Faldu,Arvind & lla Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Roshani,Faldu,Arvind & lla Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Parthiv,Faldu,Arvind & lla Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Bhagavati,Faldu,Bhagavati & Savita Faldu,,TRUE,TRUE,TRUE,TRUE
+Savita,Faldu,Bhagavati & Savita Faldu,,TRUE,TRUE,TRUE,TRUE
+Bharat,Faldu,Bharat & Lila Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Lila,Faldu,Bharat & Lila Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Pooja,Faldu,Bharat & Lila Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Ameesh,Faldu,Bharat & Lila Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Shrina,Faldu,Bharat & Lila Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Husband,Faldu,Bharat & Lila Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Jaydeep,Faldu,Jaydeep & Amee Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Ameesh,Faldu,Jaydeep & Amee Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Aarna,Faldu,Jaydeep & Amee Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Ramesh,Faldu,Jaydeep & Amee Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Madhu,Faldu,Jaydeep & Amee Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Mihir,Faldu,Mihir & Sonam Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Sonam,Faldu,Mihir & Sonam Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Yashmi,Faldu,Mihir & Sonam Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Neel,Faldu,Neel & Sveta Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Sveta,Faldu,Neel & Sveta Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Mya,Faldu,Neel & Sveta Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Ramnik,Faldu,Dr. Chirag & Meera Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Rasila,Faldu,Dr. Chirag & Meera Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Chirag,Faldu,Dr. Chirag & Meera Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Meera,Faldu,Dr. Chirag & Meera Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Tanishi,Faldu,Dr. Chirag & Meera Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Ishani,Faldu,Dr. Chirag & Meera Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Vijay,Faldu,Vijay & Nina Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Nina,Faldu,Vijay & Nina Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Rishi,Faldu,Vijay & Nina Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Nidhi,Faldu,Vijay & Nina Faldu Family,,TRUE,TRUE,TRUE,TRUE
+Govind,Fuletra,Govind & Sharda Fuletra Family,,TRUE,TRUE,TRUE,TRUE
+Sharda,Fuletra,Govind & Sharda Fuletra Family,,TRUE,TRUE,TRUE,TRUE
+Chandu,Gami,Chandu & Narmada Gami Family,,TRUE,TRUE,TRUE,TRUE
+Narmada,Gami,Chandu & Narmada Gami Family,,TRUE,TRUE,TRUE,TRUE
+Margi,Gami,Chandu & Narmada Gami Family,,TRUE,TRUE,TRUE,TRUE
+Jitendra,Ghoddsara,Ankit & Suzan Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Jaijayvanti,Ghoddsara,Ankit & Suzan Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Ankit,Ghoddsara,Ankit & Suzan Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Suzan,Ghoddsara,Ankit & Suzan Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Ranchoddas,Ghoddsara,Ranchoddas & Jaya Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Jaya,Ghoddsara,Ranchoddas & Jaya Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Sunil,Ghoddsara,Ranchoddas & Jaya Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Bhavita,Ghoddsara,Ranchoddas & Jaya Ghoddsara Family,,TRUE,TRUE,TRUE,TRUE
+Nimish,Godhani,Nimish & Naina Godhani Family,,TRUE,TRUE,TRUE,TRUE
+Naina,Godhani,Nimish & Naina Godhani Family,,TRUE,TRUE,TRUE,TRUE
+Kid,Godhani,Nimish & Naina Godhani Family,,TRUE,TRUE,TRUE,TRUE
+Dhirau,Gondha,Dhira & Saroj Gondha,,TRUE,TRUE,TRUE,TRUE
+Saroj,Gondha,Dhira & Saroj Gondha,,TRUE,TRUE,TRUE,TRUE
+Vithal,Gondha,Vithal & Ranjan Gondha,,TRUE,TRUE,TRUE,TRUE
+Ranjan,Gondha,Vithal & Ranjan Gondha,,TRUE,TRUE,TRUE,TRUE
+Nitin,Jasani,Nitin & Umi Jasani ,,TRUE,TRUE,TRUE,TRUE
+Umi,Jasani,Nitin & Umi Jasani ,,TRUE,TRUE,TRUE,TRUE
+Vinu,Jasani,Vinu & Hansa Jasani,,TRUE,TRUE,TRUE,TRUE
+Hansha,Jasani,Vinu & Hansa Jasani,,TRUE,TRUE,TRUE,TRUE
+Kamlesh,Javiya,Kamlesh & Sushila Javiya Family,,TRUE,TRUE,TRUE,TRUE
+Sushila,Javiya,Kamlesh & Sushila Javiya Family,,TRUE,TRUE,TRUE,TRUE
+Shivani,Javiya,Kamlesh & Sushila Javiya Family,,TRUE,TRUE,TRUE,TRUE
+Bakul,Kalaria,Bakul & Parul Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Parul,Kalaria,Bakul & Parul Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Ferry,Kalaria,Bakul & Parul Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Forum,Kalaria,Bakul & Parul Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Chandrakant,Kalaria,Chandrakant Kalaria,,TRUE,TRUE,TRUE,TRUE
+Raju,Kalaria,Raju & Rekha Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Rekha,Kalaria,Raju & Rekha Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Deep,Kalaria,Raju & Rekha Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Jeet,Kalaria,Raju & Rekha Kalaria Family,,TRUE,TRUE,TRUE,TRUE
+Bharat,Kanani,Bharat & Pravina Kanani,,TRUE,TRUE,TRUE,TRUE
+Pravina,Kanani,Bharat & Pravina Kanani,,TRUE,TRUE,TRUE,TRUE
+Rajnikant,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Dimpal,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Shailesh,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Jigna,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Aayush,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Yashvi,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Damodar,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Mukta,Kaneria,Rajnikant & Shailesh Kaneria Family,,TRUE,TRUE,TRUE,TRUE
+Navin,Kanjya,Navin & Urmila Kanjya,,TRUE,TRUE,TRUE,TRUE
+Urmilla,Kanjya,Navin & Urmila Kanjya,,TRUE,TRUE,TRUE,TRUE
+Pravina,Khant,Pravina & Jijay Khant Family,,TRUE,TRUE,TRUE,TRUE
+Vijay,Khant,Pravina & Jijay Khant Family,,TRUE,TRUE,TRUE,TRUE
+Sejal,Khant,Pravina & Jijay Khant Family,,TRUE,TRUE,TRUE,TRUE
+Ashish,Khant,Pravina & Jijay Khant Family,,TRUE,TRUE,TRUE,TRUE
+Chuni,Makadia,Nishant & Nirma Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Pushpa,Makadia,Nishant & Nirma Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Nishant,Makadia,Nishant & Nirma Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Nirma,Makadia,Nishant & Nirma Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Daughter,Makadia,Nishant & Nirma Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Dushyant,Makadia,Dushyant & Shivani Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Shivani,Makadia,Dushyant & Shivani Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Aarya,Makadia,Dushyant & Shivani Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Aaskha,Makadia,Dushyant & Shivani Makadia Family,,TRUE,TRUE,TRUE,TRUE
+Purshottam,Mandavia,Amit & Parina Mandavia Family,,TRUE,TRUE,TRUE,TRUE
+Savita,Mandavia,Amit & Parina Mandavia Family,,TRUE,TRUE,TRUE,TRUE
+Amit,Mandavia,Amit & Parina Mandavia Family,,TRUE,TRUE,TRUE,TRUE
+Parina,Mandavia,Amit & Parina Mandavia Family,,TRUE,TRUE,TRUE,TRUE
+Rushil,Mandavia,Amit & Parina Mandavia Family,,TRUE,TRUE,TRUE,TRUE
+Krish,Mandavia,Amit & Parina Mandavia Family,,TRUE,TRUE,TRUE,TRUE
+Harsukh,Marvania,Harsukh & Manjula Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Manjula,Marvania,Harsukh & Manjula Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Kishan,Marvania,Harsukh & Manjula Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Jayanti,Marvania,Miten & Disha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Jaya,Marvania,Miten & Disha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Miten,Marvania,Miten & Disha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Disha,Marvania,Miten & Disha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Sia,Marvania,Miten & Disha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Kiyan,Marvania,Miten & Disha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Rati,Marvania,Saroj & Rita Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Saroj,Marvania,Saroj & Rita Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Perry,Marvania,Saroj & Rita Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Zinath,Marvania,Saroj & Rita Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Raj,Marvania,Saroj & Rita Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Neha,Marvania,Saroj & Rita Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Shila,Marvania,Shila & Chand Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Chand,Marvania,Shila & Chand Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Vinay,Marvania,Vinay & Varsha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Varsha,Marvania,Vinay & Varsha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Sunny,Marvania,Vinay & Varsha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Shrina,Marvania,Vinay & Varsha Marvania Family,,TRUE,TRUE,TRUE,TRUE
+Ashvin,Patel,Ashvin & Mina Patel,,TRUE,TRUE,TRUE,TRUE
+Jayesh,Patel,Ashvin & Mina Patel,,TRUE,TRUE,TRUE,TRUE
+Mira,Patel,Jayesh & Mira Patel Family,,TRUE,TRUE,TRUE,TRUE
+Sonam,Patel,Jayesh & Mira Patel Family,,TRUE,TRUE,TRUE,TRUE
+Soham,Patel,Jayesh & Mira Patel Family,,TRUE,TRUE,TRUE,TRUE
+Kaki,Patel,Jayesh & Mira Patel Family,,TRUE,TRUE,TRUE,TRUE
+Kiran,Patel,Kiran & Jaya Patel,,TRUE,TRUE,TRUE,TRUE
+Jaya,Patel,Kiran & Jaya Patel,,TRUE,TRUE,TRUE,TRUE
+Piyush,Patel,Piyush & Setu Patel Family,,TRUE,TRUE,TRUE,TRUE
+Setu,Patel,Piyush & Setu Patel Family,,TRUE,TRUE,TRUE,TRUE
+Amaya,Patel,Piyush & Setu Patel Family,,TRUE,TRUE,TRUE,TRUE
+Aashay,Patel,Piyush & Setu Patel Family,,TRUE,TRUE,TRUE,TRUE
+Aneri,Patel,Piyush & Setu Patel Family,,TRUE,TRUE,TRUE,TRUE
+Vaju,Rabadia,Vaju & Chandrika Rabadia,,TRUE,TRUE,TRUE,TRUE
+Chandrika,Rabadia,Vaju & Chandrika Rabadia,,TRUE,TRUE,TRUE,TRUE
+Pravin,Saija,Pravin & Arti Saija,,TRUE,TRUE,TRUE,TRUE
+Arti,Saija,Pravin & Arti Saija,,TRUE,TRUE,TRUE,TRUE
+Dhiraj,Saparia,Dhiraj & Usha Saparia Family,,TRUE,TRUE,TRUE,TRUE
+Usha,Saparia,Dhiraj & Usha Saparia Family,,TRUE,TRUE,TRUE,TRUE
+Kishan,Saparia,Dhiraj & Usha Saparia Family,,TRUE,TRUE,TRUE,TRUE
+Gita,Saparia,Dhiraj & Usha Saparia Family,,TRUE,TRUE,TRUE,TRUE
+Natavar,Sureja,Natavar & Gita Sureja,,TRUE,TRUE,TRUE,TRUE
+Gita,Sureja,Natavar & Gita Sureja,,TRUE,TRUE,TRUE,TRUE
+Amu,Vachhani,Amu & Kanta Vachhani,,TRUE,TRUE,TRUE,TRUE
+Kantabaa,Vachhani,Amu & Kanta Vachhani,,TRUE,TRUE,TRUE,TRUE
+Kanti,Vachhani,Kanti & Indu Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Indu,Vachhani,Kanti & Indu Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Ravi,Vachhani,Kanti & Indu Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Hetal,Vachhani,Kanti & Indu Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Aarna,Vachhani,Kanti & Indu Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Manhar,Vachhani,Manhar & Narmada Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Narmada,Vachhani,Manhar & Narmada Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Herit,Vachhani,Manhar & Narmada Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Silva,Vachhani,Manhar & Narmada Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Monika,Vachhani,Monika & Aakar Vachhani,,TRUE,TRUE,TRUE,TRUE
+Aakar,Vachhani,Monika & Aakar Vachhani,,TRUE,TRUE,TRUE,TRUE
+Purshottam,Vachhani,Purshottam & Niru Vachhani,,TRUE,TRUE,TRUE,TRUE
+Niru,Vachhani,Purshottam & Niru Vachhani,,TRUE,TRUE,TRUE,TRUE
+Vinu,Vachhani,Vinu & Pushpa Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Pushpa,Vachhani,Vinu & Pushpa Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Raj,Vachhani,Vinu & Pushpa Vachhani Family,,TRUE,TRUE,TRUE,TRUE
+Amit,Vachhani,Vinu & Pushpa Vachhani Family,,TRUE,TRUE,TRUE,TRUE
