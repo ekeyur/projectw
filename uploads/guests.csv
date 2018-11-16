@@ -1,5 +1,4 @@
-﻿fname,lname,group,city,mandvo,garba,wedding,reception
-Gautum,Chokhsi,Mr. and Mrs. Chokshi,,TRUE,FALSE,TRUE,FALSE
+﻿Gautum,Chokhsi,Mr. and Mrs. Chokshi,,TRUE,FALSE,TRUE,FALSE
 Sulochana,Chokhsi,Mr. and Mrs. Chokshi,,TRUE,FALSE,TRUE,FALSE
 Keyur,Dalsania,Keyur Dalsania & Family,,TRUE,FALSE,TRUE,TRUE
 Shivani,Dalsania,Keyur Dalsania & Family,,TRUE,FALSE,TRUE,TRUE
@@ -90,7 +89,6 @@ Ramesh,Mathur,Mr. and Mrs. Ramesh Mathur,,TRUE,FALSE,FALSE,TRUE
 Uma,Mathur,Mr. and Mrs. Ramesh Mathur,,TRUE,FALSE,FALSE,TRUE
 Kiran,Modi,Mr. and Mrs. Kiran Modi,,TRUE,FALSE,FALSE,TRUE
 Gita,Modi,Mr. and Mrs. Kiran Modi,,TRUE,FALSE,FALSE,TRUE
-Priti,Modi,Mr. and Mrs. Kiran Modi,,,,,
 Ravi,Palaniyandi,Mr. and Mrs. Ravi Palaniyandi,,TRUE,FALSE,FALSE,TRUE
 Ambika,Palaniyandi,Mr. and Mrs. Ravi Palaniyandi,,TRUE,FALSE,FALSE,TRUE
 Bharat,Patel,Mr. and Mrs. Bharat Patel,,TRUE,FALSE,FALSE,TRUE
@@ -105,8 +103,6 @@ Yas,Sachdev,Mr. and Mrs. Yas Sachdev,,TRUE,FALSE,FALSE,TRUE
 Sarita,Sachdev,Mr. and Mrs. Yas Sachdev,,TRUE,FALSE,FALSE,TRUE
 Ashok,Shah,Ashok Shah & Family,,TRUE,FALSE,TRUE,TRUE
 Gita,Shah,Ashok Shah & Family,,TRUE,FALSE,TRUE,TRUE
-Megha,Shah,Ashok Shah & Family,,,,,
-Chirag,Shah,Ashok Shah & Family,,,,,
 Sachin,Shenoy,Shenoy,,TRUE,FALSE,FALSE,TRUE
 Simon,Symonides,Mr. and Mrs. Simon Symonides,,FALSE,FALSE,FALSE,TRUE
 Mrs. ,Symonides,Mr. and Mrs. Simon Symonides,,FALSE,FALSE,FALSE,TRUE

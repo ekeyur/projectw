@@ -98,7 +98,7 @@ app.post('/login', function(request, response) {
       next();
     } else {
       response.status(401);
-      response.json({error: "You are not logged In"});
+      response.json({error: "Wrong token. Login Failed"});
     }
   }
 
